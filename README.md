@@ -4,14 +4,18 @@ An automated NFL fantasy pipeline that identifies buy-low candidates, waiver wir
 ## The Model
 Traditional fantasy platforms rank players by raw fantasy points, which heavily reflect trailing results, touchdown luck, and splash plays. Boardsteals inverts this by prioritising underlying offensive opportunity.
 
-### Step 1: Expected PPR (Opportunity Baseline)
-Every touch or target carries an inherent expected point value based on historical league-wide conversion rates across rushing and receiving efficiency:
+### Step 1: Expected PPR (Advanced Opportunity Baseline)
+Traditional metrics treat all targets equally—we do not. BoardSteals evaluates opportunity using advanced tracking metrics like Air Yards and WOPR (Weighted Opportunity Rating) to weigh exactly *how* a player is being used.
 
-$$$$\text{Expected PPR} = (\text{Carries} \times 0.7) + (\text{Targets} \times 1.8)$$
+$$\text{Exp PPR} = (\text{Carries} \times 0.7) + (\text{Targets} \times 0.8) + (\text{Air Yards} \times 0.06) + (\text{WOPR} \times 4.0)$$
 
-- Carries ($0.7$ pts): Accounts for historical league-average yards per carry (~$4.2$–$4.4$ YPC $\approx 0.43$ pts) plus goal-line touchdown equity.
+- Carries ($0.7$ pt Accounts for historical league-average yards per carry plus goal-line touchdown equity.
+  
+- Baseline Targets ($0.8$ pts): The baseline PPR value of commanding a target, regardless of depth.
 
-- Targets ($1.8$ pts): In a full-PPR format, a target represents immediate baseline point equity ($1.0$ point per catch $\times \sim 65\%$ league completion rate $\approx 0.65$ pts) plus yardage expectation (~$7.0$–$8.0$ yards per target $\approx 0.75$ pts) and red-zone passing equity.
+- Air Yards ($0.06$ pts): Evaluates depth of target (aDOT). A player seeing 5 targets 20 yards down the field generates significantly more expected fantasy points than a player seeing 5 passes behind the line of scrimmage. 
+
+- WOPR Multiplier ($4.0$ modifier): WOPR combines a player's raw target share with their team air yards share. Scaling this metric rewards true "alpha" receivers who dominate their team's offensive game plan, filtering out random depth players who caught a lucky deep pass.
 
 ### Step 1: Disparity Calculation
 We evaluate whether a player's fantasy output underperformed or outpaced their real-world usage,
@@ -123,6 +127,8 @@ Since this will be run on a github pages instance, the pipeline exports static J
 ```
 
 ## Setup
+The python scripts can be found in `pipeline`, and you can tweak the parameters and equations to suit your team's needs. 
+
 ### Prerequisites
 Python 3.10+
 

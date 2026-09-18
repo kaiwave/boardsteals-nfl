@@ -12,10 +12,10 @@
       "team": "DET",
       "position": "WR",
       "week": 2,
-      "rating": 71.0,
+      "rating": 75.5,
       "headshot": "/assets/headshots/00-0040669.png",
       "main_stats": {
-        "expected_points": 9.0,
+        "expected_points": 10.3,
         "actual_points": 4.6,
         "total_opportunity": 5
       },
@@ -34,10 +34,10 @@
       "team": "BUF",
       "position": "WR",
       "week": 2,
-      "rating": 69.9,
+      "rating": 72.7,
       "headshot": "/assets/headshots/00-0037261.png",
       "main_stats": {
-        "expected_points": 10.8,
+        "expected_points": 11.3,
         "actual_points": 6.8,
         "total_opportunity": 6
       },
@@ -51,34 +51,12 @@
       }
     },
     {
-      "id": "00-0039139",
-      "name": "Jahmyr Gibbs",
-      "team": "DET",
-      "position": "RB",
-      "week": 2,
-      "rating": 65.4,
-      "headshot": "/assets/headshots/00-0039139.png",
-      "main_stats": {
-        "expected_points": 25.6,
-        "actual_points": 23.3,
-        "total_opportunity": 24
-      },
-      "detail_stats": {
-        "targets": 8,
-        "carries": 16,
-        "receptions": 6,
-        "receiving_yards": 61,
-        "rushing_yards": 52,
-        "wopr": 0.39
-      }
-    },
-    {
       "id": "00-0037240",
       "name": "Jameson Williams",
       "team": "DET",
       "position": "WR",
       "week": 2,
-      "rating": 64.3,
+      "rating": 66.5,
       "headshot": "/assets/headshots/00-0037240.png",
       "main_stats": {
         "expected_points": 7.2,
@@ -95,25 +73,25 @@
       }
     },
     {
-      "id": "00-0037248",
-      "name": "James Cook",
-      "team": "BUF",
+      "id": "00-0039139",
+      "name": "Jahmyr Gibbs",
+      "team": "DET",
       "position": "RB",
       "week": 2,
-      "rating": 57.1,
-      "headshot": "/assets/headshots/00-0037248.png",
+      "rating": 56.8,
+      "headshot": "/assets/headshots/00-0039139.png",
       "main_stats": {
-        "expected_points": 20.1,
-        "actual_points": 20.9,
+        "expected_points": 21.2,
+        "actual_points": 23.3,
         "total_opportunity": 24
       },
       "detail_stats": {
-        "targets": 3,
-        "carries": 21,
-        "receptions": 1,
-        "receiving_yards": 4,
-        "rushing_yards": 135,
-        "wopr": 0.16
+        "targets": 8,
+        "carries": 16,
+        "receptions": 6,
+        "receiving_yards": 61,
+        "rushing_yards": 52,
+        "wopr": 0.39
       }
     },
     {
@@ -125,7 +103,7 @@
       "rating": 55.2,
       "headshot": "/assets/headshots/00-0039901.png",
       "main_stats": {
-        "expected_points": 10.8,
+        "expected_points": 9.5,
         "actual_points": 12.3,
         "total_opportunity": 6
       },
@@ -139,25 +117,25 @@
       }
     },
     {
-      "id": "00-0039065",
-      "name": "Sam LaPorta",
-      "team": "DET",
-      "position": "TE",
+      "id": "00-0037248",
+      "name": "James Cook",
+      "team": "BUF",
+      "position": "RB",
       "week": 2,
-      "rating": 46.9,
-      "headshot": "/assets/headshots/00-0039065.png",
+      "rating": 54.4,
+      "headshot": "/assets/headshots/00-0037248.png",
       "main_stats": {
-        "expected_points": 12.6,
-        "actual_points": 17.2,
-        "total_opportunity": 7
+        "expected_points": 17.8,
+        "actual_points": 20.9,
+        "total_opportunity": 24
       },
       "detail_stats": {
-        "targets": 7,
-        "carries": 0,
-        "receptions": 6,
-        "receiving_yards": 52,
-        "rushing_yards": 0,
-        "wopr": 0.32
+        "targets": 3,
+        "carries": 21,
+        "receptions": 1,
+        "receiving_yards": 4,
+        "rushing_yards": 135,
+        "wopr": 0.16
       }
     },
     {
@@ -166,10 +144,10 @@
       "team": "BUF",
       "position": "TE",
       "week": 2,
-      "rating": 37.5,
+      "rating": 41.9,
       "headshot": "/assets/headshots/00-0038933.png",
       "main_stats": {
-        "expected_points": 14.4,
+        "expected_points": 14.2,
         "actual_points": 22.5,
         "total_opportunity": 8
       },
@@ -183,15 +161,37 @@
       }
     },
     {
+      "id": "00-0039065",
+      "name": "Sam LaPorta",
+      "team": "DET",
+      "position": "TE",
+      "week": 2,
+      "rating": 40.5,
+      "headshot": "/assets/headshots/00-0039065.png",
+      "main_stats": {
+        "expected_points": 8.3,
+        "actual_points": 17.2,
+        "total_opportunity": 7
+      },
+      "detail_stats": {
+        "targets": 7,
+        "carries": 0,
+        "receptions": 6,
+        "receiving_yards": 52,
+        "rushing_yards": 0,
+        "wopr": 0.32
+      }
+    },
+    {
       "id": "00-0036963",
       "name": "Amon-Ra St. Brown",
       "team": "DET",
       "position": "WR",
       "week": 2,
-      "rating": 27.6,
+      "rating": 31.6,
       "headshot": "/assets/headshots/00-0036963.png",
       "main_stats": {
-        "expected_points": 23.4,
+        "expected_points": 22.6,
         "actual_points": 35.2,
         "total_opportunity": 13
       },

@@ -46,15 +46,32 @@ def download_headshot(player_id, url):
 def calculate_ratings(df):
     df = df[df['position'].isin(['RB', 'WR', 'TE'])].copy()
     
-    df['expected_ppr'] = (df.get('carries', 0) * 0.7) + (df.get('targets', 0) * 1.8)
+    # Ensure advanced metrics exist (fill with 0 for players who only run the ball)
+    df['wopr'] = pd.to_numeric(df.get('wopr', 0), errors='coerce').fillna(0)
+    df['receiving_air_yards'] = pd.to_numeric(df.get('receiving_air_yards', 0), errors='coerce').fillna(0)
+    
+    # --- MORE ADVANCED EXPECTED PPR FORMULA ---
+    # Rushing: Retains the 0.7 baseline per carry
+    # Baseline Receiving: 0.8 pts per target (represents floor value of dump-offs)
+    # Advanced Receiving (Air Yards): 0.06 pts per air yard (values deep threats)
+    # Team Dominance (WOPR): A flat +4.0 modifier multiplied by their WOPR percentage to reward alpha receivers
+    df['expected_ppr'] = (
+        (df.get('carries', 0) * 0.7) + 
+        (df.get('targets', 0) * 0.8) + 
+        (df['receiving_air_yards'] * 0.06) + 
+        (df['wopr'] * 4.0)
+    )
+    
     df['disparity'] = df['expected_ppr'] - df.get('fantasy_points_ppr', 0)
-    df = df[df['expected_ppr'] >= 6] 
     
-    mean_disp = df['disparity'].mean()
-    std_disp = df['disparity'].std()
+    # Filter out bench warmers to avoid noisy data (min 6.0 expected points)
+    df = df[df['expected_ppr'] >= 6.0] 
     
-    df['z_score'] = (df['disparity'] - mean_disp) / std_disp
-    df['rating'] = np.clip(55 + (df['z_score'] * 15), 0, 100).round(1)
+    disp = df['disparity']
+    z = (disp - disp.mean()) / disp.std()
+    
+    df['z_score'] = z
+    df['rating'] = np.clip(54 + (z * 14), 0, 100).round(1)
     
     return df.sort_values('rating', ascending=False)
 

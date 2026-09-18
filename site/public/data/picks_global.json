@@ -95,6 +95,28 @@
       }
     },
     {
+      "id": "00-0040669",
+      "name": "Isaac TeSlaa",
+      "team": "DET",
+      "position": "WR",
+      "week": 2,
+      "rating": 75.5,
+      "headshot": "/assets/headshots/00-0040669.png",
+      "main_stats": {
+        "expected_points": 10.3,
+        "actual_points": 4.6,
+        "total_opportunity": 5
+      },
+      "detail_stats": {
+        "targets": 5,
+        "carries": 0,
+        "receptions": 2,
+        "receiving_yards": 26,
+        "rushing_yards": 0,
+        "wopr": 0.37
+      }
+    },
+    {
       "id": "00-0039880",
       "name": "Malik Washington",
       "team": "MIA",
@@ -271,6 +293,28 @@
       }
     },
     {
+      "id": "00-0037261",
+      "name": "Khalil Shakir",
+      "team": "BUF",
+      "position": "WR",
+      "week": 2,
+      "rating": 72.7,
+      "headshot": "/assets/headshots/00-0037261.png",
+      "main_stats": {
+        "expected_points": 11.3,
+        "actual_points": 6.8,
+        "total_opportunity": 6
+      },
+      "detail_stats": {
+        "targets": 6,
+        "carries": 0,
+        "receptions": 3,
+        "receiving_yards": 38,
+        "rushing_yards": 0,
+        "wopr": 0.54
+      }
+    },
+    {
       "id": "00-0034383",
       "name": "Dalton Schultz",
       "team": "HOU",
@@ -337,28 +381,6 @@
       }
     },
     {
-      "id": "00-0040669",
-      "name": "Isaac TeSlaa",
-      "team": "DET",
-      "position": "WR",
-      "week": 2,
-      "rating": 71.0,
-      "headshot": "/assets/headshots/00-0040669.png",
-      "main_stats": {
-        "expected_points": 9.0,
-        "actual_points": 4.6,
-        "total_opportunity": 5
-      },
-      "detail_stats": {
-        "targets": 5,
-        "carries": 0,
-        "receptions": 2,
-        "receiving_yards": 26,
-        "rushing_yards": 0,
-        "wopr": 0.37
-      }
-    },
-    {
       "id": "00-0040667",
       "name": "Matthew Golden",
       "team": "GB",
@@ -422,28 +444,6 @@
         "receiving_yards": 18,
         "rushing_yards": 0,
         "wopr": 0.58
-      }
-    },
-    {
-      "id": "00-0037261",
-      "name": "Khalil Shakir",
-      "team": "BUF",
-      "position": "WR",
-      "week": 2,
-      "rating": 69.9,
-      "headshot": "/assets/headshots/00-0037261.png",
-      "main_stats": {
-        "expected_points": 10.8,
-        "actual_points": 6.8,
-        "total_opportunity": 6
-      },
-      "detail_stats": {
-        "targets": 6,
-        "carries": 0,
-        "receptions": 3,
-        "receiving_yards": 38,
-        "rushing_yards": 0,
-        "wopr": 0.54
       }
     },
     {
@@ -805,7 +805,7 @@
       "position": "RB",
       "week": 2,
       "rating": 65.4,
-      "headshot": NaN,
+      "headshot": null,
       "main_stats": {
         "expected_points": 25.6,
         "actual_points": 23.3,
@@ -887,25 +887,25 @@
       }
     },
     {
-      "id": "00-0039075",
-      "name": "Puka Nacua",
-      "team": "LA",
-      "position": "WR",
+      "id": "00-0037256",
+      "name": "Rachaad White",
+      "team": "WAS",
+      "position": "RB",
       "week": 1,
       "rating": 64.6,
-      "headshot": "/assets/headshots/00-0039075.png",
+      "headshot": "/assets/headshots/00-0037256.png",
       "main_stats": {
-        "expected_points": 16.2,
-        "actual_points": 12.4,
+        "expected_points": 8.5,
+        "actual_points": 4.7,
         "total_opportunity": 9
       },
       "detail_stats": {
-        "targets": 9,
-        "carries": 0,
-        "receptions": 5,
-        "receiving_yards": 74,
-        "rushing_yards": 0,
-        "wopr": 0.82
+        "targets": 2,
+        "carries": 7,
+        "receptions": 2,
+        "receiving_yards": 5,
+        "rushing_yards": 22,
+        "wopr": 0.08
       }
     },
     {
@@ -931,25 +931,25 @@
       }
     },
     {
-      "id": "00-0037256",
-      "name": "Rachaad White",
-      "team": "WAS",
-      "position": "RB",
+      "id": "00-0039075",
+      "name": "Puka Nacua",
+      "team": "LA",
+      "position": "WR",
       "week": 1,
       "rating": 64.6,
-      "headshot": "/assets/headshots/00-0037256.png",
+      "headshot": "/assets/headshots/00-0039075.png",
       "main_stats": {
-        "expected_points": 8.5,
-        "actual_points": 4.7,
+        "expected_points": 16.2,
+        "actual_points": 12.4,
         "total_opportunity": 9
       },
       "detail_stats": {
-        "targets": 2,
-        "carries": 7,
-        "receptions": 2,
-        "receiving_yards": 5,
-        "rushing_yards": 22,
-        "wopr": 0.08
+        "targets": 9,
+        "carries": 0,
+        "receptions": 5,
+        "receiving_yards": 74,
+        "rushing_yards": 0,
+        "wopr": 0.82
       }
     },
     {
@@ -1063,28 +1063,6 @@
       }
     },
     {
-      "id": "00-0037291",
-      "name": "Jalen Nailor",
-      "team": "LV",
-      "position": "WR",
-      "week": 1,
-      "rating": 63.4,
-      "headshot": "/assets/headshots/00-0037291.png",
-      "main_stats": {
-        "expected_points": 9.0,
-        "actual_points": 5.7,
-        "total_opportunity": 5
-      },
-      "detail_stats": {
-        "targets": 5,
-        "carries": 0,
-        "receptions": 3,
-        "receiving_yards": 27,
-        "rushing_yards": 0,
-        "wopr": 0.46
-      }
-    },
-    {
       "id": "00-0041547",
       "name": "KC Concepcion",
       "team": "CLE",
@@ -1104,6 +1082,28 @@
         "receiving_yards": 43,
         "rushing_yards": 15,
         "wopr": 0.53
+      }
+    },
+    {
+      "id": "00-0037291",
+      "name": "Jalen Nailor",
+      "team": "LV",
+      "position": "WR",
+      "week": 1,
+      "rating": 63.4,
+      "headshot": "/assets/headshots/00-0037291.png",
+      "main_stats": {
+        "expected_points": 9.0,
+        "actual_points": 5.7,
+        "total_opportunity": 5
+      },
+      "detail_stats": {
+        "targets": 5,
+        "carries": 0,
+        "receptions": 3,
+        "receiving_yards": 27,
+        "rushing_yards": 0,
+        "wopr": 0.46
       }
     }
   ]
