@@ -3,7 +3,7 @@
     "is_season_active": true,
     "season": 2026,
     "last_completed_season": 2025,
-    "current_week": 1
+    "current_week": 2
   },
   "players": [
     {
@@ -359,28 +359,6 @@
       }
     },
     {
-      "id": "00-0039040",
-      "name": "De'Von Achane",
-      "team": "MIA",
-      "position": "RB",
-      "week": 1,
-      "rating": 70.4,
-      "headshot": "/assets/headshots/00-0039040.png",
-      "main_stats": {
-        "expected_points": 16.7,
-        "actual_points": 10.6,
-        "total_opportunity": 16
-      },
-      "detail_stats": {
-        "targets": 5,
-        "carries": 11,
-        "receptions": 4,
-        "receiving_yards": 30,
-        "rushing_yards": 36,
-        "wopr": 0.29
-      }
-    },
-    {
       "id": "00-0040667",
       "name": "Matthew Golden",
       "team": "GB",
@@ -400,6 +378,28 @@
         "receiving_yards": 95,
         "rushing_yards": 0,
         "wopr": 0.65
+      }
+    },
+    {
+      "id": "00-0039040",
+      "name": "De'Von Achane",
+      "team": "MIA",
+      "position": "RB",
+      "week": 1,
+      "rating": 70.4,
+      "headshot": "/assets/headshots/00-0039040.png",
+      "main_stats": {
+        "expected_points": 16.7,
+        "actual_points": 10.6,
+        "total_opportunity": 16
+      },
+      "detail_stats": {
+        "targets": 5,
+        "carries": 11,
+        "receptions": 4,
+        "receiving_yards": 30,
+        "rushing_yards": 36,
+        "wopr": 0.29
       }
     },
     {
@@ -887,25 +887,25 @@
       }
     },
     {
-      "id": "00-0037256",
-      "name": "Rachaad White",
-      "team": "WAS",
-      "position": "RB",
+      "id": "00-0039075",
+      "name": "Puka Nacua",
+      "team": "LA",
+      "position": "WR",
       "week": 1,
       "rating": 64.6,
-      "headshot": "/assets/headshots/00-0037256.png",
+      "headshot": "/assets/headshots/00-0039075.png",
       "main_stats": {
-        "expected_points": 8.5,
-        "actual_points": 4.7,
+        "expected_points": 16.2,
+        "actual_points": 12.4,
         "total_opportunity": 9
       },
       "detail_stats": {
-        "targets": 2,
-        "carries": 7,
-        "receptions": 2,
-        "receiving_yards": 5,
-        "rushing_yards": 22,
-        "wopr": 0.08
+        "targets": 9,
+        "carries": 0,
+        "receptions": 5,
+        "receiving_yards": 74,
+        "rushing_yards": 0,
+        "wopr": 0.82
       }
     },
     {
@@ -931,25 +931,25 @@
       }
     },
     {
-      "id": "00-0039075",
-      "name": "Puka Nacua",
-      "team": "LA",
-      "position": "WR",
+      "id": "00-0037256",
+      "name": "Rachaad White",
+      "team": "WAS",
+      "position": "RB",
       "week": 1,
       "rating": 64.6,
-      "headshot": "/assets/headshots/00-0039075.png",
+      "headshot": "/assets/headshots/00-0037256.png",
       "main_stats": {
-        "expected_points": 16.2,
-        "actual_points": 12.4,
+        "expected_points": 8.5,
+        "actual_points": 4.7,
         "total_opportunity": 9
       },
       "detail_stats": {
-        "targets": 9,
-        "carries": 0,
-        "receptions": 5,
-        "receiving_yards": 74,
-        "rushing_yards": 0,
-        "wopr": 0.82
+        "targets": 2,
+        "carries": 7,
+        "receptions": 2,
+        "receiving_yards": 5,
+        "rushing_yards": 22,
+        "wopr": 0.08
       }
     },
     {
@@ -997,28 +997,6 @@
       }
     },
     {
-      "id": "00-0038129",
-      "name": "Cade Otton",
-      "team": "TB",
-      "position": "TE",
-      "week": 1,
-      "rating": 63.6,
-      "headshot": "/assets/headshots/00-0038129.png",
-      "main_stats": {
-        "expected_points": 9.0,
-        "actual_points": 5.6,
-        "total_opportunity": 5
-      },
-      "detail_stats": {
-        "targets": 5,
-        "carries": 0,
-        "receptions": 3,
-        "receiving_yards": 26,
-        "rushing_yards": 0,
-        "wopr": 0.43
-      }
-    },
-    {
       "id": "00-0039066",
       "name": "Michael Mayer",
       "team": "LV",
@@ -1041,25 +1019,47 @@
       }
     },
     {
-      "id": "00-0041547",
-      "name": "KC Concepcion",
-      "team": "CLE",
-      "position": "WR",
+      "id": "00-0038129",
+      "name": "Cade Otton",
+      "team": "TB",
+      "position": "TE",
       "week": 1,
-      "rating": 63.4,
-      "headshot": "/assets/headshots/00-0041547.png",
+      "rating": 63.6,
+      "headshot": "/assets/headshots/00-0038129.png",
       "main_stats": {
-        "expected_points": 11.1,
-        "actual_points": 7.8,
-        "total_opportunity": 8
+        "expected_points": 9.0,
+        "actual_points": 5.6,
+        "total_opportunity": 5
       },
       "detail_stats": {
         "targets": 5,
-        "carries": 3,
-        "receptions": 4,
-        "receiving_yards": 43,
-        "rushing_yards": 15,
-        "wopr": 0.53
+        "carries": 0,
+        "receptions": 3,
+        "receiving_yards": 26,
+        "rushing_yards": 0,
+        "wopr": 0.43
+      }
+    },
+    {
+      "id": "00-0039337",
+      "name": "Malik Nabers",
+      "team": "NYG",
+      "position": "WR",
+      "week": 1,
+      "rating": 63.4,
+      "headshot": "/assets/headshots/00-0039337.png",
+      "main_stats": {
+        "expected_points": 16.2,
+        "actual_points": 12.9,
+        "total_opportunity": 9
+      },
+      "detail_stats": {
+        "targets": 9,
+        "carries": 0,
+        "receptions": 6,
+        "receiving_yards": 69,
+        "rushing_yards": 0,
+        "wopr": 0.76
       }
     },
     {
@@ -1085,25 +1085,25 @@
       }
     },
     {
-      "id": "00-0039337",
-      "name": "Malik Nabers",
-      "team": "NYG",
+      "id": "00-0041547",
+      "name": "KC Concepcion",
+      "team": "CLE",
       "position": "WR",
       "week": 1,
       "rating": 63.4,
-      "headshot": "/assets/headshots/00-0039337.png",
+      "headshot": "/assets/headshots/00-0041547.png",
       "main_stats": {
-        "expected_points": 16.2,
-        "actual_points": 12.9,
-        "total_opportunity": 9
+        "expected_points": 11.1,
+        "actual_points": 7.8,
+        "total_opportunity": 8
       },
       "detail_stats": {
-        "targets": 9,
-        "carries": 0,
-        "receptions": 6,
-        "receiving_yards": 69,
-        "rushing_yards": 0,
-        "wopr": 0.76
+        "targets": 5,
+        "carries": 3,
+        "receptions": 4,
+        "receiving_yards": 43,
+        "rushing_yards": 15,
+        "wopr": 0.53
       }
     }
   ]
