@@ -1,0 +1,48 @@
+name: Weekly BoardSteals Pipeline
+
+on:
+  schedule:
+    # Runs at 10:00 UTC (6:00 AM Eastern) every Tuesday
+    - cron: '0 10 * * 2'
+  workflow_dispatch: # Allows me to manually trigger the run anytime via a button in GitHub
+
+permissions:
+  contents: write # Needed so the action can commit updated JSONs and images back to your repo
+
+jobs:
+  run-pipeline:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -r pipeline/requirements.txt
+
+      - name: Run BoardSteals Pipeline
+        run: |
+          cd pipeline
+          python boardsteals.py
+
+      - name: Commit and Push Updated Data
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add site/public/data/ site/public/assets/headshots/
+          
+          # Only commit if data or images actually changed
+          if git diff --staged --quiet; then
+            echo "No changes detected. Skipping commit."
+          else
+            git commit -m "Automated data sync: Week $(date +'%Y-%m-%d')"
+            git push
+          fi
