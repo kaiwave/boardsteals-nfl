@@ -1,7 +1,7 @@
 # Boardsteals
 An automated NFL fantasy pipeline that identifies buy-low candidates, waiver wire gems, and sleepers by evaluating the disparity between offensive volume (opportunity) and box-score fantasy output.
 
-Soon to be live on [boardsteals.kaiwave.dev](https://boardsteals.kaiwave.dev)
+Live site: [boardsteals.kaiwave.dev](https://boardsteals.kaiwave.dev)
 
 ## The Model
 Traditional fantasy platforms rank players by raw fantasy points, which heavily reflect trailing results, touchdown luck, and splash plays. Boardsteals inverts this by prioritising underlying offensive opportunity.
