@@ -7,7 +7,7 @@ Live site: [boardsteals.kaiwave.dev](https://boardsteals.kaiwave.dev)
 Traditional fantasy platforms rank players by raw fantasy points, which heavily reflect trailing results, touchdown luck, and splash plays. Boardsteals inverts this by prioritising underlying offensive opportunity.
 
 ### Step 1: Expected PPR (Advanced Opportunity Baseline)
-Traditional metrics treat all targets equally—we do not. BoardSteals evaluates opportunity using advanced tracking metrics like Air Yards and WOPR (Weighted Opportunity Rating) to weigh exactly *how* a player is being used.
+Traditional metrics treat all targets equally, Boardsteals does not. It evaluates opportunity using more advanced advanced tracking metrics like Air Yards and WOPR (Weighted Opportunity Rating) to weigh exactly *how* a player is being used.
 
 $$\text{Exp PPR} = (\text{Carries} \times 0.7) + (\text{Targets} \times 0.8) + (\text{Air Yards} \times 0.06) + (\text{WOPR} \times 4.0)$$
 
