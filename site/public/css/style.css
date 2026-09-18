@@ -220,6 +220,14 @@ summary:focus-visible {
   object-fit: cover;
   object-position: top center;
   display: block;
+  
+  filter: contrast(0.98) blur(0.2px); 
+
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: smooth;
+  image-rendering: high-quality;
+  transform: translateZ(0);
+  backface-visibility: hidden;
 }
 
 .rank {
@@ -302,6 +310,44 @@ summary:focus-visible {
   background-size: 240% 100%;
   animation: shimmer 3.2s linear infinite;
   box-shadow: 0 4px 14px -4px rgba(79, 201, 221, 0.55);
+}
+
+/* When <details> is open, hide the rating row and main stats */
+.card-body:has(.detail-toggle[open]) .rating-row,
+.card-body:has(.detail-toggle[open]) .main-stats {
+  display: none;
+}
+
+.card-body:has(.detail-toggle[open]) .player-meta {
+  margin-bottom: 4px;
+}
+
+.card-body:has(.detail-toggle[open]) .detail-toggle {
+  margin-top: 4px;    
+  padding-top: 4px;
+}
+
+.detail-toggle summary {
+  padding: 0;
+  margin-bottom: 2px;
+}
+
+.detail-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2px 14px;
+  margin: 2px 0 0;   
+}
+
+.detail-stats dt,
+.detail-stats dd {
+  margin: 0;
+  padding: 0;
+  line-height: 1.1;
+}
+
+.detail-toggle summary {
+  padding: 2px 0;
 }
 
 @keyframes shimmer {
@@ -402,7 +448,7 @@ summary:focus-visible {
   font-size: 0.92rem;
   font-weight: 700;
   color: #fff;
-  background: var(--brblueown-deep);
+  background: var(--blue-deep);
   border: none;
   border-radius: 999px;
   padding: 11px 26px;

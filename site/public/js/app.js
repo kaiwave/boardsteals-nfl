@@ -1,7 +1,7 @@
 (function () {
   "use strict";
 
-  var PAGE_SIZE = 10;
+  var PAGE_SIZE = 8;
   var POSITION_ORDER = ["QB", "RB", "WR", "TE", "FB", "K", "DST"];
 
   var state = {
@@ -135,9 +135,9 @@
     node.querySelector(".d-recyds").textContent = detail.receiving_yards ?? "—";
     node.querySelector(".d-rushyds").textContent = detail.rushing_yards ?? "—";
     node.querySelector(".d-wopr").textContent = fmt2(detail.wopr);
-
+    
     return node;
-  }
+}
 
   function render() {
     els.grid.innerHTML = "";
