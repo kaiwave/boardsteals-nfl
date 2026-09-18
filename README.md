@@ -1,4 +1,4 @@
-# Sleepers
+# BoardSteals
 NFL fantasy sleeper picks, based on underlying hidden data. 
 
 Will be built fairly quick since its already week 2. Let me lock in.
