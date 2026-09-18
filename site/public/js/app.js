@@ -90,6 +90,8 @@
       state.filter === "ALL"
         ? state.players
         : state.players.filter(function (p) { return p.position === state.filter; });
+
+    setStatus();
   }
 
   function buildCard(player, rank) {
@@ -178,16 +180,25 @@
     render();
   });
 
-  function setStatus(meta, mode) {
+ function setStatus() {
+    var meta = state.meta || {};
+    var mode = state.mode;
+    var count = (state.filtered ? state.filtered.length : state.players.length) || 0;
+    var pos = (state.filter && state.filter !== "ALL") ? state.filter + "s" : "players";
+
     if (mode === "weekly") {
-      els.seasonBadge.textContent = meta.season + " Season | Week " + meta.current_week;
+      els.seasonBadge.textContent = (meta.season || "") + " Season | Week " + (meta.current_week || "");
       els.statusLine.textContent =
-        "The 50 biggest gaps between usage and output from week " + meta.current_week + ".";
+        "The " + count + " most underrated " + pos + " from week " + (meta.current_week || "") + ".";
     } else {
-      els.seasonBadge.textContent = meta.season + " season closed";
+      els.seasonBadge.textContent = (meta.season || "") + " season closed";
       els.statusLine.textContent =
-        "Season's over — here were the top 50 from the " +
-        meta.last_completed_season +
+        "Season's over, here were the top " +
+        count +
+        " " +
+        pos +
+        " by Boardsteals rating from the " +
+        (meta.last_completed_season || "") +
         " season.";
     }
   }
@@ -210,9 +221,11 @@
         });
       })
       .then(function (result) {
-        var meta = result.payload.meta || {};
+        state.meta = result.payload.meta || {};
+        state.mode = result.mode;
         state.players = result.payload.players || [];
-        setStatus(meta, result.mode);
+        state.filtered = state.players;
+
         buildFilters();
         applyFilter();
         render();
