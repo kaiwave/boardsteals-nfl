@@ -125,18 +125,11 @@ def main():
     for c in cols_to_fill:
         if c in weekly_df.columns:
             weekly_df[c] = pd.to_numeric(weekly_df[c], errors='coerce').fillna(0)
-    """       
+            
     latest_week = int(weekly_df['week'].max())
     print(f"Processing data up to Week {latest_week} of {SEASON}...")
     
-    current_week_df = weekly_df[weekly_df['week'] == latest_week].copy() """
-
-    # TEMPORARY TEST: Lock to Week 1 to test a full 16-game slate
-    target_week = 1
-    print(f"Processing data for Week {target_week} of {SEASON}...")
-    
-    # Isolate Week 1
-    current_week_df = weekly_df[weekly_df['week'] == target_week].copy()
+    current_week_df = weekly_df[weekly_df['week'] == latest_week].copy()
     ### CUT THE ABOVE SECTION 
 
     rated_df = calculate_ratings(current_week_df)
@@ -149,7 +142,7 @@ def main():
         "is_season_active": IS_SEASON_ACTIVE,
         "season": SEASON,
         "last_completed_season": SEASON - 1 if IS_SEASON_ACTIVE else SEASON,
-        "current_week": target_week # CHANGE TO CURRENT AFTER TESTING
+        "current_week": current_week
     }
     
     # 3. Save JSON files
