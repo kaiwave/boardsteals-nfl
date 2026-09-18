@@ -1,22 +1,147 @@
-# BoardSteals
-NFL fantasy sleeper picks, based on underlying hidden data. 
+# Boardsteals
+An automated NFL fantasy pipeline that identifies buy-low candidates, waiver wire gems, and sleepers by evaluating the disparity between offensive volume (opportunity) and box-score fantasy output.
 
-Will be built fairly quick since its already week 2. Let me lock in.
+## The Model
+Traditional fantasy platforms rank players by raw fantasy points, which heavily reflect trailing results, touchdown luck, and splash plays. Boardsteals inverts this by prioritising underlying offensive opportunity.
 
-## Repository Structure
+### Step 1: Expected PPR (Opportunity Baseline)
+Every touch or target carries an inherent expected point value based on historical league-wide conversion rates across rushing and receiving efficiency:
+
+$$$$\text{Expected PPR} = (\text{Carries} \times 0.7) + (\text{Targets} \times 1.8)$$
+
+- Carries ($0.7$ pts): Accounts for historical league-average yards per carry (~$4.2$–$4.4$ YPC $\approx 0.43$ pts) plus goal-line touchdown equity.
+
+- Targets ($1.8$ pts): In a full-PPR format, a target represents immediate baseline point equity ($1.0$ point per catch $\times \sim 65\%$ league completion rate $\approx 0.65$ pts) plus yardage expectation (~$7.0$–$8.0$ yards per target $\approx 0.75$ pts) and red-zone passing equity.
+
+### Step 1: Disparity Calculation
+We evaluate whether a player's fantasy output underperformed or outpaced their real-world usage,
+
+$$\text{Disparity} = \text{Expected PPR} - \text{Actual Fantasy Points (PPR)}$$
+
+Which gives us two key outcomes:
+
+- High Positive Disparity: High-volume involvement that was stalled by bad goal-line variance, tipped passes, or defensive stops. These players are prime candidates for breakout games (underrated).
+
+- Negative Disparity: Low-volume involvement inflated by unsustainable 70-yard breakaways or fluke multi-touchdown box scores (overrated).
+
+### Step 3: Noise Threshold
+To eliminate backup players and gadget options who distort small-sample statistics (e.g., a WR5 running one route, seeing one target, and dropping it for a $+1.8$ disparity), the engine requires a minimum opportunity floor
+
+$$\text{Expected PPR} \ge 6.0$$ 
+
+(Equivalent to roughly 4+ targets, 9+ carries, or a hybrid workload).
+
+### Step 4: Normalisation (The Boardsteal rating)
+To translate disparity into an intuitive rating where the league median sits in the 50–60 range, disparity values are normalized using standard Z-scores across the active weekly sample,
+
+$$Z = \frac{\text{Disparity} - \mu}{\sigma}$$
+
+$$\text{Rating} = \text{clip}\left(55 + (Z \times 15),\, 0,\, 100\right)$$
+
+- Rating $\approx 55$: League median expectation ($Z = 0$). Output closely matched volume.
+  
+- Rating $70$–$85+$: Significant positive disparity. The player commanded serious offensive usage with uncharacteristically low fantasy conversion (Hyper-Underrated).
+  
+- Rating $15$–$35$: Output outpaced underlying opportunity by multiple standard deviations (Hyper-Overrated).
+
+## Architecture and Pipeline
+The backend script (`pipeline/boardsteals.py`) runs as a fully decoupled, zero-server data generation pipeline.
+
 ```
-sleeper-picks-py/
-├── .github/
-│   └── workflows/
-│       └── weekly_run.yml    # Runs Python script -> builds & deploys site
-├── pipeline/
-│   ├── boardsteals.py           # Scrapes nfl_data_py & cross-references Sleeper
-│   └── requirements.txt
-├── site/                     # Source code for frontend site
-│   ├── public/
-│   │   └── data/
-│   │       └── picks.json    # Written directly by boardsteals.py
-│   ├── src/
-│   └── package.json
-└── README.md
+[nflverse / nflreadpy API]
+           │
+           ▼
+[Data Extraction & Polars-to-Pandas Conversion]
+           │
+           ▼
+[Position & Noise Filtering (RB/WR/TE; Exp PPR >= 6.0)]
+           │
+           ▼
+[Z-Score Calculation & Rating Engine (0-100)]
+           │
+           ▼
+[Headshot Download Manager] ────► [Local Asset Cache: site/public/assets/headshots/]
+           │                       (Requests session, browser headers, 0.5s rate-limit)
+           ▼
+[JSON Serialization] ───────────► [site/public/data/picks_weekly.json]
+           │                  └─► [site/public/data/picks_global.json]
+           ▼
+[Garbage Collection] ───────────► Prunes stale images not present in Weekly or Global Top 50
 ```
+
+### Key Modules
+- Dynamic Season Ingestion: Uses nflreadpy to ingest official weekly NFL player box scores. The engine isolates the latest completed week (`week.max()`) and provides fallback recovery if an active week's dataset is pending ingestion.
+  
+- Headshot Asset Cache: Downloads official player portraits directly to `site/public/assets/headshots/{player_id}.png`.
+
+- - Checks `os.path.exists()` before requesting to avoid redundant network calls.
+
+- Dual-Board JSON Serialization:
+
+- - `picks_weekly.json`: The Top 50 rated players from the current week's games.
+
+- - `picks_global.json`: The all-time season leaderboard. Deduplicates multiple weeks for the same player, retaining only their highest-rated single-game breakout signal.
+
+- Garbage Collection Pruning: Automatically deletes cached .png files from disk if a player drops out of both the Weekly Top 50 and the Global Top 50, capping local disk usage to ~100 images maximum.
+
+## Data
+Since this will be run on a github pages instance, the pipeline exports static JSON files consumable by static site generators without runtime database calls. For example,
+
+```
+{
+  "meta": {
+    "is_season_active": true,
+    "season": 2026,
+    "last_completed_season": 2025,
+    "current_week": 2
+  },
+  "players": [
+    {
+      "id": "00-0040669",
+      "name": "Isaac TeSlaa",
+      "team": "DET",
+      "position": "WR",
+      "week": 2,
+      "rating": 71.0,
+      "headshot": "/assets/headshots/00-0040669.png",
+      "main_stats": {
+        "expected_points": 9.0,
+        "actual_points": 4.6,
+        "total_opportunity": 5
+      },
+      "detail_stats": {
+        "targets": 5,
+        "carries": 0,
+        "receptions": 2,
+        "receiving_yards": 26,
+        "rushing_yards": 0,
+        "wopr": 0.37
+      }
+    }
+  ]
+}
+```
+
+## Setup
+### Prerequisites
+Python 3.10+
+
+### Installation
+1. Clone the repository and navigate to the pipeline directory:
+```
+cd pipeline
+```
+
+2. Install dependencies:
+```
+pip install -r requirements.txt --prefer-binary
+```
+
+3. Execute pipeline:
+```
+python boardsteals.py
+```
+
+The script will fetch the latest data, normalise scores, download any missing headshots to `site/public/assets/headshots/`, and write the formatted data to `site/public/data/`.
+
+Enjoy your fantasy pickings!
