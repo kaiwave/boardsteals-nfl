@@ -1,5 +1,6 @@
 import os
 import json
+import math
 import requests
 import pandas as pd
 import numpy as np
@@ -84,6 +85,21 @@ def format_player_json(row):
         }
     }
 
+def sanitize_nan(obj):
+    """pandas turns missing values (e.g. a failed headshot download) into
+    float NaN when it round-trips records through a DataFrame. json.dump
+    happily writes that as a bare `NaN` token, which is valid to Python's
+    parser but not to strict JSON - it makes fetch().json() throw in every
+    browser. Swap any NaN back to None (-> JSON null) before writing."""
+    if isinstance(obj, dict):
+        return {k: sanitize_nan(v) for k, v in obj.items()}
+    if isinstance(obj, list):
+        return [sanitize_nan(v) for v in obj]
+    if isinstance(obj, float) and math.isnan(obj):
+        return None
+    return obj
+
+
 def cleanup_unused_headshots(active_player_ids):
     if not os.path.exists(ASSETS_DIR):
         return
@@ -125,11 +141,11 @@ def main():
     for c in cols_to_fill:
         if c in weekly_df.columns:
             weekly_df[c] = pd.to_numeric(weekly_df[c], errors='coerce').fillna(0)
-
+      
     latest_week = int(weekly_df['week'].max())
     print(f"Processing data up to Week {latest_week} of {SEASON}...")
     
-    current_week_df = weekly_df[weekly_df['week'] == latest_week].copy()
+    current_week_df = weekly_df[weekly_df['week'] == latest_week].copy() 
 
     rated_df = calculate_ratings(current_week_df)
     top_50 = rated_df.head(50)
@@ -145,7 +161,7 @@ def main():
     }
     
     # 3. Save JSON files
-    weekly_output = {"meta": meta_block, "players": weekly_players}
+    weekly_output = sanitize_nan({"meta": meta_block, "players": weekly_players})
     with open(f"{DATA_DIR}/picks_weekly.json", "w") as f:
         json.dump(weekly_output, f, indent=2)
         
@@ -166,7 +182,7 @@ def main():
         all_time_df = all_time_df.drop_duplicates(subset=['id'], keep='first')
         
         top_50_global = all_time_df.head(50).to_dict('records')
-        global_output = {"meta": meta_block, "players": top_50_global}
+        global_output = sanitize_nan({"meta": meta_block, "players": top_50_global})
         with open(global_path, "w") as f:
             json.dump(global_output, f, indent=2)
 
