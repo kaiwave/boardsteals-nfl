@@ -2,12 +2,12 @@ name: Weekly BoardSteals Pipeline
 
 on:
   schedule:
-    # Runs at 10:00 UTC (6:00 AM Eastern) every Tuesday
-    - cron: '0 10 * * 2'
+    # Runs at 7:00 UTC (2:00 AM EST / 5:00 PM AEST) every Tuesday
+    - cron: '0 7 * * 2'
   workflow_dispatch: # Allows me to manually trigger the run anytime via a button in GitHub
 
 permissions:
-  contents: write # Needed so the action can commit updated JSONs and images back to your repo
+  contents: write # Needed so the action can commit updated JSONs and images
 
 jobs:
   run-pipeline:
