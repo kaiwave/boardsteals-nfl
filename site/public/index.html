@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Boardsteals by kaiwave</title>
+<meta name="description" content="Weekly underrated NFL fantasy rankings.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="page">
+
+  <header class="hero">
+    <div class="hero-top">
+      <h1 class="wordmark">Board<span>steals</span></h1>
+      <span class="season-badge" id="seasonBadge">Loading…</span>
+    </div>
+    <p class="tagline">Finding fantasy buy-low candidates, waiver wire gems, and absolute sleepers.</p>
+
+    <ul class="legend" aria-label="Rating tiers">
+      <li><span class="swatch iron"></span>Iron, 0–55</li>
+      <li><span class="swatch bronze"></span>Bronze, 56–70</li>
+      <li><span class="swatch silver"></span>Silver, 71–80</li>
+      <li><span class="swatch gold"></span>Gold, 81–97</li>
+      <li><span class="swatch diamond"></span>Diamond, 98+</li>
+    </ul>
+  </header>
+
+  <nav class="filters" id="filters" aria-label="Filter by position"></nav>
+
+  <main>
+    <p class="status-line" id="statusLine"></p>
+    <div class="grid" id="grid"></div>
+
+    <div class="load-more-wrap">
+      <button class="load-more" id="loadMoreBtn" type="button">Show 10 more</button>
+      <p class="exhausted" id="exhaustedMsg" hidden></p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="left-side">    
+      <p>
+        Made by <a href="https://kaiwave.dev" target="_blank" rel="noopener">kaiwave.dev</a>
+      </p>
+    </div>
+
+    <div class="right-side">    
+      <p>
+        <a href="https://github.com/kaiwave/boardsteals-nfl" target="_blank" rel="noopener">Source code</a>
+      </p>
+    </div>
+
+  </footer>
+
+</div>
+
+<template id="cardTemplate">
+  <article class="card">
+    <div class="card-media">
+      <span class="rank"></span>
+      <img class="headshot" alt="" loading="lazy">
+      <span class="team-badge">
+        <img class="team-logo" alt="" loading="lazy">
+      </span>
+    </div>
+    <div class="card-body">
+      <h3 class="player-name"></h3>
+      <p class="player-meta"></p>
+
+      <div class="rating-row">
+        <span class="rating-badge"><span class="rating-value"></span></span>
+        <span class="tier-label"></span>
+      </div>
+
+      <dl class="main-stats">
+        <div><dt>Expected pts</dt><dd class="stat-expected"></dd></div>
+        <div><dt>Actual pts</dt><dd class="stat-actual"></dd></div>
+        <div><dt>Opportunities</dt><dd class="stat-opp"></dd></div>
+      </dl>
+
+      <details class="detail-toggle">
+        <summary>
+          More stats
+          <svg class="chev" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </summary>
+        <dl class="detail-stats">
+          <div><dt>Targets</dt><dd class="d-targets"></dd></div>
+          <div><dt>Carries</dt><dd class="d-carries"></dd></div>
+          <div><dt>Receptions</dt><dd class="d-receptions"></dd></div>
+          <div><dt>Receiving yds</dt><dd class="d-recyds"></dd></div>
+          <div><dt>Rushing yds</dt><dd class="d-rushyds"></dd></div>
+          <div><dt>WOPR</dt><dd class="d-wopr"></dd></div>
+        </dl>
+      </details>
+    </div>
+  </article>
+</template>
+
+<script src="js/app.js"></script>
+</body>
+</html>
