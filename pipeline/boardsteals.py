@@ -81,7 +81,6 @@ def format_player_json(row):
     return {
         "id": row['player_id'],
         "name": row['player_display_name'],
-        # THE FIX: Safely check for either column name
         "team": row.get('team', row.get('recent_team', 'UNK')),
         "position": row['position'],
         "week": int(row['week']),
@@ -103,11 +102,7 @@ def format_player_json(row):
     }
 
 def sanitize_nan(obj):
-    """pandas turns missing values (e.g. a failed headshot download) into
-    float NaN when it round-trips records through a DataFrame. json.dump
-    happily writes that as a bare `NaN` token, which is valid to Python's
-    parser but not to strict JSON - it makes fetch().json() throw in every
-    browser. Swap any NaN back to None (-> JSON null) before writing."""
+    # Clean broken data points in json
     if isinstance(obj, dict):
         return {k: sanitize_nan(v) for k, v in obj.items()}
     if isinstance(obj, list):
@@ -115,7 +110,6 @@ def sanitize_nan(obj):
     if isinstance(obj, float) and math.isnan(obj):
         return None
     return obj
-
 
 def cleanup_unused_headshots(active_player_ids):
     if not os.path.exists(ASSETS_DIR):
@@ -134,7 +128,7 @@ def cleanup_unused_headshots(active_player_ids):
                 print(f"Failed to delete {filename}: {e}")
                 
     if removed_count > 0:
-        print(f"🗑️ Cleaned up {removed_count} stale headshots.")
+        print(f"Cleaned up {removed_count} stale headshots.")
 
 def main():
     global SEASON, IS_SEASON_ACTIVE 
@@ -147,7 +141,7 @@ def main():
         if weekly_df.empty:
             raise ValueError("Data exists but is empty.")
     except Exception as e:
-        print(f"⚠️ Live data for {SEASON} not found yet (Week 1 stats pending).")
+        print(f"!! Live data for {SEASON} not found yet (Week 1 stats pending).")
         print(f"Falling back to {SEASON - 1}...")
         SEASON -= 1
         IS_SEASON_ACTIVE = False
@@ -206,7 +200,7 @@ def main():
     active_ids = {p['id'] for p in weekly_players} | {p['id'] for p in top_50_global}
     cleanup_unused_headshots(active_ids)
 
-    print("✅ Pipeline complete. JSON and assets are synced.")
+    print("Pipeline complete. JSON and assets are synced.")
 
 if __name__ == "__main__":
     main()
