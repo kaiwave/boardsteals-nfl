@@ -44,17 +44,23 @@ $$\text{Expected PPR} \ge 6.0$$
 (Equivalent to roughly 4+ targets, 9+ carries, or a hybrid workload).
 
 ### Step 4: Normalisation (The Boardsteal rating)
-To translate disparity into an intuitive rating where the league median sits in the 50–60 range, disparity values are normalized using standard Z-scores across the active weekly sample,
+To translate disparity into an intuitive rating where the league median sits in the 50–60 range, disparity values are normalised using standard Z-scores across the active weekly sample,
 
 $$Z = \frac{\text{Disparity} - \mu}{\sigma}$$
 
-$$\text{Rating} = \text{clip}\left(55 + (Z \times 15),\, 0,\, 100\right)$$
+And given a Boardsteals rating from 0-100 accordingly.
 
-- Rating $\approx 55$: League median expectation ($Z = 0$). Output closely matched volume.
+$$\text{Rating} = \text{clip}\left(54 + (Z \times 14),\, 0,\, 100\right)$$
+
+- Rating $0-55$ - Iron: Up to just above median expectation ($Z = 0$). Output closely matched volume.
   
-- Rating $70$–$85+$: Significant positive disparity. The player commanded serious offensive usage with uncharacteristically low fantasy conversion (Hyper-Underrated).
+- Rating $56–70$ - Bronze: Some positive disparity. Between the top 47-13% most underrated players.
   
-- Rating $15$–$35$: Output outpaced underlying opportunity by multiple standard deviations (Hyper-Overrated).
+- Rating $71-80$ - Silver: High positive disparity. Between the top 13-3% most underrated players
+
+- Rating $81-97$ - Gold: Extremely high potential players, top 3% most underrated players in the league.
+
+- Rating $98+$ - Diamond: Projected skill underpaced actual points by multiple standard deviations. Top 0.1% generational outliers. 
 
 ## Architecture and Pipeline
 The backend script (`pipeline/boardsteals.py`) runs as a fully decoupled, zero-server data generation pipeline.
