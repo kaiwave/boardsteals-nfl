@@ -2,7 +2,7 @@
   "use strict";
 
   var PAGE_SIZE = 8;
-  var POSITION_ORDER = ["QB", "RB", "WR", "TE", "FB", "K", "DST"];
+  var POSITION_ORDER = ["QB", "RB", "WR", "TE", "FB", "K"];
 
   var state = {
     players: [],
@@ -100,7 +100,7 @@
     var tier = tierFor(player.rating);
     article.dataset.tier = tier.key;
 
-    node.querySelector(".rank").textContent = "#" + rank;
+    node.querySelector(".rank").textContent = "#" + (player.rank || rank);
 
     var headshot = node.querySelector(".headshot");
     headshot.src = headshotSrc(player);
@@ -130,13 +130,24 @@
     node.querySelector(".stat-opp").textContent =
       typeof main.total_opportunity === "number" ? main.total_opportunity : "—";
 
-    var detail = player.detail_stats || {};
-    node.querySelector(".d-targets").textContent = detail.targets ?? "—";
-    node.querySelector(".d-carries").textContent = detail.carries ?? "—";
-    node.querySelector(".d-receptions").textContent = detail.receptions ?? "—";
-    node.querySelector(".d-recyds").textContent = detail.receiving_yards ?? "—";
-    node.querySelector(".d-rushyds").textContent = detail.rushing_yards ?? "—";
-    node.querySelector(".d-wopr").textContent = fmt2(detail.wopr);
+    var detailList = node.querySelector(".detail-stats");
+    detailList.innerHTML = ""; // Ensure it's clean
+    
+    var detailArray = player.detail_stats || [];
+    
+    detailArray.forEach(function (stat) {
+      var div = document.createElement("div");
+      
+      var dt = document.createElement("dt");
+      dt.textContent = stat.label;
+      
+      var dd = document.createElement("dd");
+      dd.textContent = stat.value != null ? stat.value : "—";
+      
+      div.appendChild(dt);
+      div.appendChild(dd);
+      detailList.appendChild(div);
+    });
     
     return node;
 }
@@ -224,6 +235,12 @@
         state.meta = result.payload.meta || {};
         state.mode = result.mode;
         state.players = result.payload.players || [];
+        state.filtered = state.players;
+
+        state.players.forEach(function (player, index) {
+            player.rank = index + 1;
+        });
+        
         state.filtered = state.players;
 
         buildFilters();
