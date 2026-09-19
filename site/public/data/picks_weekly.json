@@ -12,43 +12,79 @@
       "team": "PIT",
       "position": "WR",
       "week": 1,
-      "rating": 91.0,
+      "rating": 92.6,
       "headshot": "/assets/headshots/00-0035640.png",
       "main_stats": {
         "expected_points": 23.3,
         "actual_points": 8.0,
         "total_opportunity": 10
       },
-      "detail_stats": {
-        "targets": 10,
-        "carries": 0,
-        "receptions": 4,
-        "receiving_yards": 40,
-        "rushing_yards": 0,
-        "wopr": 0.76
-      }
+      "detail_stats": [
+        {
+          "label": "Targets",
+          "value": 10
+        },
+        {
+          "label": "Carries",
+          "value": 0
+        },
+        {
+          "label": "Receptions",
+          "value": 4
+        },
+        {
+          "label": "Rec Yds",
+          "value": 40
+        },
+        {
+          "label": "Rush Yds",
+          "value": 0
+        },
+        {
+          "label": "WOPR",
+          "value": 0.76
+        }
+      ]
     },
     {
-      "id": "00-0039880",
-      "name": "Malik Washington",
-      "team": "MIA",
-      "position": "WR",
+      "id": "00-0023459",
+      "name": "Aaron Rodgers",
+      "team": "PIT",
+      "position": "QB",
       "week": 1,
-      "rating": 81.9,
-      "headshot": "/assets/headshots/00-0039880.png",
+      "rating": 85.9,
+      "headshot": "/assets/headshots/00-0023459.png",
       "main_stats": {
-        "expected_points": 17.5,
-        "actual_points": 6.3,
-        "total_opportunity": 8
+        "expected_points": 31.1,
+        "actual_points": 12.5,
+        "total_opportunity": 43
       },
-      "detail_stats": {
-        "targets": 8,
-        "carries": 0,
-        "receptions": 3,
-        "receiving_yards": 53,
-        "rushing_yards": 0,
-        "wopr": 0.75
-      }
+      "detail_stats": [
+        {
+          "label": "Pass Att",
+          "value": 40
+        },
+        {
+          "label": "Pass Yds",
+          "value": 221
+        },
+        {
+          "label": "Pass TDs",
+          "value": 1
+        },
+        {
+          "label": "Carries",
+          "value": 3
+        },
+        {
+          "label": "Rush Yds",
+          "value": -3
+        },
+        {
+          "label": "INTs",
+          "value": 0
+        }
+      ]
     },
     {
       "id": "00-0037240",
@@ -56,373 +92,79 @@
       "team": "DET",
       "position": "WR",
       "week": 1,
-      "rating": 77.9,
+      "rating": 77.6,
       "headshot": "/assets/headshots/00-0037240.png",
       "main_stats": {
         "expected_points": 17.9,
         "actual_points": 8.5,
         "total_opportunity": 9
       },
-      "detail_stats": {
-        "targets": 9,
-        "carries": 0,
-        "receptions": 4,
-        "receiving_yards": 45,
-        "rushing_yards": 0,
-        "wopr": 0.78
-      }
+      "detail_stats": [
+        {
+          "label": "Targets",
+          "value": 9
+        },
+        {
+          "label": "Carries",
+          "value": 0
+        },
+        {
+          "label": "Receptions",
+          "value": 4
+        },
+        {
+          "label": "Rec Yds",
+          "value": 45
+        },
+        {
+          "label": "Rush Yds",
+          "value": 0
+        },
+        {
+          "label": "WOPR",
+          "value": 0.78
+        }
+      ]
     },
     {
-      "id": "00-0039739",
-      "name": "Roman Wilson",
-      "team": "PIT",
+      "id": "00-0039880",
+      "name": "Malik Washington",
+      "team": "MIA",
       "position": "WR",
       "week": 1,
-      "rating": 76.1,
-      "headshot": "/assets/headshots/00-0039739.png",
+      "rating": 77.1,
+      "headshot": "/assets/headshots/00-0039880.png",
       "main_stats": {
-        "expected_points": 14.2,
-        "actual_points": 5.6,
-        "total_opportunity": 6
-      },
-      "detail_stats": {
-        "targets": 6,
-        "carries": 0,
-        "receptions": 3,
-        "receiving_yards": 26,
-        "rushing_yards": 0,
-        "wopr": 0.46
-      }
-    },
-    {
-      "id": "00-0037816",
-      "name": "Romeo Doubs",
-      "team": "NE",
-      "position": "WR",
-      "week": 1,
-      "rating": 75.7,
-      "headshot": "/assets/headshots/00-0037816.png",
-      "main_stats": {
-        "expected_points": 8.4,
-        "actual_points": 0.0,
-        "total_opportunity": 3
-      },
-      "detail_stats": {
-        "targets": 3,
-        "carries": 0,
-        "receptions": 0,
-        "receiving_yards": 0,
-        "rushing_yards": 0,
-        "wopr": 0.38
-      }
-    },
-    {
-      "id": "00-0039811",
-      "name": "MarShawn Lloyd",
-      "team": "GB",
-      "position": "RB",
-      "week": 1,
-      "rating": 73.7,
-      "headshot": "/assets/headshots/00-0039811.png",
-      "main_stats": {
-        "expected_points": 11.2,
-        "actual_points": 3.7,
-        "total_opportunity": 14
-      },
-      "detail_stats": {
-        "targets": 1,
-        "carries": 13,
-        "receptions": 0,
-        "receiving_yards": 0,
-        "rushing_yards": 37,
-        "wopr": 0.06
-      }
-    },
-    {
-      "id": "00-0037247",
-      "name": "George Pickens",
-      "team": "DAL",
-      "position": "WR",
-      "week": 1,
-      "rating": 73.3,
-      "headshot": "/assets/headshots/00-0037247.png",
-      "main_stats": {
-        "expected_points": 13.2,
-        "actual_points": 5.8,
-        "total_opportunity": 6
-      },
-      "detail_stats": {
-        "targets": 6,
-        "carries": 0,
-        "receptions": 3,
-        "receiving_yards": 28,
-        "rushing_yards": 0,
-        "wopr": 0.54
-      }
-    },
-    {
-      "id": "00-0036139",
-      "name": "Rico Dowdle",
-      "team": "PIT",
-      "position": "RB",
-      "week": 1,
-      "rating": 71.5,
-      "headshot": "/assets/headshots/00-0036139.png",
-      "main_stats": {
-        "expected_points": 10.7,
-        "actual_points": 4.1,
-        "total_opportunity": 13
-      },
-      "detail_stats": {
-        "targets": 5,
-        "carries": 8,
-        "receptions": 2,
-        "receiving_yards": 6,
-        "rushing_yards": 15,
-        "wopr": 0.21
-      }
-    },
-    {
-      "id": "00-0036626",
-      "name": "Dyami Brown",
-      "team": "WAS",
-      "position": "WR",
-      "week": 1,
-      "rating": 71.2,
-      "headshot": "/assets/headshots/00-0036626.png",
-      "main_stats": {
-        "expected_points": 6.4,
-        "actual_points": 0.0,
-        "total_opportunity": 2
-      },
-      "detail_stats": {
-        "targets": 2,
-        "carries": 0,
-        "receptions": 0,
-        "receiving_yards": 0,
-        "rushing_yards": 0,
-        "wopr": 0.24
-      }
-    },
-    {
-      "id": "00-0031381",
-      "name": "Davante Adams",
-      "team": "LA",
-      "position": "WR",
-      "week": 1,
-      "rating": 69.6,
-      "headshot": "/assets/headshots/00-0031381.png",
-      "main_stats": {
-        "expected_points": 11.3,
-        "actual_points": 5.6,
-        "total_opportunity": 6
-      },
-      "detail_stats": {
-        "targets": 6,
-        "carries": 0,
-        "receptions": 3,
-        "receiving_yards": 26,
-        "rushing_yards": 0,
-        "wopr": 0.53
-      }
-    },
-    {
-      "id": "00-0034348",
-      "name": "Courtland Sutton",
-      "team": "DEN",
-      "position": "WR",
-      "week": 1,
-      "rating": 69.4,
-      "headshot": "/assets/headshots/00-0034348.png",
-      "main_stats": {
-        "expected_points": 8.7,
-        "actual_points": 3.1,
-        "total_opportunity": 5
-      },
-      "detail_stats": {
-        "targets": 5,
-        "carries": 0,
-        "receptions": 2,
-        "receiving_yards": 11,
-        "rushing_yards": 0,
-        "wopr": 0.58
-      }
-    },
-    {
-      "id": "00-0037741",
-      "name": "Jahan Dotson",
-      "team": "ATL",
-      "position": "WR",
-      "week": 1,
-      "rating": 69.0,
-      "headshot": "/assets/headshots/00-0037741.png",
-      "main_stats": {
-        "expected_points": 8.4,
-        "actual_points": 2.9,
-        "total_opportunity": 3
-      },
-      "detail_stats": {
-        "targets": 3,
-        "carries": 0,
-        "receptions": 1,
-        "receiving_yards": 19,
-        "rushing_yards": 0,
-        "wopr": 0.71
-      }
-    },
-    {
-      "id": "00-0036410",
-      "name": "Tee Higgins",
-      "team": "CIN",
-      "position": "WR",
-      "week": 1,
-      "rating": 68.9,
-      "headshot": "/assets/headshots/00-0036410.png",
-      "main_stats": {
-        "expected_points": 14.3,
-        "actual_points": 8.9,
-        "total_opportunity": 6
-      },
-      "detail_stats": {
-        "targets": 6,
-        "carries": 0,
-        "receptions": 3,
-        "receiving_yards": 59,
-        "rushing_yards": 0,
-        "wopr": 0.63
-      }
-    },
-    {
-      "id": "00-0040124",
-      "name": "Tetairoa McMillan",
-      "team": "CAR",
-      "position": "WR",
-      "week": 1,
-      "rating": 68.8,
-      "headshot": "/assets/headshots/00-0040124.png",
-      "main_stats": {
-        "expected_points": 15.9,
-        "actual_points": 10.5,
+        "expected_points": 17.5,
+        "actual_points": 8.3,
         "total_opportunity": 8
       },
-      "detail_stats": {
-        "targets": 8,
-        "carries": 0,
-        "receptions": 5,
-        "receiving_yards": 75,
-        "rushing_yards": 0,
-        "wopr": 0.58
-      }
-    },
-    {
-      "id": "00-0038544",
-      "name": "Quentin Johnston",
-      "team": "LAC",
-      "position": "WR",
-      "week": 1,
-      "rating": 68.4,
-      "headshot": "/assets/headshots/00-0038544.png",
-      "main_stats": {
-        "expected_points": 8.9,
-        "actual_points": 3.7,
-        "total_opportunity": 6
-      },
-      "detail_stats": {
-        "targets": 6,
-        "carries": 0,
-        "receptions": 2,
-        "receiving_yards": 17,
-        "rushing_yards": 0,
-        "wopr": 0.43
-      }
-    },
-    {
-      "id": "00-0039146",
-      "name": "Jayden Reed",
-      "team": "GB",
-      "position": "WR",
-      "week": 1,
-      "rating": 67.9,
-      "headshot": "/assets/headshots/00-0039146.png",
-      "main_stats": {
-        "expected_points": 9.9,
-        "actual_points": 5.0,
-        "total_opportunity": 7
-      },
-      "detail_stats": {
-        "targets": 7,
-        "carries": 0,
-        "receptions": 3,
-        "receiving_yards": 20,
-        "rushing_yards": 0,
-        "wopr": 0.34
-      }
-    },
-    {
-      "id": "00-0039075",
-      "name": "Puka Nacua",
-      "team": "LA",
-      "position": "WR",
-      "week": 1,
-      "rating": 67.9,
-      "headshot": "/assets/headshots/00-0039075.png",
-      "main_stats": {
-        "expected_points": 17.4,
-        "actual_points": 12.4,
-        "total_opportunity": 9
-      },
-      "detail_stats": {
-        "targets": 9,
-        "carries": 0,
-        "receptions": 5,
-        "receiving_yards": 74,
-        "rushing_yards": 0,
-        "wopr": 0.82
-      }
-    },
-    {
-      "id": "00-0040667",
-      "name": "Matthew Golden",
-      "team": "GB",
-      "position": "WR",
-      "week": 1,
-      "rating": 67.8,
-      "headshot": "/assets/headshots/00-0040667.png",
-      "main_stats": {
-        "expected_points": 20.4,
-        "actual_points": 15.5,
-        "total_opportunity": 12
-      },
-      "detail_stats": {
-        "targets": 12,
-        "carries": 0,
-        "receptions": 6,
-        "receiving_yards": 95,
-        "rushing_yards": 0,
-        "wopr": 0.65
-      }
-    },
-    {
-      "id": "00-0039894",
-      "name": "Xavier Worthy",
-      "team": "KC",
-      "position": "WR",
-      "week": 1,
-      "rating": 67.6,
-      "headshot": "/assets/headshots/00-0039894.png",
-      "main_stats": {
-        "expected_points": 9.6,
-        "actual_points": 4.8,
-        "total_opportunity": 6
-      },
-      "detail_stats": {
-        "targets": 6,
-        "carries": 0,
-        "receptions": 3,
-        "receiving_yards": 18,
-        "rushing_yards": 0,
-        "wopr": 0.58
-      }
+      "detail_stats": [
+        {
+          "label": "Targets",
+          "value": 8
+        },
+        {
+          "label": "Carries",
+          "value": 0
+        },
+        {
+          "label": "Receptions",
+          "value": 3
+        },
+        {
+          "label": "Rec Yds",
+          "value": 53
+        },
+        {
+          "label": "Rush Yds",
+          "value": 0
+        },
+        {
+          "label": "WOPR",
+          "value": 0.75
+        }
+      ]
     },
     {
       "id": "00-0033288",
@@ -430,43 +172,479 @@
       "team": "SF",
       "position": "TE",
       "week": 1,
-      "rating": 67.2,
+      "rating": 77.0,
       "headshot": "/assets/headshots/00-0033288.png",
       "main_stats": {
         "expected_points": 7.9,
         "actual_points": 3.2,
         "total_opportunity": 5
       },
-      "detail_stats": {
-        "targets": 5,
-        "carries": 0,
-        "receptions": 2,
-        "receiving_yards": 12,
-        "rushing_yards": 0,
-        "wopr": 0.4
-      }
+      "detail_stats": [
+        {
+          "label": "Targets",
+          "value": 5
+        },
+        {
+          "label": "Carries",
+          "value": 0
+        },
+        {
+          "label": "Receptions",
+          "value": 2
+        },
+        {
+          "label": "Rec Yds",
+          "value": 12
+        },
+        {
+          "label": "Rush Yds",
+          "value": 0
+        },
+        {
+          "label": "WOPR",
+          "value": 0.4
+        }
+      ]
     },
     {
-      "id": "00-0041042",
-      "name": "Malachi Fields",
-      "team": "NYG",
+      "id": "00-0039811",
+      "name": "MarShawn Lloyd",
+      "team": "GB",
+      "position": "RB",
+      "week": 1,
+      "rating": 76.4,
+      "headshot": "/assets/headshots/00-0039811.png",
+      "main_stats": {
+        "expected_points": 11.2,
+        "actual_points": 3.7,
+        "total_opportunity": 14
+      },
+      "detail_stats": [
+        {
+          "label": "Targets",
+          "value": 1
+        },
+        {
+          "label": "Carries",
+          "value": 13
+        },
+        {
+          "label": "Receptions",
+          "value": 0
+        },
+        {
+          "label": "Rec Yds",
+          "value": 0
+        },
+        {
+          "label": "Rush Yds",
+          "value": 37
+        },
+        {
+          "label": "WOPR",
+          "value": 0.06
+        }
+      ]
+    },
+    {
+      "id": "00-0039739",
+      "name": "Roman Wilson",
+      "team": "PIT",
       "position": "WR",
       "week": 1,
-      "rating": 67.1,
-      "headshot": "/assets/headshots/00-0041042.png",
+      "rating": 75.5,
+      "headshot": "/assets/headshots/00-0039739.png",
       "main_stats": {
-        "expected_points": 9.1,
-        "actual_points": 4.5,
-        "total_opportunity": 4
+        "expected_points": 14.2,
+        "actual_points": 5.6,
+        "total_opportunity": 6
       },
-      "detail_stats": {
-        "targets": 4,
-        "carries": 0,
-        "receptions": 2,
-        "receiving_yards": 25,
-        "rushing_yards": 0,
-        "wopr": 0.41
-      }
+      "detail_stats": [
+        {
+          "label": "Targets",
+          "value": 6
+        },
+        {
+          "label": "Carries",
+          "value": 0
+        },
+        {
+          "label": "Receptions",
+          "value": 3
+        },
+        {
+          "label": "Rec Yds",
+          "value": 26
+        },
+        {
+          "label": "Rush Yds",
+          "value": 0
+        },
+        {
+          "label": "WOPR",
+          "value": 0.46
+        }
+      ]
+    },
+    {
+      "id": "00-0040126",
+      "name": "Colston Loveland",
+      "team": "CHI",
+      "position": "TE",
+      "week": 1,
+      "rating": 75.1,
+      "headshot": "/assets/headshots/00-0040126.png",
+      "main_stats": {
+        "expected_points": 4.1,
+        "actual_points": 0.0,
+        "total_opportunity": 2
+      },
+      "detail_stats": [
+        {
+          "label": "Targets",
+          "value": 2
+        },
+        {
+          "label": "Carries",
+          "value": 0
+        },
+        {
+          "label": "Receptions",
+          "value": 0
+        },
+        {
+          "label": "Rec Yds",
+          "value": 0
+        },
+        {
+          "label": "Rush Yds",
+          "value": 0
+        },
+        {
+          "label": "WOPR",
+          "value": 0.18
+        }
+      ]
+    },
+    {
+      "id": "00-0037816",
+      "name": "Romeo Doubs",
+      "team": "NE",
+      "position": "WR",
+      "week": 1,
+      "rating": 75.1,
+      "headshot": "/assets/headshots/00-0037816.png",
+      "main_stats": {
+        "expected_points": 8.4,
+        "actual_points": 0.0,
+        "total_opportunity": 3
+      },
+      "detail_stats": [
+        {
+          "label": "Targets",
+          "value": 3
+        },
+        {
+          "label": "Carries",
+          "value": 0
+        },
+        {
+          "label": "Receptions",
+          "value": 0
+        },
+        {
+          "label": "Rec Yds",
+          "value": 0
+        },
+        {
+          "label": "Rush Yds",
+          "value": 0
+        },
+        {
+          "label": "WOPR",
+          "value": 0.38
+        }
+      ]
+    },
+    {
+      "id": "00-0036139",
+      "name": "Rico Dowdle",
+      "team": "PIT",
+      "position": "RB",
+      "week": 1,
+      "rating": 74.0,
+      "headshot": "/assets/headshots/00-0036139.png",
+      "main_stats": {
+        "expected_points": 10.7,
+        "actual_points": 4.1,
+        "total_opportunity": 13
+      },
+      "detail_stats": [
+        {
+          "label": "Targets",
+          "value": 5
+        },
+        {
+          "label": "Carries",
+          "value": 8
+        },
+        {
+          "label": "Receptions",
+          "value": 2
+        },
+        {
+          "label": "Rec Yds",
+          "value": 6
+        },
+        {
+          "label": "Rush Yds",
+          "value": 15
+        },
+        {
+          "label": "WOPR",
+          "value": 0.21
+        }
+      ]
+    },
+    {
+      "id": "00-0036970",
+      "name": "Kyle Pitts",
+      "team": "ATL",
+      "position": "TE",
+      "week": 1,
+      "rating": 73.4,
+      "headshot": "/assets/headshots/00-0036970.png",
+      "main_stats": {
+        "expected_points": 3.6,
+        "actual_points": 0.0,
+        "total_opportunity": 1
+      },
+      "detail_stats": [
+        {
+          "label": "Targets",
+          "value": 1
+        },
+        {
+          "label": "Carries",
+          "value": 0
+        },
+        {
+          "label": "Receptions",
+          "value": 0
+        },
+        {
+          "label": "Rec Yds",
+          "value": 0
+        },
+        {
+          "label": "Rush Yds",
+          "value": 0
+        },
+        {
+          "label": "WOPR",
+          "value": 0.32
+        }
+      ]
+    },
+    {
+      "id": "00-0026498",
+      "name": "Matthew Stafford",
+      "team": "LA",
+      "position": "QB",
+      "week": 1,
+      "rating": 73.2,
+      "headshot": "/assets/headshots/00-0026498.png",
+      "main_stats": {
+        "expected_points": 18.9,
+        "actual_points": 6.1,
+        "total_opportunity": 27
+      },
+      "detail_stats": [
+        {
+          "label": "Pass Att",
+          "value": 25
+        },
+        {
+          "label": "Pass Yds",
+          "value": 155
+        },
+        {
+          "label": "Pass TDs",
+          "value": 0
+        },
+        {
+          "label": "Carries",
+          "value": 2
+        },
+        {
+          "label": "Rush Yds",
+          "value": -1
+        },
+        {
+          "label": "INTs",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "00-0037247",
+      "name": "George Pickens",
+      "team": "DAL",
+      "position": "WR",
+      "week": 1,
+      "rating": 72.4,
+      "headshot": "/assets/headshots/00-0037247.png",
+      "main_stats": {
+        "expected_points": 13.2,
+        "actual_points": 5.8,
+        "total_opportunity": 6
+      },
+      "detail_stats": [
+        {
+          "label": "Targets",
+          "value": 6
+        },
+        {
+          "label": "Carries",
+          "value": 0
+        },
+        {
+          "label": "Receptions",
+          "value": 3
+        },
+        {
+          "label": "Rec Yds",
+          "value": 28
+        },
+        {
+          "label": "Rush Yds",
+          "value": 0
+        },
+        {
+          "label": "WOPR",
+          "value": 0.54
+        }
+      ]
+    },
+    {
+      "id": "00-0033119",
+      "name": "Jacoby Brissett",
+      "team": "ARI",
+      "position": "QB",
+      "week": 1,
+      "rating": 71.0,
+      "headshot": "/assets/headshots/00-0033119.png",
+      "main_stats": {
+        "expected_points": 28.2,
+        "actual_points": 16.5,
+        "total_opportunity": 43
+      },
+      "detail_stats": [
+        {
+          "label": "Pass Att",
+          "value": 37
+        },
+        {
+          "label": "Pass Yds",
+          "value": 277
+        },
+        {
+          "label": "Pass TDs",
+          "value": 1
+        },
+        {
+          "label": "Carries",
+          "value": 6
+        },
+        {
+          "label": "Rush Yds",
+          "value": 14
+        },
+        {
+          "label": "INTs",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "00-0040743",
+      "name": "Tyler Shough",
+      "team": "NO",
+      "position": "QB",
+      "week": 1,
+      "rating": 70.7,
+      "headshot": "/assets/headshots/00-0040743.png",
+      "main_stats": {
+        "expected_points": 40.8,
+        "actual_points": 29.2,
+        "total_opportunity": 60
+      },
+      "detail_stats": [
+        {
+          "label": "Pass Att",
+          "value": 56
+        },
+        {
+          "label": "Pass Yds",
+          "value": 410
+        },
+        {
+          "label": "Pass TDs",
+          "value": 3
+        },
+        {
+          "label": "Carries",
+          "value": 4
+        },
+        {
+          "label": "Rush Yds",
+          "value": 8
+        },
+        {
+          "label": "INTs",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "00-0036626",
+      "name": "Dyami Brown",
+      "team": "WAS",
+      "position": "WR",
+      "week": 1,
+      "rating": 69.9,
+      "headshot": "/assets/headshots/00-0036626.png",
+      "main_stats": {
+        "expected_points": 6.4,
+        "actual_points": 0.0,
+        "total_opportunity": 2
+      },
+      "detail_stats": [
+        {
+          "label": "Targets",
+          "value": 2
+        },
+        {
+          "label": "Carries",
+          "value": 0
+        },
+        {
+          "label": "Receptions",
+          "value": 0
+        },
+        {
+          "label": "Rec Yds",
+          "value": 0
+        },
+        {
+          "label": "Rush Yds",
+          "value": 0
+        },
+        {
+          "label": "WOPR",
+          "value": 0.24
+        }
+      ]
     },
     {
       "id": "00-0037263",
@@ -474,43 +652,39 @@
       "team": "ARI",
       "position": "RB",
       "week": 1,
-      "rating": 66.8,
+      "rating": 68.8,
       "headshot": "/assets/headshots/00-0037263.png",
       "main_stats": {
         "expected_points": 13.5,
         "actual_points": 9.0,
         "total_opportunity": 19
       },
-      "detail_stats": {
-        "targets": 2,
-        "carries": 17,
-        "receptions": 2,
-        "receiving_yards": 9,
-        "rushing_yards": 61,
-        "wopr": 0.07
-      }
-    },
-    {
-      "id": "00-0040727",
-      "name": "Tre Harris",
-      "team": "LAC",
-      "position": "WR",
-      "week": 1,
-      "rating": 66.7,
-      "headshot": "/assets/headshots/00-0040727.png",
-      "main_stats": {
-        "expected_points": 9.4,
-        "actual_points": 5.0,
-        "total_opportunity": 6
-      },
-      "detail_stats": {
-        "targets": 6,
-        "carries": 0,
-        "receptions": 3,
-        "receiving_yards": 20,
-        "rushing_yards": 0,
-        "wopr": 0.45
-      }
+      "detail_stats": [
+        {
+          "label": "Targets",
+          "value": 2
+        },
+        {
+          "label": "Carries",
+          "value": 17
+        },
+        {
+          "label": "Receptions",
+          "value": 2
+        },
+        {
+          "label": "Rec Yds",
+          "value": 9
+        },
+        {
+          "label": "Rush Yds",
+          "value": 61
+        },
+        {
+          "label": "WOPR",
+          "value": 0.07
+        }
+      ]
     },
     {
       "id": "00-0035261",
@@ -518,527 +692,79 @@
       "team": "TEN",
       "position": "RB",
       "week": 1,
-      "rating": 66.4,
+      "rating": 68.4,
       "headshot": "/assets/headshots/00-0035261.png",
       "main_stats": {
         "expected_points": 8.7,
         "actual_points": 4.4,
         "total_opportunity": 9
       },
-      "detail_stats": {
-        "targets": 2,
-        "carries": 7,
-        "receptions": 1,
-        "receiving_yards": -1,
-        "rushing_yards": 35,
-        "wopr": 0.2
-      }
+      "detail_stats": [
+        {
+          "label": "Targets",
+          "value": 2
+        },
+        {
+          "label": "Carries",
+          "value": 7
+        },
+        {
+          "label": "Receptions",
+          "value": 1
+        },
+        {
+          "label": "Rec Yds",
+          "value": -1
+        },
+        {
+          "label": "Rush Yds",
+          "value": 35
+        },
+        {
+          "label": "WOPR",
+          "value": 0.2
+        }
+      ]
     },
     {
-      "id": "00-0041547",
-      "name": "KC Concepcion",
-      "team": "CLE",
-      "position": "WR",
+      "id": "00-0037809",
+      "name": "Chig Okonkwo",
+      "team": "WAS",
+      "position": "TE",
       "week": 1,
-      "rating": 66.2,
-      "headshot": "/assets/headshots/00-0041547.png",
+      "rating": 68.3,
+      "headshot": "/assets/headshots/00-0037809.png",
       "main_stats": {
-        "expected_points": 12.0,
-        "actual_points": 7.8,
-        "total_opportunity": 8
-      },
-      "detail_stats": {
-        "targets": 5,
-        "carries": 3,
-        "receptions": 4,
-        "receiving_yards": 43,
-        "rushing_yards": 15,
-        "wopr": 0.53
-      }
-    },
-    {
-      "id": "00-0039299",
-      "name": "George Holani",
-      "team": "SEA",
-      "position": "RB",
-      "week": 1,
-      "rating": 66.2,
-      "headshot": "/assets/headshots/00-0039299.png",
-      "main_stats": {
-        "expected_points": 7.1,
-        "actual_points": 2.9,
-        "total_opportunity": 9
-      },
-      "detail_stats": {
-        "targets": 1,
-        "carries": 8,
-        "receptions": 0,
-        "receiving_yards": 0,
-        "rushing_yards": 29,
-        "wopr": 0.09
-      }
-    },
-    {
-      "id": "00-0039794",
-      "name": "Braelon Allen",
-      "team": "NYJ",
-      "position": "RB",
-      "week": 1,
-      "rating": 65.9,
-      "headshot": "/assets/headshots/00-0039794.png",
-      "main_stats": {
-        "expected_points": 8.1,
-        "actual_points": 4.0,
-        "total_opportunity": 11
-      },
-      "detail_stats": {
-        "targets": 1,
-        "carries": 10,
-        "receptions": 0,
-        "receiving_yards": 0,
-        "rushing_yards": 40,
-        "wopr": 0.07
-      }
-    },
-    {
-      "id": "00-0037291",
-      "name": "Jalen Nailor",
-      "team": "LV",
-      "position": "WR",
-      "week": 1,
-      "rating": 65.6,
-      "headshot": "/assets/headshots/00-0037291.png",
-      "main_stats": {
-        "expected_points": 9.7,
-        "actual_points": 5.7,
-        "total_opportunity": 5
-      },
-      "detail_stats": {
-        "targets": 5,
-        "carries": 0,
-        "receptions": 3,
-        "receiving_yards": 27,
-        "rushing_yards": 0,
-        "wopr": 0.46
-      }
-    },
-    {
-      "id": "00-0036912",
-      "name": "DeVonta Smith",
-      "team": "PHI",
-      "position": "WR",
-      "week": 1,
-      "rating": 65.4,
-      "headshot": "/assets/headshots/00-0036912.png",
-      "main_stats": {
-        "expected_points": 12.2,
-        "actual_points": 8.3,
-        "total_opportunity": 6
-      },
-      "detail_stats": {
-        "targets": 6,
-        "carries": 0,
-        "receptions": 3,
-        "receiving_yards": 53,
-        "rushing_yards": 0,
-        "wopr": 0.65
-      }
-    },
-    {
-      "id": "00-0040784",
-      "name": "Quinshon Judkins",
-      "team": "CLE",
-      "position": "RB",
-      "week": 1,
-      "rating": 64.9,
-      "headshot": "/assets/headshots/00-0040784.png",
-      "main_stats": {
-        "expected_points": 10.6,
-        "actual_points": 7.0,
-        "total_opportunity": 14
-      },
-      "detail_stats": {
-        "targets": 2,
-        "carries": 12,
-        "receptions": 2,
-        "receiving_yards": 17,
-        "rushing_yards": 33,
-        "wopr": 0.14
-      }
-    },
-    {
-      "id": "00-0036875",
-      "name": "Rhamondre Stevenson",
-      "team": "NE",
-      "position": "RB",
-      "week": 1,
-      "rating": 64.9,
-      "headshot": "/assets/headshots/00-0036875.png",
-      "main_stats": {
-        "expected_points": 18.1,
-        "actual_points": 14.5,
-        "total_opportunity": 24
-      },
-      "detail_stats": {
-        "targets": 6,
-        "carries": 18,
-        "receptions": 5,
-        "receiving_yards": 44,
-        "rushing_yards": 51,
-        "wopr": 0.27
-      }
-    },
-    {
-      "id": "00-0034844",
-      "name": "Saquon Barkley",
-      "team": "PHI",
-      "position": "RB",
-      "week": 1,
-      "rating": 64.8,
-      "headshot": "/assets/headshots/00-0034844.png",
-      "main_stats": {
-        "expected_points": 12.6,
-        "actual_points": 9.0,
-        "total_opportunity": 17
-      },
-      "detail_stats": {
-        "targets": 2,
-        "carries": 15,
-        "receptions": 1,
-        "receiving_yards": -3,
-        "rushing_yards": 83,
-        "wopr": 0.13
-      }
-    },
-    {
-      "id": "00-0039849",
-      "name": "Marvin Harrison Jr.",
-      "team": "ARI",
-      "position": "WR",
-      "week": 1,
-      "rating": 64.7,
-      "headshot": "/assets/headshots/00-0039849.png",
-      "main_stats": {
-        "expected_points": 7.8,
-        "actual_points": 4.3,
+        "expected_points": 5.7,
+        "actual_points": 3.6,
         "total_opportunity": 3
       },
-      "detail_stats": {
-        "targets": 3,
-        "carries": 0,
-        "receptions": 1,
-        "receiving_yards": 33,
-        "rushing_yards": 0,
-        "wopr": 0.3
-      }
-    },
-    {
-      "id": "00-0037664",
-      "name": "Alec Pierce",
-      "team": "IND",
-      "position": "WR",
-      "week": 1,
-      "rating": 64.7,
-      "headshot": "/assets/headshots/00-0037664.png",
-      "main_stats": {
-        "expected_points": 13.7,
-        "actual_points": 10.1,
-        "total_opportunity": 6
-      },
-      "detail_stats": {
-        "targets": 6,
-        "carries": 0,
-        "receptions": 4,
-        "receiving_yards": 61,
-        "rushing_yards": 0,
-        "wopr": 0.67
-      }
-    },
-    {
-      "id": "00-0039337",
-      "name": "Malik Nabers",
-      "team": "NYG",
-      "position": "WR",
-      "week": 1,
-      "rating": 64.6,
-      "headshot": "/assets/headshots/00-0039337.png",
-      "main_stats": {
-        "expected_points": 16.4,
-        "actual_points": 12.9,
-        "total_opportunity": 9
-      },
-      "detail_stats": {
-        "targets": 9,
-        "carries": 0,
-        "receptions": 6,
-        "receiving_yards": 69,
-        "rushing_yards": 0,
-        "wopr": 0.76
-      }
-    },
-    {
-      "id": "00-0038618",
-      "name": "Xavier Hutchinson",
-      "team": "HOU",
-      "position": "WR",
-      "week": 1,
-      "rating": 64.6,
-      "headshot": "/assets/headshots/00-0038618.png",
-      "main_stats": {
-        "expected_points": 9.7,
-        "actual_points": 6.2,
-        "total_opportunity": 6
-      },
-      "detail_stats": {
-        "targets": 6,
-        "carries": 0,
-        "receptions": 3,
-        "receiving_yards": 32,
-        "rushing_yards": 0,
-        "wopr": 0.37
-      }
-    },
-    {
-      "id": "00-0041438",
-      "name": "Carnell Tate",
-      "team": "TEN",
-      "position": "WR",
-      "week": 1,
-      "rating": 64.1,
-      "headshot": "/assets/headshots/00-0041438.png",
-      "main_stats": {
-        "expected_points": 11.1,
-        "actual_points": 7.8,
-        "total_opportunity": 6
-      },
-      "detail_stats": {
-        "targets": 6,
-        "carries": 0,
-        "receptions": 4,
-        "receiving_yards": 38,
-        "rushing_yards": 0,
-        "wopr": 0.57
-      }
-    },
-    {
-      "id": "00-0037746",
-      "name": "Brian Robinson",
-      "team": "ATL",
-      "position": "RB",
-      "week": 1,
-      "rating": 63.9,
-      "headshot": "/assets/headshots/00-0037746.png",
-      "main_stats": {
-        "expected_points": 6.3,
-        "actual_points": 3.1,
-        "total_opportunity": 9
-      },
-      "detail_stats": {
-        "targets": 0,
-        "carries": 9,
-        "receptions": 0,
-        "receiving_yards": 0,
-        "rushing_yards": 31,
-        "wopr": 0.0
-      }
-    },
-    {
-      "id": "00-0036900",
-      "name": "Ja'Marr Chase",
-      "team": "CIN",
-      "position": "WR",
-      "week": 1,
-      "rating": 63.9,
-      "headshot": "/assets/headshots/00-0036900.png",
-      "main_stats": {
-        "expected_points": 6.4,
-        "actual_points": 3.2,
-        "total_opportunity": 4
-      },
-      "detail_stats": {
-        "targets": 4,
-        "carries": 0,
-        "receptions": 2,
-        "receiving_yards": 12,
-        "rushing_yards": 0,
-        "wopr": 0.28
-      }
-    },
-    {
-      "id": "00-0038621",
-      "name": "DeMario Douglas",
-      "team": "NE",
-      "position": "WR",
-      "week": 1,
-      "rating": 63.8,
-      "headshot": "/assets/headshots/00-0038621.png",
-      "main_stats": {
-        "expected_points": 10.2,
-        "actual_points": 7.0,
-        "total_opportunity": 7
-      },
-      "detail_stats": {
-        "targets": 7,
-        "carries": 0,
-        "receptions": 5,
-        "receiving_yards": 20,
-        "rushing_yards": 0,
-        "wopr": 0.48
-      }
-    },
-    {
-      "id": "00-0037248",
-      "name": "James Cook",
-      "team": "BUF",
-      "position": "RB",
-      "week": 1,
-      "rating": 63.4,
-      "headshot": "/assets/headshots/00-0037248.png",
-      "main_stats": {
-        "expected_points": 12.9,
-        "actual_points": 9.9,
-        "total_opportunity": 17
-      },
-      "detail_stats": {
-        "targets": 4,
-        "carries": 13,
-        "receptions": 3,
-        "receiving_yards": 12,
-        "rushing_yards": 57,
-        "wopr": 0.21
-      }
-    },
-    {
-      "id": "00-0038563",
-      "name": "Tre Tucker",
-      "team": "LV",
-      "position": "WR",
-      "week": 1,
-      "rating": 63.4,
-      "headshot": "/assets/headshots/00-0038563.png",
-      "main_stats": {
-        "expected_points": 7.6,
-        "actual_points": 4.7,
-        "total_opportunity": 4
-      },
-      "detail_stats": {
-        "targets": 4,
-        "carries": 0,
-        "receptions": 2,
-        "receiving_yards": 27,
-        "rushing_yards": 0,
-        "wopr": 0.36
-      }
-    },
-    {
-      "id": "00-0036407",
-      "name": "Jerry Jeudy",
-      "team": "CLE",
-      "position": "WR",
-      "week": 1,
-      "rating": 62.5,
-      "headshot": "/assets/headshots/00-0036407.png",
-      "main_stats": {
-        "expected_points": 7.2,
-        "actual_points": 4.6,
-        "total_opportunity": 4
-      },
-      "detail_stats": {
-        "targets": 4,
-        "carries": 0,
-        "receptions": 2,
-        "receiving_yards": 26,
-        "rushing_yards": 0,
-        "wopr": 0.4
-      }
-    },
-    {
-      "id": "00-0039040",
-      "name": "De'Von Achane",
-      "team": "MIA",
-      "position": "RB",
-      "week": 1,
-      "rating": 62.3,
-      "headshot": "/assets/headshots/00-0039040.png",
-      "main_stats": {
-        "expected_points": 13.1,
-        "actual_points": 10.6,
-        "total_opportunity": 16
-      },
-      "detail_stats": {
-        "targets": 5,
-        "carries": 11,
-        "receptions": 4,
-        "receiving_yards": 30,
-        "rushing_yards": 36,
-        "wopr": 0.29
-      }
-    },
-    {
-      "id": "00-0041052",
-      "name": "Kaelon Black",
-      "team": "SF",
-      "position": "RB",
-      "week": 1,
-      "rating": 62.1,
-      "headshot": "/assets/headshots/00-0041052.png",
-      "main_stats": {
-        "expected_points": 10.4,
-        "actual_points": 8.0,
-        "total_opportunity": 15
-      },
-      "detail_stats": {
-        "targets": 1,
-        "carries": 14,
-        "receptions": 1,
-        "receiving_yards": 5,
-        "rushing_yards": 65,
-        "wopr": 0.02
-      }
-    },
-    {
-      "id": "00-0040583",
-      "name": "Woody Marks",
-      "team": "HOU",
-      "position": "RB",
-      "week": 1,
-      "rating": 61.5,
-      "headshot": "/assets/headshots/00-0040583.png",
-      "main_stats": {
-        "expected_points": 7.1,
-        "actual_points": 5.0,
-        "total_opportunity": 10
-      },
-      "detail_stats": {
-        "targets": 1,
-        "carries": 9,
-        "receptions": 1,
-        "receiving_yards": -2,
-        "rushing_yards": 42,
-        "wopr": 0.04
-      }
-    },
-    {
-      "id": "00-0037228",
-      "name": "Jaylen Warren",
-      "team": "PIT",
-      "position": "RB",
-      "week": 1,
-      "rating": 61.4,
-      "headshot": "/assets/headshots/00-0037228.png",
-      "main_stats": {
-        "expected_points": 12.4,
-        "actual_points": 10.3,
-        "total_opportunity": 16
-      },
-      "detail_stats": {
-        "targets": 6,
-        "carries": 10,
-        "receptions": 5,
-        "receiving_yards": 27,
-        "rushing_yards": 46,
-        "wopr": 0.23
-      }
+      "detail_stats": [
+        {
+          "label": "Targets",
+          "value": 3
+        },
+        {
+          "label": "Carries",
+          "value": 0
+        },
+        {
+          "label": "Receptions",
+          "value": 2
+        },
+        {
+          "label": "Rec Yds",
+          "value": 16
+        },
+        {
+          "label": "Rush Yds",
+          "value": 0
+        },
+        {
+          "label": "WOPR",
+          "value": 0.24
+        }
+      ]
     },
     {
       "id": "00-0038129",
@@ -1046,43 +772,159 @@
       "team": "TB",
       "position": "TE",
       "week": 1,
-      "rating": 61.4,
+      "rating": 68.1,
       "headshot": "/assets/headshots/00-0038129.png",
       "main_stats": {
         "expected_points": 7.7,
         "actual_points": 5.6,
         "total_opportunity": 5
       },
-      "detail_stats": {
-        "targets": 5,
-        "carries": 0,
-        "receptions": 3,
-        "receiving_yards": 26,
-        "rushing_yards": 0,
-        "wopr": 0.43
-      }
+      "detail_stats": [
+        {
+          "label": "Targets",
+          "value": 5
+        },
+        {
+          "label": "Carries",
+          "value": 0
+        },
+        {
+          "label": "Receptions",
+          "value": 3
+        },
+        {
+          "label": "Rec Yds",
+          "value": 26
+        },
+        {
+          "label": "Rush Yds",
+          "value": 0
+        },
+        {
+          "label": "WOPR",
+          "value": 0.43
+        }
+      ]
     },
     {
-      "id": "00-0039919",
-      "name": "Rome Odunze",
-      "team": "CHI",
+      "id": "00-0039299",
+      "name": "George Holani",
+      "team": "SEA",
+      "position": "RB",
+      "week": 1,
+      "rating": 68.1,
+      "headshot": "/assets/headshots/00-0039299.png",
+      "main_stats": {
+        "expected_points": 7.1,
+        "actual_points": 2.9,
+        "total_opportunity": 9
+      },
+      "detail_stats": [
+        {
+          "label": "Targets",
+          "value": 1
+        },
+        {
+          "label": "Carries",
+          "value": 8
+        },
+        {
+          "label": "Receptions",
+          "value": 0
+        },
+        {
+          "label": "Rec Yds",
+          "value": 0
+        },
+        {
+          "label": "Rush Yds",
+          "value": 29
+        },
+        {
+          "label": "WOPR",
+          "value": 0.09
+        }
+      ]
+    },
+    {
+      "id": "00-0031381",
+      "name": "Davante Adams",
+      "team": "LA",
       "position": "WR",
       "week": 1,
-      "rating": 61.4,
-      "headshot": "/assets/headshots/00-0039919.png",
+      "rating": 68.1,
+      "headshot": "/assets/headshots/00-0031381.png",
       "main_stats": {
-        "expected_points": 9.3,
-        "actual_points": 7.2,
-        "total_opportunity": 3
+        "expected_points": 11.3,
+        "actual_points": 5.6,
+        "total_opportunity": 6
       },
-      "detail_stats": {
-        "targets": 3,
-        "carries": 0,
-        "receptions": 2,
-        "receiving_yards": 52,
-        "rushing_yards": 0,
-        "wopr": 0.37
-      }
+      "detail_stats": [
+        {
+          "label": "Targets",
+          "value": 6
+        },
+        {
+          "label": "Carries",
+          "value": 0
+        },
+        {
+          "label": "Receptions",
+          "value": 3
+        },
+        {
+          "label": "Rec Yds",
+          "value": 26
+        },
+        {
+          "label": "Rush Yds",
+          "value": 0
+        },
+        {
+          "label": "WOPR",
+          "value": 0.53
+        }
+      ]
+    },
+    {
+      "id": "00-0034348",
+      "name": "Courtland Sutton",
+      "team": "DEN",
+      "position": "WR",
+      "week": 1,
+      "rating": 67.9,
+      "headshot": "/assets/headshots/00-0034348.png",
+      "main_stats": {
+        "expected_points": 8.7,
+        "actual_points": 3.1,
+        "total_opportunity": 5
+      },
+      "detail_stats": [
+        {
+          "label": "Targets",
+          "value": 5
+        },
+        {
+          "label": "Carries",
+          "value": 0
+        },
+        {
+          "label": "Receptions",
+          "value": 2
+        },
+        {
+          "label": "Rec Yds",
+          "value": 11
+        },
+        {
+          "label": "Rush Yds",
+          "value": 0
+        },
+        {
+          "label": "WOPR",
+          "value": 0.58
+        }
+      ]
     },
     {
       "id": "00-0034383",
@@ -1090,21 +932,1079 @@
       "team": "HOU",
       "position": "TE",
       "week": 1,
-      "rating": 61.2,
+      "rating": 67.9,
       "headshot": "/assets/headshots/00-0034383.png",
       "main_stats": {
         "expected_points": 9.5,
         "actual_points": 7.5,
         "total_opportunity": 8
       },
-      "detail_stats": {
-        "targets": 8,
-        "carries": 0,
-        "receptions": 4,
-        "receiving_yards": 35,
-        "rushing_yards": 0,
-        "wopr": 0.38
-      }
+      "detail_stats": [
+        {
+          "label": "Targets",
+          "value": 8
+        },
+        {
+          "label": "Carries",
+          "value": 0
+        },
+        {
+          "label": "Receptions",
+          "value": 4
+        },
+        {
+          "label": "Rec Yds",
+          "value": 35
+        },
+        {
+          "label": "Rush Yds",
+          "value": 0
+        },
+        {
+          "label": "WOPR",
+          "value": 0.38
+        }
+      ]
+    },
+    {
+      "id": "00-0040676",
+      "name": "Cam Ward",
+      "team": "TEN",
+      "position": "QB",
+      "week": 1,
+      "rating": 67.8,
+      "headshot": "/assets/headshots/00-0040676.png",
+      "main_stats": {
+        "expected_points": 21.9,
+        "actual_points": 11.7,
+        "total_opportunity": 36
+      },
+      "detail_stats": [
+        {
+          "label": "Pass Att",
+          "value": 32
+        },
+        {
+          "label": "Pass Yds",
+          "value": 140
+        },
+        {
+          "label": "Pass TDs",
+          "value": 1
+        },
+        {
+          "label": "Carries",
+          "value": 4
+        },
+        {
+          "label": "Rush Yds",
+          "value": 21
+        },
+        {
+          "label": "INTs",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "00-0039794",
+      "name": "Braelon Allen",
+      "team": "NYJ",
+      "position": "RB",
+      "week": 1,
+      "rating": 67.7,
+      "headshot": "/assets/headshots/00-0039794.png",
+      "main_stats": {
+        "expected_points": 8.1,
+        "actual_points": 4.0,
+        "total_opportunity": 11
+      },
+      "detail_stats": [
+        {
+          "label": "Targets",
+          "value": 1
+        },
+        {
+          "label": "Carries",
+          "value": 10
+        },
+        {
+          "label": "Receptions",
+          "value": 0
+        },
+        {
+          "label": "Rec Yds",
+          "value": 0
+        },
+        {
+          "label": "Rush Yds",
+          "value": 40
+        },
+        {
+          "label": "WOPR",
+          "value": 0.07
+        }
+      ]
+    },
+    {
+      "id": "00-0037741",
+      "name": "Jahan Dotson",
+      "team": "ATL",
+      "position": "WR",
+      "week": 1,
+      "rating": 67.5,
+      "headshot": "/assets/headshots/00-0037741.png",
+      "main_stats": {
+        "expected_points": 8.4,
+        "actual_points": 2.9,
+        "total_opportunity": 3
+      },
+      "detail_stats": [
+        {
+          "label": "Targets",
+          "value": 3
+        },
+        {
+          "label": "Carries",
+          "value": 0
+        },
+        {
+          "label": "Receptions",
+          "value": 1
+        },
+        {
+          "label": "Rec Yds",
+          "value": 19
+        },
+        {
+          "label": "Rush Yds",
+          "value": 0
+        },
+        {
+          "label": "WOPR",
+          "value": 0.71
+        }
+      ]
+    },
+    {
+      "id": "00-0036410",
+      "name": "Tee Higgins",
+      "team": "CIN",
+      "position": "WR",
+      "week": 1,
+      "rating": 67.4,
+      "headshot": "/assets/headshots/00-0036410.png",
+      "main_stats": {
+        "expected_points": 14.3,
+        "actual_points": 8.9,
+        "total_opportunity": 6
+      },
+      "detail_stats": [
+        {
+          "label": "Targets",
+          "value": 6
+        },
+        {
+          "label": "Carries",
+          "value": 0
+        },
+        {
+          "label": "Receptions",
+          "value": 3
+        },
+        {
+          "label": "Rec Yds",
+          "value": 59
+        },
+        {
+          "label": "Rush Yds",
+          "value": 0
+        },
+        {
+          "label": "WOPR",
+          "value": 0.63
+        }
+      ]
+    },
+    {
+      "id": "00-0030565",
+      "name": "Geno Smith",
+      "team": "NYJ",
+      "position": "QB",
+      "week": 1,
+      "rating": 67.3,
+      "headshot": "/assets/headshots/00-0030565.png",
+      "main_stats": {
+        "expected_points": 19.3,
+        "actual_points": 9.3,
+        "total_opportunity": 30
+      },
+      "detail_stats": [
+        {
+          "label": "Pass Att",
+          "value": 24
+        },
+        {
+          "label": "Pass Yds",
+          "value": 215
+        },
+        {
+          "label": "Pass TDs",
+          "value": 0
+        },
+        {
+          "label": "Carries",
+          "value": 6
+        },
+        {
+          "label": "Rush Yds",
+          "value": 7
+        },
+        {
+          "label": "INTs",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "00-0038544",
+      "name": "Quentin Johnston",
+      "team": "LAC",
+      "position": "WR",
+      "week": 1,
+      "rating": 66.7,
+      "headshot": "/assets/headshots/00-0038544.png",
+      "main_stats": {
+        "expected_points": 8.9,
+        "actual_points": 3.7,
+        "total_opportunity": 6
+      },
+      "detail_stats": [
+        {
+          "label": "Targets",
+          "value": 6
+        },
+        {
+          "label": "Carries",
+          "value": 0
+        },
+        {
+          "label": "Receptions",
+          "value": 2
+        },
+        {
+          "label": "Rec Yds",
+          "value": 17
+        },
+        {
+          "label": "Rush Yds",
+          "value": 0
+        },
+        {
+          "label": "WOPR",
+          "value": 0.43
+        }
+      ]
+    },
+    {
+      "id": "00-0038996",
+      "name": "Tucker Kraft",
+      "team": "GB",
+      "position": "TE",
+      "week": 1,
+      "rating": 66.6,
+      "headshot": "/assets/headshots/00-0038996.png",
+      "main_stats": {
+        "expected_points": 11.1,
+        "actual_points": 9.5,
+        "total_opportunity": 6
+      },
+      "detail_stats": [
+        {
+          "label": "Targets",
+          "value": 6
+        },
+        {
+          "label": "Carries",
+          "value": 0
+        },
+        {
+          "label": "Receptions",
+          "value": 3
+        },
+        {
+          "label": "Rec Yds",
+          "value": 65
+        },
+        {
+          "label": "Rush Yds",
+          "value": 0
+        },
+        {
+          "label": "WOPR",
+          "value": 0.35
+        }
+      ]
+    },
+    {
+      "id": "00-0036875",
+      "name": "Rhamondre Stevenson",
+      "team": "NE",
+      "position": "RB",
+      "week": 1,
+      "rating": 66.6,
+      "headshot": "/assets/headshots/00-0036875.png",
+      "main_stats": {
+        "expected_points": 18.1,
+        "actual_points": 14.5,
+        "total_opportunity": 24
+      },
+      "detail_stats": [
+        {
+          "label": "Targets",
+          "value": 6
+        },
+        {
+          "label": "Carries",
+          "value": 18
+        },
+        {
+          "label": "Receptions",
+          "value": 5
+        },
+        {
+          "label": "Rec Yds",
+          "value": 44
+        },
+        {
+          "label": "Rush Yds",
+          "value": 51
+        },
+        {
+          "label": "WOPR",
+          "value": 0.27
+        }
+      ]
+    },
+    {
+      "id": "00-0040784",
+      "name": "Quinshon Judkins",
+      "team": "CLE",
+      "position": "RB",
+      "week": 1,
+      "rating": 66.6,
+      "headshot": "/assets/headshots/00-0040784.png",
+      "main_stats": {
+        "expected_points": 10.6,
+        "actual_points": 7.0,
+        "total_opportunity": 14
+      },
+      "detail_stats": [
+        {
+          "label": "Targets",
+          "value": 2
+        },
+        {
+          "label": "Carries",
+          "value": 12
+        },
+        {
+          "label": "Receptions",
+          "value": 2
+        },
+        {
+          "label": "Rec Yds",
+          "value": 17
+        },
+        {
+          "label": "Rush Yds",
+          "value": 33
+        },
+        {
+          "label": "WOPR",
+          "value": 0.14
+        }
+      ]
+    },
+    {
+      "id": "00-0034844",
+      "name": "Saquon Barkley",
+      "team": "PHI",
+      "position": "RB",
+      "week": 1,
+      "rating": 66.5,
+      "headshot": "/assets/headshots/00-0034844.png",
+      "main_stats": {
+        "expected_points": 12.6,
+        "actual_points": 9.0,
+        "total_opportunity": 17
+      },
+      "detail_stats": [
+        {
+          "label": "Targets",
+          "value": 2
+        },
+        {
+          "label": "Carries",
+          "value": 15
+        },
+        {
+          "label": "Receptions",
+          "value": 1
+        },
+        {
+          "label": "Rec Yds",
+          "value": -3
+        },
+        {
+          "label": "Rush Yds",
+          "value": 83
+        },
+        {
+          "label": "WOPR",
+          "value": 0.13
+        }
+      ]
+    },
+    {
+      "id": "00-0039910",
+      "name": "Jayden Daniels",
+      "team": "WAS",
+      "position": "QB",
+      "week": 1,
+      "rating": 66.4,
+      "headshot": "/assets/headshots/00-0039910.png",
+      "main_stats": {
+        "expected_points": 27.3,
+        "actual_points": 17.7,
+        "total_opportunity": 39
+      },
+      "detail_stats": [
+        {
+          "label": "Pass Att",
+          "value": 34
+        },
+        {
+          "label": "Pass Yds",
+          "value": 164
+        },
+        {
+          "label": "Pass TDs",
+          "value": 2
+        },
+        {
+          "label": "Carries",
+          "value": 5
+        },
+        {
+          "label": "Rush Yds",
+          "value": 31
+        },
+        {
+          "label": "INTs",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "00-0039851",
+      "name": "Drake Maye",
+      "team": "NE",
+      "position": "QB",
+      "week": 1,
+      "rating": 66.3,
+      "headshot": "/assets/headshots/00-0039851.png",
+      "main_stats": {
+        "expected_points": 25.4,
+        "actual_points": 15.8,
+        "total_opportunity": 40
+      },
+      "detail_stats": [
+        {
+          "label": "Pass Att",
+          "value": 33
+        },
+        {
+          "label": "Pass Yds",
+          "value": 178
+        },
+        {
+          "label": "Pass TDs",
+          "value": 1
+        },
+        {
+          "label": "Carries",
+          "value": 7
+        },
+        {
+          "label": "Rush Yds",
+          "value": 47
+        },
+        {
+          "label": "INTs",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "00-0039075",
+      "name": "Puka Nacua",
+      "team": "LA",
+      "position": "WR",
+      "week": 1,
+      "rating": 66.2,
+      "headshot": "/assets/headshots/00-0039075.png",
+      "main_stats": {
+        "expected_points": 17.4,
+        "actual_points": 12.4,
+        "total_opportunity": 9
+      },
+      "detail_stats": [
+        {
+          "label": "Targets",
+          "value": 9
+        },
+        {
+          "label": "Carries",
+          "value": 0
+        },
+        {
+          "label": "Receptions",
+          "value": 5
+        },
+        {
+          "label": "Rec Yds",
+          "value": 74
+        },
+        {
+          "label": "Rush Yds",
+          "value": 0
+        },
+        {
+          "label": "WOPR",
+          "value": 0.82
+        }
+      ]
+    },
+    {
+      "id": "00-0039146",
+      "name": "Jayden Reed",
+      "team": "GB",
+      "position": "WR",
+      "week": 1,
+      "rating": 66.2,
+      "headshot": "/assets/headshots/00-0039146.png",
+      "main_stats": {
+        "expected_points": 9.9,
+        "actual_points": 5.0,
+        "total_opportunity": 7
+      },
+      "detail_stats": [
+        {
+          "label": "Targets",
+          "value": 7
+        },
+        {
+          "label": "Carries",
+          "value": 0
+        },
+        {
+          "label": "Receptions",
+          "value": 3
+        },
+        {
+          "label": "Rec Yds",
+          "value": 20
+        },
+        {
+          "label": "Rush Yds",
+          "value": 0
+        },
+        {
+          "label": "WOPR",
+          "value": 0.34
+        }
+      ]
+    },
+    {
+      "id": "00-0040667",
+      "name": "Matthew Golden",
+      "team": "GB",
+      "position": "WR",
+      "week": 1,
+      "rating": 66.1,
+      "headshot": "/assets/headshots/00-0040667.png",
+      "main_stats": {
+        "expected_points": 20.4,
+        "actual_points": 15.5,
+        "total_opportunity": 12
+      },
+      "detail_stats": [
+        {
+          "label": "Targets",
+          "value": 12
+        },
+        {
+          "label": "Carries",
+          "value": 0
+        },
+        {
+          "label": "Receptions",
+          "value": 6
+        },
+        {
+          "label": "Rec Yds",
+          "value": 95
+        },
+        {
+          "label": "Rush Yds",
+          "value": 0
+        },
+        {
+          "label": "WOPR",
+          "value": 0.65
+        }
+      ]
+    },
+    {
+      "id": "00-0040736",
+      "name": "Mason Taylor",
+      "team": "NYJ",
+      "position": "TE",
+      "week": 1,
+      "rating": 66.1,
+      "headshot": "/assets/headshots/00-0040736.png",
+      "main_stats": {
+        "expected_points": 3.3,
+        "actual_points": 1.8,
+        "total_opportunity": 3
+      },
+      "detail_stats": [
+        {
+          "label": "Targets",
+          "value": 3
+        },
+        {
+          "label": "Carries",
+          "value": 0
+        },
+        {
+          "label": "Receptions",
+          "value": 2
+        },
+        {
+          "label": "Rec Yds",
+          "value": -2
+        },
+        {
+          "label": "Rush Yds",
+          "value": 0
+        },
+        {
+          "label": "WOPR",
+          "value": 0.2
+        }
+      ]
+    },
+    {
+      "id": "00-0038573",
+      "name": "Derius Davis",
+      "team": "LAC",
+      "position": "WR",
+      "week": 1,
+      "rating": 66.0,
+      "headshot": "/assets/headshots/00-0038573.png",
+      "main_stats": {
+        "expected_points": 4.9,
+        "actual_points": 0.0,
+        "total_opportunity": 1
+      },
+      "detail_stats": [
+        {
+          "label": "Targets",
+          "value": 1
+        },
+        {
+          "label": "Carries",
+          "value": 0
+        },
+        {
+          "label": "Receptions",
+          "value": 0
+        },
+        {
+          "label": "Rec Yds",
+          "value": 0
+        },
+        {
+          "label": "Rush Yds",
+          "value": 0
+        },
+        {
+          "label": "WOPR",
+          "value": 0.2
+        }
+      ]
+    },
+    {
+      "id": "00-0039894",
+      "name": "Xavier Worthy",
+      "team": "KC",
+      "position": "WR",
+      "week": 1,
+      "rating": 65.9,
+      "headshot": "/assets/headshots/00-0039894.png",
+      "main_stats": {
+        "expected_points": 9.6,
+        "actual_points": 4.8,
+        "total_opportunity": 6
+      },
+      "detail_stats": [
+        {
+          "label": "Targets",
+          "value": 6
+        },
+        {
+          "label": "Carries",
+          "value": 0
+        },
+        {
+          "label": "Receptions",
+          "value": 3
+        },
+        {
+          "label": "Rec Yds",
+          "value": 18
+        },
+        {
+          "label": "Rush Yds",
+          "value": 0
+        },
+        {
+          "label": "WOPR",
+          "value": 0.58
+        }
+      ]
+    },
+    {
+      "id": "00-0037746",
+      "name": "Brian Robinson",
+      "team": "ATL",
+      "position": "RB",
+      "week": 1,
+      "rating": 65.6,
+      "headshot": "/assets/headshots/00-0037746.png",
+      "main_stats": {
+        "expected_points": 6.3,
+        "actual_points": 3.1,
+        "total_opportunity": 9
+      },
+      "detail_stats": [
+        {
+          "label": "Targets",
+          "value": 0
+        },
+        {
+          "label": "Carries",
+          "value": 9
+        },
+        {
+          "label": "Receptions",
+          "value": 0
+        },
+        {
+          "label": "Rec Yds",
+          "value": 0
+        },
+        {
+          "label": "Rush Yds",
+          "value": 31
+        },
+        {
+          "label": "WOPR",
+          "value": 0.0
+        }
+      ]
+    },
+    {
+      "id": "00-0041042",
+      "name": "Malachi Fields",
+      "team": "NYG",
+      "position": "WR",
+      "week": 1,
+      "rating": 65.3,
+      "headshot": "/assets/headshots/00-0041042.png",
+      "main_stats": {
+        "expected_points": 9.1,
+        "actual_points": 4.5,
+        "total_opportunity": 4
+      },
+      "detail_stats": [
+        {
+          "label": "Targets",
+          "value": 4
+        },
+        {
+          "label": "Carries",
+          "value": 0
+        },
+        {
+          "label": "Receptions",
+          "value": 2
+        },
+        {
+          "label": "Rec Yds",
+          "value": 25
+        },
+        {
+          "label": "Rush Yds",
+          "value": 0
+        },
+        {
+          "label": "WOPR",
+          "value": 0.41
+        }
+      ]
+    },
+    {
+      "id": "00-0040556",
+      "name": "Corey Kiner",
+      "team": "NE",
+      "position": "RB",
+      "week": 1,
+      "rating": 65.3,
+      "headshot": "/assets/headshots/00-0040556.png",
+      "main_stats": {
+        "expected_points": 4.2,
+        "actual_points": 1.1,
+        "total_opportunity": 6
+      },
+      "detail_stats": [
+        {
+          "label": "Targets",
+          "value": 0
+        },
+        {
+          "label": "Carries",
+          "value": 6
+        },
+        {
+          "label": "Receptions",
+          "value": 0
+        },
+        {
+          "label": "Rec Yds",
+          "value": 0
+        },
+        {
+          "label": "Rush Yds",
+          "value": 11
+        },
+        {
+          "label": "WOPR",
+          "value": 0.0
+        }
+      ]
+    },
+    {
+      "id": "00-0037248",
+      "name": "James Cook",
+      "team": "BUF",
+      "position": "RB",
+      "week": 1,
+      "rating": 65.0,
+      "headshot": "/assets/headshots/00-0037248.png",
+      "main_stats": {
+        "expected_points": 12.9,
+        "actual_points": 9.9,
+        "total_opportunity": 17
+      },
+      "detail_stats": [
+        {
+          "label": "Targets",
+          "value": 4
+        },
+        {
+          "label": "Carries",
+          "value": 13
+        },
+        {
+          "label": "Receptions",
+          "value": 3
+        },
+        {
+          "label": "Rec Yds",
+          "value": 12
+        },
+        {
+          "label": "Rush Yds",
+          "value": 57
+        },
+        {
+          "label": "WOPR",
+          "value": 0.21
+        }
+      ]
+    },
+    {
+      "id": "00-0036264",
+      "name": "Jordan Love",
+      "team": "GB",
+      "position": "QB",
+      "week": 1,
+      "rating": 64.9,
+      "headshot": "/assets/headshots/00-0036264.png",
+      "main_stats": {
+        "expected_points": 32.4,
+        "actual_points": 23.5,
+        "total_opportunity": 43
+      },
+      "detail_stats": [
+        {
+          "label": "Pass Att",
+          "value": 42
+        },
+        {
+          "label": "Pass Yds",
+          "value": 387
+        },
+        {
+          "label": "Pass TDs",
+          "value": 2
+        },
+        {
+          "label": "Carries",
+          "value": 1
+        },
+        {
+          "label": "Rush Yds",
+          "value": 0
+        },
+        {
+          "label": "INTs",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "00-0040727",
+      "name": "Tre Harris",
+      "team": "LAC",
+      "position": "WR",
+      "week": 1,
+      "rating": 64.8,
+      "headshot": "/assets/headshots/00-0040727.png",
+      "main_stats": {
+        "expected_points": 9.4,
+        "actual_points": 5.0,
+        "total_opportunity": 6
+      },
+      "detail_stats": [
+        {
+          "label": "Targets",
+          "value": 6
+        },
+        {
+          "label": "Carries",
+          "value": 0
+        },
+        {
+          "label": "Receptions",
+          "value": 3
+        },
+        {
+          "label": "Rec Yds",
+          "value": 20
+        },
+        {
+          "label": "Rush Yds",
+          "value": 0
+        },
+        {
+          "label": "WOPR",
+          "value": 0.45
+        }
+      ]
+    },
+    {
+      "id": "00-0036244",
+      "name": "Colby Parkinson",
+      "team": "LA",
+      "position": "TE",
+      "week": 1,
+      "rating": 64.8,
+      "headshot": "/assets/headshots/00-0036244.png",
+      "main_stats": {
+        "expected_points": 2.7,
+        "actual_points": 1.6,
+        "total_opportunity": 2
+      },
+      "detail_stats": [
+        {
+          "label": "Targets",
+          "value": 2
+        },
+        {
+          "label": "Carries",
+          "value": 0
+        },
+        {
+          "label": "Receptions",
+          "value": 1
+        },
+        {
+          "label": "Rec Yds",
+          "value": 6
+        },
+        {
+          "label": "Rush Yds",
+          "value": 0
+        },
+        {
+          "label": "WOPR",
+          "value": 0.14
+        }
+      ]
+    },
+    {
+      "id": "00-0036442",
+      "name": "Joe Burrow",
+      "team": "CIN",
+      "position": "QB",
+      "week": 1,
+      "rating": 64.7,
+      "headshot": "/assets/headshots/00-0036442.png",
+      "main_stats": {
+        "expected_points": 25.0,
+        "actual_points": 16.2,
+        "total_opportunity": 40
+      },
+      "detail_stats": [
+        {
+          "label": "Pass Att",
+          "value": 35
+        },
+        {
+          "label": "Pass Yds",
+          "value": 254
+        },
+        {
+          "label": "Pass TDs",
+          "value": 1
+        },
+        {
+          "label": "Carries",
+          "value": 5
+        },
+        {
+          "label": "Rush Yds",
+          "value": 20
+        },
+        {
+          "label": "INTs",
+          "value": 0
+        }
+      ]
     }
   ]
 }
