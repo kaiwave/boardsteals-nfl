@@ -1,12 +1,12 @@
 # Boardsteals
-An automated NFL fantasy pipeline that identifies buy-low candidates, waiver wire gems, and sleepers by evaluating the disparity between offensive volume (opportunity) and box-score fantasy output.
+An automated NFL fantasy pipeline that identifies buy-low candidates, waiver wire gems, and board steals by evaluating the disparity between offensive volume (opportunity) and box-score fantasy output.
 
 Live site: [boardsteals.kaiwave.dev](https://boardsteals.kaiwave.dev)
 
 ## The Model
 Traditional fantasy platforms rank players by raw fantasy points, which heavily reflect trailing results, touchdown luck, and splash plays. Boardsteals inverts this by prioritising underlying offensive opportunity.
 
-### Step 1: Expected Points and Introa-Positional Disparity (Advanced Opportunity Baseline)
+### Step 1: Expected Points and Intra-Positional Disparity (Advanced Opportunity Baseline)
 Traditional metrics treat all targets equally, but we do not. BoardSteals evaluates opportunity using advanced tracking metrics like Air Yards and WOPR (Weighted Opportunity Rating) to weigh exactly *how* a player is being used in their specific roles, and compares players strictly against their positional peers.
 
 $$\begin{aligned} \text{Expected Points} &= (\text{Pass Att} \times 0.42) + (\text{Pass Air Yards} \times 0.03) \\ &+ (\text{Carries} \times 0.70) \\ &+ (\text{Targets} \times 0.80) + (\text{Rec Air Yards} \times 0.06) + (\text{WOPR} \times 4.0) \end{aligned}$$
