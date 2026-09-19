@@ -210,9 +210,54 @@ summary:focus-visible {
 .card[data-tier="silver"] { border-top-color: var(--tier-silver); }
 .card[data-tier="gold"] { border-top-color: var(--tier-gold); }
 .card[data-tier="diamond"] {
-  border-top: 3px solid transparent;
-  border-image: linear-gradient(90deg, var(--tier-diamond-a), var(--tier-diamond-b), var(--tier-diamond-a)) 1;
-  box-shadow: var(--shadow), 0 0 0 1px rgba(166, 132, 214, 0.25), 0 0 26px -6px rgba(79, 201, 221, 0.45);
+  position: relative;
+  border: none;           
+  padding-top: 0;       
+  overflow: hidden;        
+  box-shadow: 
+    var(--shadow), 
+    var(--tier-diamond-b), 
+    var(--tier-diamond-a);
+}
+
+/* 1. The Border */
+.card[data-tier="diamond"]::before {
+  content: "";
+  position: absolute;
+  inset: 0;                  /* Snaps flush to the exact edge of the card */
+  border-radius: inherit;
+  padding: 3px;              /* Border thickness */
+  z-index: 2;
+  background: linear-gradient(
+    90deg,
+    var(--tier-diamond-a) 0%,
+    var(--tier-diamond-b) 20%,
+    var(--tier-diamond-c) 25%,
+    var(--tier-diamond-a) 50%,
+    var(--tier-diamond-b) 70%,
+    var(--tier-diamond-c) 75%,
+    var(--tier-diamond-a) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 3s linear infinite;
+
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+
+  mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+
+  pointer-events: none;
+}
+
+.card[data-tier="diamond"] .rank,
+.card[data-tier="diamond"] .team-logo {
+  position: relative;
+  z-index: 3;
 }
 
 .card-media {
@@ -325,9 +370,18 @@ summary:focus-visible {
 
 .card[data-tier="diamond"] .rating-badge {
   color: #fff;
-  background: linear-gradient(100deg, var(--tier-diamond-a), var(--tier-diamond-b) 45%, var(--tier-diamond-c) 55%, var(--tier-diamond-a));
-  background-size: 240% 100%;
-  animation: shimmer 3.2s linear infinite;
+  background: linear-gradient(
+    90deg,
+    var(--tier-diamond-a) 0%,
+    var(--tier-diamond-b) 20%,
+    var(--tier-diamond-c) 25%,
+    var(--tier-diamond-a) 50%,
+    var(--tier-diamond-b) 70%,
+    var(--tier-diamond-c) 75%,
+    var(--tier-diamond-a) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 3s linear infinite;
   box-shadow: 0 4px 14px -4px rgba(79, 201, 221, 0.55);
 }
 
@@ -354,7 +408,7 @@ summary:focus-visible {
 .detail-stats {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 2px 14px;
+  gap: 4px 14px;
   margin: 2px 0 0;   
 }
 
@@ -371,7 +425,7 @@ summary:focus-visible {
 
 @keyframes shimmer {
   from { background-position: 0% 0; }
-  to { background-position: 240% 0; }
+  to { background-position: 100% 0; }
 }
 
 .tier-label {

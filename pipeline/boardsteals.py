@@ -43,62 +43,113 @@ def download_headshot(player_id, url):
             return None
     return local_path
 
+import pandas as pd
+import numpy as np
+
 def calculate_ratings(df):
-    df = df[df['position'].isin(['RB', 'WR', 'TE'])].copy()
-    
-    # Ensure advanced metrics exist (fill with 0 for players who only run the ball)
-    df['wopr'] = pd.to_numeric(df.get('wopr', 0), errors='coerce').fillna(0)
-    df['receiving_air_yards'] = pd.to_numeric(df.get('receiving_air_yards', 0), errors='coerce').fillna(0)
-    
-    # --- MORE ADVANCED EXPECTED PPR FORMULA ---
-    # Rushing: Retains the 0.7 baseline per carry
-    # Baseline Receiving: 0.8 pts per target (represents floor value of dump-offs)
-    # Advanced Receiving (Air Yards): 0.06 pts per air yard (values deep threats)
-    # Team Dominance (WOPR): A flat +4.0 modifier multiplied by their WOPR percentage to reward alpha receivers
-    df['expected_ppr'] = (
-        (df.get('carries', 0) * 0.7) + 
-        (df.get('targets', 0) * 0.8) + 
-        (df['receiving_air_yards'] * 0.06) + 
-        (df['wopr'] * 4.0)
+    VALID_POSITIONS = ["QB", "RB", "WR", "TE"]
+    df = df[df["position"].isin(VALID_POSITIONS)].copy()
+
+    # 1. Ensure all expected columns exist (fills with 0 if missing)
+    expected_cols = [
+        'attempts', 'passing_air_yards', 'passing_tds', 'passing_yards', 'interceptions',
+        'carries', 'rushing_yards', 'rushing_tds',
+        'targets', 'receiving_air_yards', 'receptions', 'receiving_yards', 'receiving_tds',
+        'wopr', 'fg_att', 'fg_made', 'pat_att', 'pat_made'
+    ]
+    for col in expected_cols:
+        if col not in df.columns:
+            df[col] = 0
+
+    # 2. Calculate Actual Fantasy Points (Standard 4pt passing TD, PPR)
+    df['actual_points'] = (
+        (df['passing_yards'] * 0.04) + (df['passing_tds'] * 4.0) - (df['interceptions'] * 2.0) +
+        (df['rushing_yards'] * 0.1) + (df['rushing_tds'] * 6.0) +
+        (df['receptions'] * 1.0) + (df['receiving_yards'] * 0.1) + (df['receiving_tds'] * 6.0) +
+        (df['fg_made'] * 3.0) + (df['pat_made'] * 1.0)
     )
+
+    # 3. Calculate Expected Fantasy Points based on league-average positional usage
+    df['expected_points'] = (
+        (df['attempts'] * 0.42) +             # Passing volume
+        (df['passing_air_yards'] * 0.03) +    # Passing depth opportunity
+        (df['carries'] * 0.70) +              # Rushing volume
+        (df['targets'] * 0.80) +              # Receiving volume 
+        (df['receiving_air_yards'] * 0.06) +  # Receiving depth opportunity
+        (df['wopr'] * 4.0) +                  # Market share weight (mostly WR/RB/TE)
+        (df['fg_att'] * 2.55) +               # Kicking (Assumes ~85% league avg FG completion)
+        (df['pat_att'] * 0.95)                # Kicking (Assumes ~95% league avg PAT completion)
+    )
+
+    # Calculate standard 'Opportunities' metric for the frontend card summary
+    df['total_opportunity'] = df['attempts'] + df['carries'] + df['targets'] + df['fg_att']
+
+    # 4. Calculate Disparity (How much they underperformed their pure usage)
+    df['disparity'] = df['expected_points'] - df['actual_points']
+
+    # Only calculate stats for players with real volume
+    active_mask = (df['total_opportunity'] >= 2) | (df['expected_points'] >= 3.0)
+    df = df[active_mask].copy()
+
+    # Now compute positional z-score
+    df['z_score'] = df.groupby('position')['disparity'].transform(
+        lambda x: (x - x.mean()) / x.std()
+    )
+
+    # Handle NaNs for positions with only 1 player or identical stats (0 standard deviation)
+    df['z_score'] = df['z_score'].fillna(0)
+
+    # 6. Apply standard rating distribution mapping
+    df['rating'] = (df['z_score'] * 14) + 54
     
-    df['disparity'] = df['expected_ppr'] - df.get('fantasy_points_ppr', 0)
-    
-    # Filter out bench warmers to avoid noisy data (min 6.0 expected points)
-    df = df[df['expected_ppr'] >= 6.0] 
-    
-    disp = df['disparity']
-    z = (disp - disp.mean()) / disp.std()
-    
-    df['z_score'] = z
-    df['rating'] = np.clip(54 + (z * 14), 0, 100).round(1)
-    
-    return df.sort_values('rating', ascending=False)
+    # Cap outliers to keep it strictly between 1.0 and 99.9
+    df['rating'] = df['rating'].clip(1.0, 99.9).round(1)
+
+    return df
 
 def format_player_json(row):
     headshot_path = download_headshot(row['player_id'], row.get('headshot_url'))
     
+    pos = row['position']
+
+    exp_pts = round(float(row.get('expected_points', 0)), 1)
+    act_pts = round(float(row.get('actual_points', 0)), 1)
+    opps = int(row.get('total_opportunity', 0))
+
+    # Dynamic stats based on position
+    if pos == "QB":
+        detail_stats = [
+            {"label": "Pass Att", "value": int(row.get('attempts', 0))},
+            {"label": "Pass Yds", "value": int(row.get('passing_yards', 0))},
+            {"label": "Pass TDs", "value": int(row.get('passing_tds', 0))},
+            {"label": "Carries", "value": int(row.get('carries', 0))},
+            {"label": "Rush Yds", "value": int(row.get('rushing_yards', 0))},
+            {"label": "INTs", "value": int(row.get('interceptions', 0))}
+        ]
+    else: # RB, WR, TE
+        detail_stats = [
+            {"label": "Targets", "value": int(row.get('targets', 0))},
+            {"label": "Carries", "value": int(row.get('carries', 0))},
+            {"label": "Receptions", "value": int(row.get('receptions', 0))},
+            {"label": "Rec Yds", "value": int(row.get('receiving_yards', 0))},
+            {"label": "Rush Yds", "value": int(row.get('rushing_yards', 0))},
+            {"label": "WOPR", "value": round(float(row.get('wopr', 0)), 2) if 'wopr' in row and not pd.isna(row['wopr']) else 0}
+        ]
+
     return {
         "id": row['player_id'],
         "name": row['player_display_name'],
         "team": row.get('team', row.get('recent_team', 'UNK')),
-        "position": row['position'],
+        "position": pos,
         "week": int(row['week']),
         "rating": float(row['rating']),
         "headshot": headshot_path,
         "main_stats": {
-            "expected_points": round(float(row['expected_ppr']), 1),
-            "actual_points": round(float(row.get('fantasy_points_ppr', 0)), 1),
-            "total_opportunity": int(row.get('carries', 0) + row.get('targets', 0))
+            "expected_points": exp_pts,
+            "actual_points": act_pts,
+            "total_opportunity": opps
         },
-        "detail_stats": {
-            "targets": int(row.get('targets', 0)),
-            "carries": int(row.get('carries', 0)),
-            "receptions": int(row.get('receptions', 0)),
-            "receiving_yards": int(row.get('receiving_yards', 0)),
-            "rushing_yards": int(row.get('rushing_yards', 0)),
-            "wopr": round(float(row.get('wopr', 0)), 2) if 'wopr' in row and not pd.isna(row['wopr']) else 0
-        }
+        "detail_stats": detail_stats
     }
 
 def sanitize_nan(obj):
@@ -153,13 +204,21 @@ def main():
         if c in weekly_df.columns:
             weekly_df[c] = pd.to_numeric(weekly_df[c], errors='coerce').fillna(0)
       
-    latest_week = int(weekly_df['week'].max())
+    latest_week = 1 #int(weekly_df['week'].max())
     print(f"Processing data up to Week {latest_week} of {SEASON}...")
     
     current_week_df = weekly_df[weekly_df['week'] == latest_week].copy() 
 
-    rated_df = calculate_ratings(current_week_df)
-    top_50 = rated_df.head(50)
+    # Assign output directly back to df so the downstream variable names match
+    df = calculate_ratings(current_week_df)
+
+    # Explicitly sort by final rating from highest to lowest
+    df = df.sort_values(by="rating", ascending=False).reset_index(drop=True)
+    
+    # Assign the explicit 1-50 rank column
+    df["rank"] = df.index + 1
+    
+    top_50 = df.head(50)
     
     print("Formatting Weekly JSON and downloading headshots...")
     weekly_players = [format_player_json(row) for _, row in top_50.iterrows()]

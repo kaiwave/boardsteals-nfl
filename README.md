@@ -6,12 +6,14 @@ Live site: [boardsteals.kaiwave.dev](https://boardsteals.kaiwave.dev)
 ## The Model
 Traditional fantasy platforms rank players by raw fantasy points, which heavily reflect trailing results, touchdown luck, and splash plays. Boardsteals inverts this by prioritising underlying offensive opportunity.
 
-### Step 1: Expected PPR (Advanced Opportunity Baseline)
-Traditional metrics treat all targets equally—we do not. BoardSteals evaluates opportunity using advanced tracking metrics like Air Yards and WOPR (Weighted Opportunity Rating) to weigh exactly *how* a player is being used.
+### Step 1: Expected Points and Introa-Positional Disparity (Advanced Opportunity Baseline)
+Traditional metrics treat all targets equally, but we do not. BoardSteals evaluates opportunity using advanced tracking metrics like Air Yards and WOPR (Weighted Opportunity Rating) to weigh exactly *how* a player is being used in their specific roles, and compares players strictly against their positional peers.
 
-$$\text{Exp PPR} = (\text{Carries} \times 0.7) + (\text{Targets} \times 0.8) + (\text{Air Yards} \times 0.06) + (\text{WOPR} \times 4.0)$$
+$$\begin{aligned} \text{Expected Points} &= (\text{Pass Att} \times 0.42) + (\text{Pass Air Yards} \times 0.03) \\ &+ (\text{Carries} \times 0.70) \\ &+ (\text{Targets} \times 0.80) + (\text{Rec Air Yards} \times 0.06) + (\text{WOPR} \times 4.0) \end{aligned}$$
 
-- Carries ($0.7$ pt Accounts for historical league-average yards per carry plus goal-line touchdown equity.
+- Passing Volume & Depth ($0.42$ / $0.03$ pts): Accounts for quarterback pass attempts and downfield air-yard equity, modeling league-average completion rates and yardage expectation per dropback.
+
+- Carries ($0.7$) pt Accounts for historical league-average yards per carry plus goal-line touchdown equity.
   
 - Baseline Targets ($0.8$ pts): The baseline PPR value of commanding a target, regardless of depth.
 
@@ -22,13 +24,17 @@ $$\text{Exp PPR} = (\text{Carries} \times 0.7) + (\text{Targets} \times 0.8) + (
 ### Step 1: Disparity Calculation
 We evaluate whether a player's fantasy output underperformed or outpaced their real-world usage,
 
-$$\text{Disparity} = \text{Expected PPR} - \text{Actual Fantasy Points (PPR)}$$
+$$\text{Disparity} = \text{Expected Points} - \text{Actual Fantasy Points}$$
 
-Which gives us two key outcomes:
+$$\text{Z-Score}_{\text{Pos}} = \frac{\text{Disparity} - \mu_{\text{position}}}{\sigma_{\text{position}}}$$
+
+Which gives us key outcomes:
 
 - High Positive Disparity: High-volume involvement that was stalled by bad goal-line variance, tipped passes, or defensive stops. These players are prime candidates for breakout games (underrated).
 
 - Negative Disparity: Low-volume involvement inflated by unsustainable 70-yard breakaways or fluke multi-touchdown box scores (overrated).
+
+- Intra-Positional Grouping: Because quarterback volume naturally outpaces flex positions, Z-scores are computed strictly within each position group ($\text{QB}$, $\text{RB}$, $\text{WR}$, $\text{TE}$). A top-tier rating reflects an elite usage-to-output gap relative to positional peers.
 
 ### Step 3: Noise Threshold
 To eliminate backup players and gadget options who distort small-sample statistics (e.g., a WR5 running one route, seeing one target, and dropping it for a $+1.8$ disparity), the engine requires a minimum opportunity floor
