@@ -7,7 +7,7 @@ Live site: [boardsteals.kaiwave.dev](https://boardsteals.kaiwave.dev)
 Traditional fantasy platforms rank players by raw fantasy points, which heavily reflect trailing results, touchdown luck, and splash plays. Boardsteals inverts this by prioritising underlying offensive opportunity.
 
 ### Step 1: Expected Points and Intra-Positional Disparity (Advanced Opportunity Baseline)
-Traditional metrics treat all targets equally, but we do not. BoardSteals evaluates opportunity using advanced tracking metrics like Air Yards and WOPR (Weighted Opportunity Rating) to weigh exactly *how* a player is being used in their specific roles, and compares players strictly against their positional peers.
+Traditional metrics treat all targets equally, but we do not. Boardsteals evaluates opportunity using advanced tracking metrics like Air Yards and WOPR (Weighted Opportunity Rating) to weigh exactly *how* a player is being used in their specific roles, and compares players strictly against their positional peers.
 
 $$\begin{aligned} \text{Expected Points} &= (\text{Pass Att} \times 0.42) + (\text{Pass Air Yards} \times 0.03) \\ &+ (\text{Carries} \times 0.70) \\ &+ (\text{Targets} \times 0.80) + (\text{Rec Air Yards} \times 0.06) + (\text{WOPR} \times 4.0) \end{aligned}$$
 
@@ -43,7 +43,7 @@ $$\text{Expected PPR} \ge 6.0$$
 
 (Equivalent to roughly 4+ targets, 9+ carries, or a hybrid workload).
 
-### Step 4: Normalisation (The Boardsteal rating)
+### Step 4: Normalisation (The Boardsteals rating)
 To translate disparity into an intuitive rating where the league median sits in the 50–60 range, disparity values are normalised using standard Z-scores across the active weekly sample,
 
 $$Z = \frac{\text{Disparity} - \mu}{\sigma}$$
