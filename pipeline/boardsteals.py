@@ -28,7 +28,6 @@ def download_headshot(player_id, url):
     
     if not os.path.exists(file_path):
         try:
-            # Spoof a real browser to bypass ESPN's anti-bot blocking
             headers = {
                 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
             }
@@ -249,13 +248,17 @@ def main():
     all_time_df = pd.DataFrame(global_players + weekly_players)
     if not all_time_df.empty:
         all_time_df = all_time_df.sort_values('rating', ascending=False)
-        all_time_df = all_time_df.drop_duplicates(subset=['id'], keep='first')
         
+        # This allows different weeks for the same player to stack on the leaderboard
+        all_time_df = all_time_df.drop_duplicates(subset=['id', 'week'], keep='first')
+        
+        # Grab the top 50 performances
         top_50_global = all_time_df.head(50).to_dict('records')
         global_output = sanitize_nan({"meta": meta_block, "players": top_50_global})
         with open(global_path, "w") as f:
             json.dump(global_output, f, indent=2)
 
+    # Active IDs still used to protect downloaded headshots from deletion
     active_ids = {p['id'] for p in weekly_players} | {p['id'] for p in top_50_global}
     cleanup_unused_headshots(active_ids)
 
