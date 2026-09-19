@@ -209,25 +209,42 @@ summary:focus-visible {
 .card[data-tier="bronze"] { border-top-color: var(--tier-bronze); }
 .card[data-tier="silver"] { border-top-color: var(--tier-silver); }
 .card[data-tier="gold"] { border-top-color: var(--tier-gold); }
+/* 1. The Card Wrapper */
 .card[data-tier="diamond"] {
   position: relative;
-  border: none;           
-  padding-top: 0;       
-  overflow: hidden;        
+  
+  /* Destroy the physical borders so overflow: hidden doesn't clip our overlay */
+  border: none !important; 
+  
+  /* Replace the physical space of the old borders with padding.
+     Top: 3px, Right: 1px, Bottom: 1px, Left: 1px. 
+     This keeps the photo in the EXACT same alignment as the Gold cards! */
+  padding: 3px 1px 1px 1px !important; 
+  
+  overflow: hidden; 
   box-shadow: 
     var(--shadow), 
     var(--tier-diamond-b), 
     var(--tier-diamond-a);
 }
 
-/* 1. The Border */
+.card[data-tier="diamond"] .card-media,
+.card[data-tier="diamond"] .player-photo {
+  margin: 0;
+}
+
+/* 2. The Animated Border Overlay */
 .card[data-tier="diamond"]::before {
   content: "";
   position: absolute;
-  inset: 0;                  /* Snaps flush to the exact edge of the card */
+  inset: 0; /* Snaps flush to the outer edge of the card */
   border-radius: inherit;
-  padding: 3px;              /* Border thickness */
+  
+  /* BORDER THICKNESS: Increase this to 4px or 5px if you want it bolder */
+  padding: 4px; 
+  
   z-index: 2;
+  
   background: linear-gradient(
     90deg,
     var(--tier-diamond-a) 0%,
@@ -254,16 +271,16 @@ summary:focus-visible {
   pointer-events: none;
 }
 
-.card[data-tier="diamond"] .rank,
-.card[data-tier="diamond"] .team-logo {
-  position: relative;
-  z-index: 3;
-}
-
 .card-media {
   position: relative;
   aspect-ratio: 4 / 3;
   background: var(--surface-tint);
+}
+
+.card[data-tier="diamond"] .player-photo,
+.card[data-tier="diamond"] .card-media {
+  margin-top: 0; 
+  top: 0;
 }
 
 .headshot {

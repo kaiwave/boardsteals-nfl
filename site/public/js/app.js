@@ -119,7 +119,15 @@
     };
 
     node.querySelector(".player-name").textContent = player.name;
-    node.querySelector(".player-meta").textContent = player.position + ", " + player.team;
+
+    var metaEl = node.querySelector(".player-meta");
+    var baseMeta = player.position + ", " + player.team;
+
+    if (state.mode === "global" && player.week) {
+      metaEl.innerHTML = baseMeta + ' - <em>Week ' + player.week + '</em>';
+    } else {
+      metaEl.textContent = baseMeta;
+    }
 
     node.querySelector(".rating-value").textContent = fmt1(player.rating);
     node.querySelector(".tier-label").textContent = tier.label;
@@ -208,7 +216,7 @@
         count +
         " " +
         pos +
-        " by Boardsteals rating from the " +
+        " Boardsteals ratings from the " +
         (meta.last_completed_season || "") +
         " season.";
     }
