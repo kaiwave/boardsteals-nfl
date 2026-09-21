@@ -42,9 +42,6 @@ def download_headshot(player_id, url):
             return None
     return local_path
 
-import pandas as pd
-import numpy as np
-
 def calculate_ratings(df):
     VALID_POSITIONS = ["QB", "RB", "WR", "TE"]
     df = df[df["position"].isin(VALID_POSITIONS)].copy()
@@ -203,7 +200,7 @@ def main():
         if c in weekly_df.columns:
             weekly_df[c] = pd.to_numeric(weekly_df[c], errors='coerce').fillna(0)
       
-    latest_week = int(weekly_df['week'].max())
+    latest_week = 1 #int(weekly_df['week'].max())
     print(f"Processing data up to Week {latest_week} of {SEASON}...")
     
     current_week_df = weekly_df[weekly_df['week'] == latest_week].copy() 
