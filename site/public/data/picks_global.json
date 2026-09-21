@@ -887,46 +887,6 @@
       ]
     },
     {
-      "id": "00-0034383",
-      "name": "Dalton Schultz",
-      "team": "HOU",
-      "position": "TE",
-      "week": 1,
-      "rating": 67.9,
-      "headshot": "/assets/headshots/00-0034383.png",
-      "main_stats": {
-        "expected_points": 9.5,
-        "actual_points": 7.5,
-        "total_opportunity": 8
-      },
-      "detail_stats": [
-        {
-          "label": "Targets",
-          "value": 8
-        },
-        {
-          "label": "Carries",
-          "value": 0
-        },
-        {
-          "label": "Receptions",
-          "value": 4
-        },
-        {
-          "label": "Rec Yds",
-          "value": 35
-        },
-        {
-          "label": "Rush Yds",
-          "value": 0
-        },
-        {
-          "label": "WOPR",
-          "value": 0.38
-        }
-      ]
-    },
-    {
       "id": "00-0034348",
       "name": "Courtland Sutton",
       "team": "DEN",
@@ -963,6 +923,46 @@
         {
           "label": "WOPR",
           "value": 0.58
+        }
+      ]
+    },
+    {
+      "id": "00-0034383",
+      "name": "Dalton Schultz",
+      "team": "HOU",
+      "position": "TE",
+      "week": 1,
+      "rating": 67.9,
+      "headshot": "/assets/headshots/00-0034383.png",
+      "main_stats": {
+        "expected_points": 9.5,
+        "actual_points": 7.5,
+        "total_opportunity": 8
+      },
+      "detail_stats": [
+        {
+          "label": "Targets",
+          "value": 8
+        },
+        {
+          "label": "Carries",
+          "value": 0
+        },
+        {
+          "label": "Receptions",
+          "value": 4
+        },
+        {
+          "label": "Rec Yds",
+          "value": 35
+        },
+        {
+          "label": "Rush Yds",
+          "value": 0
+        },
+        {
+          "label": "WOPR",
+          "value": 0.38
         }
       ]
     },
@@ -1247,46 +1247,6 @@
       ]
     },
     {
-      "id": "00-0038996",
-      "name": "Tucker Kraft",
-      "team": "GB",
-      "position": "TE",
-      "week": 1,
-      "rating": 66.6,
-      "headshot": "/assets/headshots/00-0038996.png",
-      "main_stats": {
-        "expected_points": 11.1,
-        "actual_points": 9.5,
-        "total_opportunity": 6
-      },
-      "detail_stats": [
-        {
-          "label": "Targets",
-          "value": 6
-        },
-        {
-          "label": "Carries",
-          "value": 0
-        },
-        {
-          "label": "Receptions",
-          "value": 3
-        },
-        {
-          "label": "Rec Yds",
-          "value": 65
-        },
-        {
-          "label": "Rush Yds",
-          "value": 0
-        },
-        {
-          "label": "WOPR",
-          "value": 0.35
-        }
-      ]
-    },
-    {
       "id": "00-0036875",
       "name": "Rhamondre Stevenson",
       "team": "NE",
@@ -1323,6 +1283,46 @@
         {
           "label": "WOPR",
           "value": 0.27
+        }
+      ]
+    },
+    {
+      "id": "00-0038996",
+      "name": "Tucker Kraft",
+      "team": "GB",
+      "position": "TE",
+      "week": 1,
+      "rating": 66.6,
+      "headshot": "/assets/headshots/00-0038996.png",
+      "main_stats": {
+        "expected_points": 11.1,
+        "actual_points": 9.5,
+        "total_opportunity": 6
+      },
+      "detail_stats": [
+        {
+          "label": "Targets",
+          "value": 6
+        },
+        {
+          "label": "Carries",
+          "value": 0
+        },
+        {
+          "label": "Receptions",
+          "value": 3
+        },
+        {
+          "label": "Rec Yds",
+          "value": 65
+        },
+        {
+          "label": "Rush Yds",
+          "value": 0
+        },
+        {
+          "label": "WOPR",
+          "value": 0.35
         }
       ]
     },
