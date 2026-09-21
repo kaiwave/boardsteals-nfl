@@ -200,7 +200,7 @@ def main():
         if c in weekly_df.columns:
             weekly_df[c] = pd.to_numeric(weekly_df[c], errors='coerce').fillna(0)
       
-    latest_week = 1 #int(weekly_df['week'].max())
+    latest_week = int(weekly_df['week'].max())
     print(f"Processing data up to Week {latest_week} of {SEASON}...")
     
     current_week_df = weekly_df[weekly_df['week'] == latest_week].copy() 
