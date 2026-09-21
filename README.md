@@ -100,7 +100,9 @@ The backend script (`pipeline/boardsteals.py`) runs as a fully decoupled, zero-s
 
 - - `picks_global.json`: The all-time season leaderboard. Deduplicates multiple weeks for the same player, retaining only their highest-rated single-game breakout signal.
 
-- Garbage Collection Pruning: Automatically deletes cached .png files from disk if a player drops out of both the Weekly Top 50 and the Global Top 50, capping local disk usage to ~100 images maximum.
+- Garbage Collection Pruning: Automatically deletes cached .png files from the repo if a player drops out of both the Weekly Top 50 and the Global Top 50, capping local disk usage to ~100 images maximum.
+
+- Cloudflare CDN Cache: Optimise GitHub pages bandwidth by cacheing all logos and headshots to Cloudflare's CDN, purging once a week during the automated run.
 
 ## Data
 Since this will be run on a github pages instance, the pipeline exports static JSON files consumable by static site generators without runtime database calls. For example,
