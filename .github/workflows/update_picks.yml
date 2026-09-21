@@ -46,3 +46,15 @@ jobs:
             git commit -m "Automated data sync: Week $(date +'%Y-%m-%d')"
             git push
           fi
+
+      - name: Purge Cloudflare Cache
+        if: success()
+        env:
+          CF_ZONE_ID: ${{ secrets.CF_ZONE_ID }}
+          CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+        run: |
+          echo "Triggering Cloudflare cache purge..."
+          curl -s -X POST "https://api.cloudflare.com/client/v4/zones/${CF_ZONE_ID}/purge_cache" \
+            -H "Authorization: Bearer ${CF_API_TOKEN}" \
+            -H "Content-Type: application/json" \
+            --data '{"purge_everything":true}'
