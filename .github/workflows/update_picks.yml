@@ -1,9 +1,6 @@
 name: Weekly BoardSteals Pipeline
 
 on:
-  schedule:
-    # Runs at 7:34 UTC (2:34 AM EST / 5:34 PM AEST) every Tuesday to avoid top of hour queue
-    - cron: '34 7 * * 2'
   workflow_dispatch: # Allows me to manually trigger the run anytime via a button in GitHub
 
 permissions:
