@@ -807,46 +807,6 @@
       ]
     },
     {
-      "id": "00-0036971",
-      "name": "Trevor Lawrence",
-      "team": "JAX",
-      "position": "QB",
-      "week": 2,
-      "rating": 72.9,
-      "headshot": "/assets/headshots/00-0036971.png",
-      "main_stats": {
-        "expected_points": 22.6,
-        "actual_points": 8.2,
-        "total_opportunity": 31
-      },
-      "detail_stats": [
-        {
-          "label": "Pass Att",
-          "value": 29
-        },
-        {
-          "label": "Pass Yds",
-          "value": 189
-        },
-        {
-          "label": "Pass TDs",
-          "value": 0
-        },
-        {
-          "label": "Carries",
-          "value": 2
-        },
-        {
-          "label": "Rush Yds",
-          "value": 6
-        },
-        {
-          "label": "INTs",
-          "value": 0
-        }
-      ]
-    },
-    {
       "id": "00-0033293",
       "name": "Aaron Jones",
       "team": "MIN",
@@ -883,6 +843,46 @@
         {
           "label": "WOPR",
           "value": 0.0
+        }
+      ]
+    },
+    {
+      "id": "00-0036971",
+      "name": "Trevor Lawrence",
+      "team": "JAX",
+      "position": "QB",
+      "week": 2,
+      "rating": 72.9,
+      "headshot": "/assets/headshots/00-0036971.png",
+      "main_stats": {
+        "expected_points": 22.6,
+        "actual_points": 8.2,
+        "total_opportunity": 31
+      },
+      "detail_stats": [
+        {
+          "label": "Pass Att",
+          "value": 29
+        },
+        {
+          "label": "Pass Yds",
+          "value": 189
+        },
+        {
+          "label": "Pass TDs",
+          "value": 0
+        },
+        {
+          "label": "Carries",
+          "value": 2
+        },
+        {
+          "label": "Rush Yds",
+          "value": 6
+        },
+        {
+          "label": "INTs",
+          "value": 0
         }
       ]
     },
@@ -1367,46 +1367,6 @@
       ]
     },
     {
-      "id": "00-0033090",
-      "name": "Hunter Henry",
-      "team": "NE",
-      "position": "TE",
-      "week": 2,
-      "rating": 68.6,
-      "headshot": "/assets/headshots/00-0033090.png",
-      "main_stats": {
-        "expected_points": 9.7,
-        "actual_points": 7.0,
-        "total_opportunity": 5
-      },
-      "detail_stats": [
-        {
-          "label": "Targets",
-          "value": 5
-        },
-        {
-          "label": "Carries",
-          "value": 0
-        },
-        {
-          "label": "Receptions",
-          "value": 3
-        },
-        {
-          "label": "Rec Yds",
-          "value": 40
-        },
-        {
-          "label": "Rush Yds",
-          "value": 0
-        },
-        {
-          "label": "WOPR",
-          "value": 0.56
-        }
-      ]
-    },
-    {
       "id": "00-0036322",
       "name": "Justin Jefferson",
       "team": "MIN",
@@ -1443,6 +1403,46 @@
         {
           "label": "WOPR",
           "value": 0.88
+        }
+      ]
+    },
+    {
+      "id": "00-0033090",
+      "name": "Hunter Henry",
+      "team": "NE",
+      "position": "TE",
+      "week": 2,
+      "rating": 68.6,
+      "headshot": "/assets/headshots/00-0033090.png",
+      "main_stats": {
+        "expected_points": 9.7,
+        "actual_points": 7.0,
+        "total_opportunity": 5
+      },
+      "detail_stats": [
+        {
+          "label": "Targets",
+          "value": 5
+        },
+        {
+          "label": "Carries",
+          "value": 0
+        },
+        {
+          "label": "Receptions",
+          "value": 3
+        },
+        {
+          "label": "Rec Yds",
+          "value": 40
+        },
+        {
+          "label": "Rush Yds",
+          "value": 0
+        },
+        {
+          "label": "WOPR",
+          "value": 0.56
         }
       ]
     },
@@ -1927,46 +1927,6 @@
       ]
     },
     {
-      "id": "00-0041489",
-      "name": "Germie Bernard",
-      "team": "PIT",
-      "position": "WR",
-      "week": 2,
-      "rating": 63.9,
-      "headshot": "/assets/headshots/00-0041489.png",
-      "main_stats": {
-        "expected_points": 12.8,
-        "actual_points": 7.5,
-        "total_opportunity": 8
-      },
-      "detail_stats": [
-        {
-          "label": "Targets",
-          "value": 8
-        },
-        {
-          "label": "Carries",
-          "value": 0
-        },
-        {
-          "label": "Receptions",
-          "value": 4
-        },
-        {
-          "label": "Rec Yds",
-          "value": 35
-        },
-        {
-          "label": "Rush Yds",
-          "value": 0
-        },
-        {
-          "label": "WOPR",
-          "value": 0.55
-        }
-      ]
-    },
-    {
       "id": "00-0040583",
       "name": "Woody Marks",
       "team": "HOU",
@@ -2003,6 +1963,46 @@
         {
           "label": "WOPR",
           "value": 0.2
+        }
+      ]
+    },
+    {
+      "id": "00-0041489",
+      "name": "Germie Bernard",
+      "team": "PIT",
+      "position": "WR",
+      "week": 2,
+      "rating": 63.9,
+      "headshot": "/assets/headshots/00-0041489.png",
+      "main_stats": {
+        "expected_points": 12.8,
+        "actual_points": 7.5,
+        "total_opportunity": 8
+      },
+      "detail_stats": [
+        {
+          "label": "Targets",
+          "value": 8
+        },
+        {
+          "label": "Carries",
+          "value": 0
+        },
+        {
+          "label": "Receptions",
+          "value": 4
+        },
+        {
+          "label": "Rec Yds",
+          "value": 35
+        },
+        {
+          "label": "Rush Yds",
+          "value": 0
+        },
+        {
+          "label": "WOPR",
+          "value": 0.55
         }
       ]
     }
