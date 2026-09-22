@@ -29,7 +29,7 @@ $$\begin{aligned}
 
 - WOPR Multiplier ($4.0$ modifier): WOPR combines a player's raw target share with their team air yards share. Scaling this metric rewards true "alpha" receivers who dominate their team's offensive game plan, filtering out random depth players who caught a lucky deep pass.
 
-- End Zone Targets ($2.0$ multiplier): An end zone target already gets counted in Targets (+0.80) and receives a small contribution from Rec Air Yards
+- End Zone Targets ($2.0$ multiplier): An end zone target already gets counted in Targets (+0.80) and receives a small contribution from Rec Air Yards. This term adds a bonus as incompletes in the endzone are worth more than elsewhere. 
 
 ### Step 1: Disparity Calculation
 We evaluate whether a player's fantasy output underperformed or outpaced their real-world usage,
