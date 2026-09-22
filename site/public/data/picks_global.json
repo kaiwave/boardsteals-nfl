@@ -1327,46 +1327,6 @@
       ]
     },
     {
-      "id": "00-0033293",
-      "name": "Aaron Jones",
-      "team": "MIN",
-      "position": "RB",
-      "week": 2,
-      "rating": 72.9,
-      "headshot": "/assets/headshots/00-0033293.png",
-      "main_stats": {
-        "expected_points": 16.1,
-        "actual_points": 10.5,
-        "total_opportunity": 23
-      },
-      "detail_stats": [
-        {
-          "label": "Targets",
-          "value": 0
-        },
-        {
-          "label": "Carries",
-          "value": 23
-        },
-        {
-          "label": "Receptions",
-          "value": 0
-        },
-        {
-          "label": "Rec Yds",
-          "value": 0
-        },
-        {
-          "label": "Rush Yds",
-          "value": 105
-        },
-        {
-          "label": "WOPR",
-          "value": 0.0
-        }
-      ]
-    },
-    {
       "id": "00-0036971",
       "name": "Trevor Lawrence",
       "team": "JAX",
@@ -1403,6 +1363,46 @@
         {
           "label": "INTs",
           "value": 0
+        }
+      ]
+    },
+    {
+      "id": "00-0033293",
+      "name": "Aaron Jones",
+      "team": "MIN",
+      "position": "RB",
+      "week": 2,
+      "rating": 72.9,
+      "headshot": "/assets/headshots/00-0033293.png",
+      "main_stats": {
+        "expected_points": 16.1,
+        "actual_points": 10.5,
+        "total_opportunity": 23
+      },
+      "detail_stats": [
+        {
+          "label": "Targets",
+          "value": 0
+        },
+        {
+          "label": "Carries",
+          "value": 23
+        },
+        {
+          "label": "Receptions",
+          "value": 0
+        },
+        {
+          "label": "Rec Yds",
+          "value": 0
+        },
+        {
+          "label": "Rush Yds",
+          "value": 105
+        },
+        {
+          "label": "WOPR",
+          "value": 0.0
         }
       ]
     },
@@ -1527,46 +1527,6 @@
       ]
     },
     {
-      "id": "00-0040743",
-      "name": "Tyler Shough",
-      "team": "NO",
-      "position": "QB",
-      "week": 1,
-      "rating": 70.7,
-      "headshot": "/assets/headshots/00-0040743.png",
-      "main_stats": {
-        "expected_points": 40.8,
-        "actual_points": 29.2,
-        "total_opportunity": 60
-      },
-      "detail_stats": [
-        {
-          "label": "Pass Att",
-          "value": 56
-        },
-        {
-          "label": "Pass Yds",
-          "value": 410
-        },
-        {
-          "label": "Pass TDs",
-          "value": 3
-        },
-        {
-          "label": "Carries",
-          "value": 4
-        },
-        {
-          "label": "Rush Yds",
-          "value": 8
-        },
-        {
-          "label": "INTs",
-          "value": 0
-        }
-      ]
-    },
-    {
       "id": "00-0040237",
       "name": "Tez Johnson",
       "team": "TB",
@@ -1603,6 +1563,46 @@
         {
           "label": "WOPR",
           "value": 0.43
+        }
+      ]
+    },
+    {
+      "id": "00-0040743",
+      "name": "Tyler Shough",
+      "team": "NO",
+      "position": "QB",
+      "week": 1,
+      "rating": 70.7,
+      "headshot": "/assets/headshots/00-0040743.png",
+      "main_stats": {
+        "expected_points": 40.8,
+        "actual_points": 29.2,
+        "total_opportunity": 60
+      },
+      "detail_stats": [
+        {
+          "label": "Pass Att",
+          "value": 56
+        },
+        {
+          "label": "Pass Yds",
+          "value": 410
+        },
+        {
+          "label": "Pass TDs",
+          "value": 3
+        },
+        {
+          "label": "Carries",
+          "value": 4
+        },
+        {
+          "label": "Rush Yds",
+          "value": 8
+        },
+        {
+          "label": "INTs",
+          "value": 0
         }
       ]
     },
