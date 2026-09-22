@@ -51,7 +51,7 @@ def calculate_ratings(df):
         'attempts', 'passing_air_yards', 'passing_tds', 'passing_yards', 'interceptions',
         'carries', 'rushing_yards', 'rushing_tds',
         'targets', 'receiving_air_yards', 'receptions', 'receiving_yards', 'receiving_tds',
-        'wopr', 'fg_att', 'fg_made', 'pat_att', 'pat_made'
+        'wopr', 'fg_att', 'fg_made', 'pat_att', 'pat_made', 'endzone_targets' 
     ]
     for col in expected_cols:
         if col not in df.columns:
@@ -73,6 +73,7 @@ def calculate_ratings(df):
         (df['targets'] * 0.80) +              # Receiving volume 
         (df['receiving_air_yards'] * 0.06) +  # Receiving depth opportunity
         (df['wopr'] * 4.0) +                  # Market share weight (mostly WR/RB/TE)
+        (df['endzone_targets'] * 2.0) +       # End Zone Target Bonus
         (df['fg_att'] * 2.55) +               # Kicking (Assumes ~85% league avg FG completion)
         (df['pat_att'] * 0.95)                # Kicking (Assumes ~95% league avg PAT completion)
     )
@@ -185,7 +186,8 @@ def main():
 # 1. Fetch live data natively
     try:
         weekly_df = nfl.load_player_stats(seasons=[SEASON]).to_pandas()
-        if weekly_df.empty:
+        pbp_df = nfl.load_pbp(seasons=[SEASON]).to_pandas() # Fetch PBP for target depth
+        if weekly_df.empty or pbp_df.empty:
             raise ValueError("Data exists but is empty.")
     except Exception as e:
         print(f"!! Live data for {SEASON} not found yet (Week 1 stats pending).")
@@ -204,6 +206,19 @@ def main():
     print(f"Processing data up to Week {latest_week} of {SEASON}...")
     
     current_week_df = weekly_df[weekly_df['week'] == latest_week].copy() 
+    current_week_pbp = pbp_df[pbp_df['week'] == latest_week].copy()
+
+    current_week_pbp["is_endzone_target"] = (
+        (current_week_pbp["pass_attempt"] == 1) & 
+        (current_week_pbp["air_yards"] >= current_week_pbp["yardline_100"])
+    ).astype(int)
+    
+    # Group by receiver ID to sum the end zone targets
+    ez_targets = current_week_pbp.groupby("receiver_player_id")["is_endzone_target"].sum().reset_index()
+    ez_targets.columns = ["player_id", "endzone_targets"]
+    
+    # Merge the calculated end zone targets into the weekly summary stats
+    current_week_df = current_week_df.merge(ez_targets, on="player_id", how="left").fillna({"endzone_targets": 0})
 
     # Assign output directly back to df so the downstream variable names match
     df = calculate_ratings(current_week_df)

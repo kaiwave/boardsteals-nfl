@@ -15,7 +15,8 @@ $$\begin{aligned}
 & + (\text{Carries} \times 0.70) \\ 
 & + (\text{Targets} \times 0.80) \\
 & + (\text{Rec Air Yards} \times 0.06) \\  
-& + (\text{WOPR} \times 4.0) 
+& + (\text{WOPR} \times 4.0) \\
+& + (\text{End Zone Targets} \times 2.0) 
 \end{aligned}$$
 
 - Passing Volume & Depth ($0.42$ / $0.03$ pts): Accounts for quarterback pass attempts and downfield air-yard equity, modeling league-average completion rates and yardage expectation per dropback.
@@ -27,6 +28,8 @@ $$\begin{aligned}
 - Air Yards ($0.06$ pts): Evaluates depth of target (aDOT). A player seeing 5 targets 20 yards down the field generates significantly more expected fantasy points than a player seeing 5 passes behind the line of scrimmage. 
 
 - WOPR Multiplier ($4.0$ modifier): WOPR combines a player's raw target share with their team air yards share. Scaling this metric rewards true "alpha" receivers who dominate their team's offensive game plan, filtering out random depth players who caught a lucky deep pass.
+
+- End Zone Targets ($2.0$ multiplier): An end zone target already gets counted in Targets (+0.80) and receives a small contribution from Rec Air Yards
 
 ### Step 1: Disparity Calculation
 We evaluate whether a player's fantasy output underperformed or outpaced their real-world usage,
