@@ -76,7 +76,7 @@ $$\text{Rating} = \text{clip}\left(54 + (Z \times 14),\, 0,\, 100\right)$$
 The backend script (`pipeline/boardsteals.py`) runs as a fully decoupled, zero-server data generation pipeline.
 
 ```
-[nflverse / nflreadpy API]
+[nflreadpy API]
            │
            ▼
 [Data Extraction & Polars-to-Pandas Conversion]
@@ -85,20 +85,26 @@ The backend script (`pipeline/boardsteals.py`) runs as a fully decoupled, zero-s
 [Position & Noise Filtering (RB/WR/TE; Exp PPR >= 6.0)]
            │
            ▼
+[xP and Disparity Calculation]
+           │
+           ▼
 [Z-Score Calculation & Rating Engine (0-100)]
            │
            ▼
-[Headshot Download Manager] ────► [Local Asset Cache: site/public/assets/headshots/]
+[Headshot Download Manager] ────► [Asset Cache: site/public/assets/headshots/]
            │                       (Requests session, browser headers, 0.5s rate-limit)
            ▼
 [JSON Serialization] ───────────► [site/public/data/picks_weekly.json]
            │                  └─► [site/public/data/picks_global.json]
            ▼
 [Garbage Collection] ───────────► Prunes stale images not present in Weekly or Global Top 50
+           │
+           ▼
+[Site Deployment] ──────────────► Clear Cloudflare CDN Cache and deploy updated list and headshots
 ```
 
 ### Key Modules
-- Dynamic Season Ingestion: Uses nflreadpy to ingest official weekly NFL player box scores. The engine isolates the latest completed week (`week.max()`) and provides fallback recovery if an active week's dataset is pending ingestion.
+- Dynamic Season Ingestion: Uses nflreadpy to ingest official weekly NFL player box scores and pbp stats. The engine isolates the latest completed week (`week.max()`) and provides fallback recovery if an active week's dataset is pending ingestion.
   
 - Headshot Asset Cache: Downloads official player portraits directly to `site/public/assets/headshots/{player_id}.png`.
 
@@ -115,7 +121,7 @@ The backend script (`pipeline/boardsteals.py`) runs as a fully decoupled, zero-s
 - Cloudflare CDN Cache: Optimise GitHub pages bandwidth by cacheing all logos and headshots to Cloudflare's CDN, purging once a week during the automated run.
 
 ## Data
-Since this will be run on a github pages instance, the pipeline exports static JSON files consumable by static site generators without runtime database calls. For example,
+Since the live site is run on a github pages instance, the pipeline exports static JSON files consumable by static site generators without runtime database calls. For example,
 
 ```
 {
