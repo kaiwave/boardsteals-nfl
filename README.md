@@ -9,7 +9,14 @@ Traditional fantasy platforms rank players by raw fantasy points, which heavily 
 ### Step 1: Expected Points and Intra-Positional Disparity (Advanced Opportunity Baseline)
 Traditional metrics treat all targets equally, but we do not. Boardsteals evaluates opportunity using advanced tracking metrics like Air Yards and WOPR (Weighted Opportunity Rating) to weigh exactly *how* a player is being used in their specific roles, and compares players strictly against their positional peers.
 
-$$\begin{aligned} \text{Expected Points} &= (\text{Pass Att} \times 0.42) + (\text{Pass Air Yards} \times 0.03) \\ &+ (\text{Carries} \times 0.70) \\ &+ (\text{Targets} \times 0.80) + (\text{Rec Air Yards} \times 0.06) + (\text{WOPR} \times 4.0) \end{aligned}$$
+$$\begin{aligned} 
+\text{Expected Points} & = (\text{Pass Att} \times 0.42) \\
+& + (\text{Pass Air Yards} \times 0.03) \\ 
+& + (\text{Carries} \times 0.70) \\ 
+& + (\text{Targets} \times 0.80) \\
+& + (\text{Rec Air Yards} \times 0.06) \\  
+& + (\text{WOPR} \times 4.0) 
+\end{aligned}$$
 
 - Passing Volume & Depth ($0.42$ / $0.03$ pts): Accounts for quarterback pass attempts and downfield air-yard equity, modeling league-average completion rates and yardage expectation per dropback.
 
