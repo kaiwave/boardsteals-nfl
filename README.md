@@ -195,4 +195,4 @@ The script will fetch the latest data, normalise scores, download any missing he
 Enjoy your fantasy pickings!
 
 ---
-[MIT License](LICENCE)
+[MIT License](LICENSE)
