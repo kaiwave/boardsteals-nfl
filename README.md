@@ -3,6 +3,8 @@ An automated NFL fantasy pipeline that identifies buy-low candidates, waiver wir
 
 Live site: [boardsteals.kaiwave.dev](https://boardsteals.kaiwave.dev)
 
+--- 
+
 ## The Model
 Traditional fantasy platforms rank players by raw fantasy points, which heavily reflect trailing results, touchdown luck, and splash plays. Boardsteals inverts this by prioritising underlying offensive opportunity.
 
@@ -72,6 +74,8 @@ $$\text{Rating} = \text{clip}\left(54 + (Z \times 14),\, 0,\, 100\right)$$
 
 - Rating $98+$ - Diamond: Projected skill underpaced actual points by multiple standard deviations. Top 0.1% generational outliers. 
 
+---
+
 ## Architecture and Pipeline
 The backend script (`pipeline/boardsteals.py`) runs as a fully decoupled, zero-server data generation pipeline.
 
@@ -103,6 +107,8 @@ The backend script (`pipeline/boardsteals.py`) runs as a fully decoupled, zero-s
 [Site Deployment] ──────────────► Clear Cloudflare CDN Cache and deploy updated list and headshots
 ```
 
+---
+
 ### Key Modules
 - Dynamic Season Ingestion: Uses nflreadpy to ingest official weekly NFL player box scores and pbp stats. The engine isolates the latest completed week (`week.max()`) and provides fallback recovery if an active week's dataset is pending ingestion.
   
@@ -119,6 +125,8 @@ The backend script (`pipeline/boardsteals.py`) runs as a fully decoupled, zero-s
 - Garbage Collection Pruning: Automatically deletes cached .png files from the repo if a player drops out of both the Weekly Top 50 and the Global Top 50, capping local disk usage to ~100 images maximum.
 
 - Cloudflare CDN Cache: Optimise GitHub pages bandwidth by cacheing all logos and headshots to Cloudflare's CDN, purging once a week during the automated run.
+
+---
 
 ## Data
 Since the live site is run on a github pages instance, the pipeline exports static JSON files consumable by static site generators without runtime database calls. For example,
@@ -158,6 +166,8 @@ Since the live site is run on a github pages instance, the pipeline exports stat
 }
 ```
 
+---
+
 ## Setup
 The python scripts can be found in `pipeline`, and you can tweak the parameters and equations to suit your team's needs. 
 
@@ -183,3 +193,6 @@ python boardsteals.py
 The script will fetch the latest data, normalise scores, download any missing headshots to `site/public/assets/headshots/`, and write the formatted data to `site/public/data/`.
 
 Enjoy your fantasy pickings!
+
+---
+[MIT License](LICENCE)
