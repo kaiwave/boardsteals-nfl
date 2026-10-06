@@ -1287,46 +1287,6 @@
       ]
     },
     {
-      "id": "00-0031503",
-      "name": "Jameis Winston",
-      "team": "NYG",
-      "position": "QB",
-      "week": 2,
-      "rating": 77.8,
-      "headshot": "/assets/headshots/00-0031503.png",
-      "main_stats": {
-        "expected_points": 21.6,
-        "actual_points": 4.5,
-        "total_opportunity": 29
-      },
-      "detail_stats": [
-        {
-          "label": "Pass Att",
-          "value": 27
-        },
-        {
-          "label": "Pass Yds",
-          "value": 111
-        },
-        {
-          "label": "Pass TDs",
-          "value": 0
-        },
-        {
-          "label": "Carries",
-          "value": 2
-        },
-        {
-          "label": "Rush Yds",
-          "value": 1
-        },
-        {
-          "label": "INTs",
-          "value": 0
-        }
-      ]
-    },
-    {
       "id": "00-0041525",
       "name": "Chris Bell",
       "team": "MIA",
@@ -1363,6 +1323,46 @@
         {
           "label": "WOPR",
           "value": 0.58
+        }
+      ]
+    },
+    {
+      "id": "00-0031503",
+      "name": "Jameis Winston",
+      "team": "NYG",
+      "position": "QB",
+      "week": 2,
+      "rating": 77.8,
+      "headshot": "/assets/headshots/00-0031503.png",
+      "main_stats": {
+        "expected_points": 21.6,
+        "actual_points": 4.5,
+        "total_opportunity": 29
+      },
+      "detail_stats": [
+        {
+          "label": "Pass Att",
+          "value": 27
+        },
+        {
+          "label": "Pass Yds",
+          "value": 111
+        },
+        {
+          "label": "Pass TDs",
+          "value": 0
+        },
+        {
+          "label": "Carries",
+          "value": 2
+        },
+        {
+          "label": "Rush Yds",
+          "value": 1
+        },
+        {
+          "label": "INTs",
+          "value": 0
         }
       ]
     },
