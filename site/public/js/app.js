@@ -22,7 +22,7 @@
   };
 
   function tierFor(rating) {
-    if (rating >= 98) return { key: "diamond", label: "Diamond" };
+    if (rating >= 99) return { key: "diamond", label: "Diamond" };
     if (rating >= 81) return { key: "gold", label: "Gold" };
     if (rating >= 71) return { key: "silver", label: "Silver" };
     if (rating >= 56) return { key: "bronze", label: "Bronze" };
@@ -134,8 +134,7 @@
     var main = player.main_stats || {};
     node.querySelector(".stat-expected").textContent = fmt1(main.expected_points);
     node.querySelector(".stat-actual").textContent = fmt1(main.actual_points);
-    node.querySelector(".stat-opp").textContent =
-      typeof main.total_opportunity === "number" ? main.total_opportunity : "—";
+    node.querySelector(".stat-season").textContent = fmt1(main.season_avg);
 
     var detailList = node.querySelector(".detail-stats");
     detailList.innerHTML = ""; // Ensure it's clean

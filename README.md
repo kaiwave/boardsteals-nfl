@@ -33,18 +33,24 @@ $$\begin{aligned}
 
 - End Zone Targets ($2.0$ multiplier): An end zone target already gets counted in Targets (+0.80) and receives a small contribution from Rec Air Yards. This term adds a bonus as incompletes in the endzone are worth more than elsewhere. 
 
-### Step 2: Disparity Calculation
-We evaluate whether a player's fantasy output underperformed or outpaced their real-world usage,
+### Step 2: Buy-Low Score
+A single game is mostly noise, so we project from a player's last 3 games and compare that projection with what they have been scoring all season,
 
-$$\text{Disparity} = \text{Expected Points} - \text{Actual Fantasy Points}$$
+$$\text{Projection} = 0.6 \times \overline{\text{Expected Points}}_{\text{last 3}} + 0.4 \times \overline{\text{Actual Points}}_{\text{last 3}}$$
 
-$$\text{Z-Score}_{\text{Pos}} = \frac{\text{Disparity} - \mu_{\text{position}}}{\sigma_{\text{position}}}$$
+$$\text{Buy-Low Score} = \text{Projection} - \overline{\text{Actual Points}}_{\text{season so far}}$$
+
+$$\text{Z-Score}_{\text{Pos}} = \frac{\text{Buy-Low Score} - \mu_{\text{position}}}{\sigma_{\text{position}}}$$
 
 Which gives us key outcomes:
 
-- High Positive Disparity: High-volume involvement that was stalled by bad goal-line variance, tipped passes, or defensive stops. These players are prime candidates for breakout games (underrated).
+- High Positive Score: Recent usage says the player should be scoring more than they have been. Bad goal-line luck, tipped passes or a growing role are hiding behind the box score (underrated).
 
-- Negative Disparity: Low-volume involvement inflated by unsustainable 70-yard breakaways or fluke multi-touchdown box scores (overrated).
+- Negative Score: Recent output is running ahead of usage, often from unsustainable 70-yard breakaways or fluke multi-touchdown games (overrated).
+
+- Why the blend: Comparing usage against output alone ignores how much a player is used, so a backup with one quiet game could look like a star. Keeping 40% actual output in the projection keeps volume in the score. The 0.6 / 0.4 blend and 3-game window were fitted on 2023–24 games, and tested on 2025–26: the rating correlates with next week's points above the player's own average (r ≈ +0.09, p < 0.001), where the previous single-week model showed no relationship.
+
+- Only past games are used, so a rating for any week is exactly what was known at the time.
 
 - Intra-Positional Grouping: Because quarterback volume naturally outpaces flex positions, Z-scores are computed strictly within each position group ($\text{QB}$, $\text{RB}$, $\text{WR}$, $\text{TE}$). A top-tier rating reflects an elite usage-to-output gap relative to positional peers.
 
@@ -56,23 +62,42 @@ $$\text{Opportunities} \ge 2 \quad \text{or} \quad \text{Expected PPR} \ge 3.0$$
 where Opportunities = pass attempts + carries + targets.
 
 ### Step 4: Normalisation (The Boardsteals rating)
-To translate disparity into an intuitive rating where the league median sits in the 50–60 range, disparity values are normalised using the positional Z-scores from Step 2 across the active weekly sample,
+To translate the score into an intuitive rating where the league median sits in the 50–60 range, buy-low scores are normalised using the positional Z-scores from Step 2, computed separately for each week,
 
-$$Z = \frac{\text{Disparity} - \mu_{\text{position}}}{\sigma_{\text{position}}}$$
+$$Z = \frac{\text{Buy-Low Score} - \mu_{\text{position}}}{\sigma_{\text{position}}}$$
 
 And given a Boardsteals rating from 1-99.9 accordingly.
 
-$$\text{Rating} = \text{clip}\left(54 + (Z \times 14),\, 1,\, 99.9\right)$$
+$$\text{Rating} = \text{clip}\left(54 + (Z \times 13),\, 1,\, 99.9\right)$$
+
+The tier shares below were measured on 2023–26 player-weeks.
 
 - Rating $0-55$ - Iron: Up to just above median expectation ($Z = 0$). Output closely matched volume.
   
-- Rating $56–70$ - Bronze: Some positive disparity. Between the top 47-13% most underrated players.
+- Rating $56–70$ - Bronze: Some positive buy-low score. Between the top 44-8.5% most underrated players.
   
-- Rating $71-80$ - Silver: High positive disparity. Between the top 13-3% most underrated players
+- Rating $71-80$ - Silver: High positive buy-low score. Between the top 8.5-2% most underrated players.
 
-- Rating $81-97$ - Gold: Extremely high potential players, top 3% most underrated players in the league.
+- Rating $81-98$ - Gold: Extremely high potential players, top 2% most underrated players in the league.
 
-- Rating $98+$ - Diamond: Projected skill underpaced actual points by multiple standard deviations. Top 0.1% generational outliers. 
+- Rating $99+$ - Diamond: Projected skill underpaced actual points by multiple standard deviations. Top 0.1% generational outliers, roughly one every 3–4 weeks. 
+
+---
+
+## Model Improvements (v2.0)
+- **3-game buy-low model:** The rating used to compare expected and actual points from a single game. Backtested on 2025–26 games, it showed no link to next week's results (r = −0.02). The new model projects from the last 3 games and compares against the player's season average. Its settings were fitted on 2023–24, and on the unseen 2025–26 seasons it is a modest but statistically significant predictor (r = +0.09, p < 0.0001). Each week's top 50 went on to beat their own average by about 1.0 point, versus 0.17 before.
+
+- **Tested and rejected:** Adding red-zone usage terms and shrinking low-volume players' scores were both backtested, and neither improved predictions.
+
+- **Interception fix:** QBs now lose 2 points per interception. The stats feed names the column `passing_interceptions`, so they were previously never subtracted.
+
+- **Rating scale:** The scale is now 13 rating points per standard deviation, and Diamond starts at 99. Diamond appears roughly once every 3–4 weeks.
+
+- **Cards:** Cards show the numbers the rating is built from (last-3 expected and actual points, and the season average), with that week's box score in the dropdown.
+
+- **Season board:** The global board is rebuilt from the whole season on every run, so past weeks always reflect the current model.
+
+- **Headshots:** Headshots load from the NFL's image CDN at card size instead of being stored in the repo.
 
 ---
 
@@ -89,7 +114,7 @@ The backend script (`pipeline/boardsteals.py`) runs as a fully decoupled, zero-s
 [Position Filtering (QB/RB/WR/TE)]
            │
            ▼
-[xP and Disparity Calculation]
+[xP, 3-Game Projection & Buy-Low Score (every week of the season)]
            │
            ▼
 [Noise Filtering (Opportunities >= 2 or Exp PPR >= 3.0)]
@@ -115,7 +140,7 @@ The backend script (`pipeline/boardsteals.py`) runs as a fully decoupled, zero-s
 
 - - `picks_weekly.json`: The Top 50 rated players from the current week's games.
 
-- - `picks_global.json`: The season leaderboard: the Top 50 single-week ratings so far. The same player can appear once per week. It is cleared when Week 1 of a new season is processed.
+- - `picks_global.json`: The season leaderboard: the Top 50 single-week ratings so far. The same player can appear once per week. It is rebuilt from the whole season on every run, so it always reflects the current model and starts fresh each season.
 
 - Cloudflare CDN Cache: Optimise GitHub pages bandwidth by caching the site and team logos on Cloudflare's CDN, purging once a week during the automated run.
 
@@ -144,7 +169,7 @@ Since the live site is run on a github pages instance, the pipeline exports stat
       "main_stats": {
         "expected_points": 9.0,
         "actual_points": 4.6,
-        "total_opportunity": 5
+        "season_avg": 5.1
       },
       "detail_stats": [
         { "label": "Targets", "value": 5 },
@@ -184,6 +209,8 @@ python boardsteals.py
 ```
 
 The script will fetch the latest data, normalise scores, and write the formatted data to `site/public/data/`.
+
+To check the rating logic without fetching any data, run `python test_ratings.py`.
 
 Enjoy your fantasy pickings!
 
