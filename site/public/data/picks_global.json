@@ -13,7 +13,7 @@
       "position": "WR",
       "week": 1,
       "rating": 98.4,
-      "headshot": "/assets/headshots/00-0035640.png",
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/kxql4sjfelubhxawu2zh",
       "main_stats": {
         "expected_points": 25.3,
         "actual_points": 8.0,
@@ -53,7 +53,7 @@
       "position": "RB",
       "week": 2,
       "rating": 96.5,
-      "headshot": "/assets/headshots/00-0040122.png",
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/syspis1mntov9kgspb7r",
       "main_stats": {
         "expected_points": 21.9,
         "actual_points": 10.3,
@@ -93,7 +93,7 @@
       "position": "WR",
       "week": 2,
       "rating": 94.8,
-      "headshot": "/assets/headshots/00-0035659.png",
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/tmfl2zruajmkrtcg4zxp",
       "main_stats": {
         "expected_points": 25.2,
         "actual_points": 7.0,
@@ -133,7 +133,7 @@
       "position": "WR",
       "week": 6,
       "rating": 93.2,
-      "headshot": "/assets/headshots/00-0036358.png",
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/mbblzwtynxr15ovzkevi",
       "main_stats": {
         "expected_points": 32.7,
         "actual_points": 16.0,
@@ -173,7 +173,7 @@
       "position": "QB",
       "week": 5,
       "rating": 90.9,
-      "headshot": "/assets/headshots/00-0035710.png",
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/yslz8jcyiekbmm7iguxm",
       "main_stats": {
         "expected_points": 35.8,
         "actual_points": 11.1,
@@ -213,7 +213,7 @@
       "position": "QB",
       "week": 4,
       "rating": 90.8,
-      "headshot": "/assets/headshots/00-0026498.png",
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/jwpkjfrkzufdyh8u1mg7",
       "main_stats": {
         "expected_points": 37.1,
         "actual_points": 13.7,
@@ -253,7 +253,7 @@
       "position": "RB",
       "week": 2,
       "rating": 89.9,
-      "headshot": "/assets/headshots/00-0039040.png",
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/xk1xwio0bryfxo1ylweu",
       "main_stats": {
         "expected_points": 22.2,
         "actual_points": 12.3,
@@ -293,7 +293,7 @@
       "position": "WR",
       "week": 2,
       "rating": 89.1,
-      "headshot": "/assets/headshots/00-0041048.png",
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/mmf6qmo6a2evw4feupcm",
       "main_stats": {
         "expected_points": 20.5,
         "actual_points": 4.7,
@@ -333,7 +333,7 @@
       "position": "WR",
       "week": 5,
       "rating": 88.7,
-      "headshot": "/assets/headshots/00-0036309.png",
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/eaejonwaflt9drrs9ika",
       "main_stats": {
         "expected_points": 17.9,
         "actual_points": 3.4,
@@ -373,7 +373,7 @@
       "position": "WR",
       "week": 3,
       "rating": 88.6,
-      "headshot": "/assets/headshots/00-0039410.png",
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/tqwq3cgpqu7j9hzoyicx",
       "main_stats": {
         "expected_points": 17.7,
         "actual_points": 4.2,
@@ -413,7 +413,7 @@
       "position": "QB",
       "week": 2,
       "rating": 88.2,
-      "headshot": "/assets/headshots/00-0039163.png",
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/tt4zrtxlhifaljhj0rn7",
       "main_stats": {
         "expected_points": 39.4,
         "actual_points": 17.0,
@@ -453,7 +453,7 @@
       "position": "WR",
       "week": 5,
       "rating": 88.1,
-      "headshot": "/assets/headshots/00-0032951.png",
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/zptuxjil3y3ajnrw1las",
       "main_stats": {
         "expected_points": 19.7,
         "actual_points": 5.4,
@@ -493,7 +493,7 @@
       "position": "TE",
       "week": 5,
       "rating": 87.6,
-      "headshot": "/assets/headshots/00-0035689.png",
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/ihlvyh95aub97tfklmr1",
       "main_stats": {
         "expected_points": 10.1,
         "actual_points": 1.6,
@@ -533,7 +533,7 @@
       "position": "WR",
       "week": 4,
       "rating": 87.3,
-      "headshot": "/assets/headshots/00-0031381.png",
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/tdzluk4xau3arxqk9zsl",
       "main_stats": {
         "expected_points": 19.4,
         "actual_points": 7.2,
@@ -573,7 +573,7 @@
       "position": "WR",
       "week": 5,
       "rating": 86.3,
-      "headshot": "/assets/headshots/00-0038640.png",
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/xeg0tvg6klf0afgddkq6",
       "main_stats": {
         "expected_points": 17.2,
         "actual_points": 3.6,
@@ -613,7 +613,7 @@
       "position": "QB",
       "week": 1,
       "rating": 85.9,
-      "headshot": "/assets/headshots/00-0023459.png",
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/dypvakakxhccxs67tb0y",
       "main_stats": {
         "expected_points": 31.1,
         "actual_points": 12.5,
@@ -653,7 +653,7 @@
       "position": "TE",
       "week": 6,
       "rating": 85.8,
-      "headshot": "/assets/headshots/00-0038394.png",
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/eti1fo2pwyhiihzpxiqo",
       "main_stats": {
         "expected_points": 13.5,
         "actual_points": 4.0,
@@ -693,7 +693,7 @@
       "position": "WR",
       "week": 4,
       "rating": 85.8,
-      "headshot": "/assets/headshots/00-0034348.png",
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/kqwmqcrlrwmqcvfuguhs",
       "main_stats": {
         "expected_points": 13.1,
         "actual_points": 1.4,
@@ -733,7 +733,7 @@
       "position": "WR",
       "week": 5,
       "rating": 85.3,
-      "headshot": "/assets/headshots/00-0039337.png",
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/w3edoyyuomqlovvp9ixc",
       "main_stats": {
         "expected_points": 42.4,
         "actual_points": 29.1,
@@ -773,7 +773,7 @@
       "position": "TE",
       "week": 2,
       "rating": 85.2,
-      "headshot": "/assets/headshots/00-0039847.png",
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/fv2jbzlocr1o3ahkru43",
       "main_stats": {
         "expected_points": 7.7,
         "actual_points": 0.0,
@@ -813,7 +813,7 @@
       "position": "WR",
       "week": 5,
       "rating": 84.9,
-      "headshot": "/assets/headshots/00-0041438.png",
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/xlva68qwhtm0n36pwyad",
       "main_stats": {
         "expected_points": 14.7,
         "actual_points": 1.6,
@@ -853,7 +853,7 @@
       "position": "WR",
       "week": 6,
       "rating": 84.4,
-      "headshot": "/assets/headshots/00-0037238.png",
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/y5mkxrljhsglpwl3ky94",
       "main_stats": {
         "expected_points": 23.6,
         "actual_points": 10.2,
@@ -893,7 +893,7 @@
       "position": "QB",
       "week": 6,
       "rating": 84.2,
-      "headshot": "/assets/headshots/00-0034869.png",
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/fyay8vruj0cqmhopufzk",
       "main_stats": {
         "expected_points": 35.5,
         "actual_points": 13.0,
@@ -933,7 +933,7 @@
       "position": "WR",
       "week": 6,
       "rating": 84.1,
-      "headshot": "/assets/headshots/00-0035676.png",
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/qfhvjyssf0lwsh0kienp",
       "main_stats": {
         "expected_points": 19.0,
         "actual_points": 5.7,
@@ -973,7 +973,7 @@
       "position": "WR",
       "week": 5,
       "rating": 83.2,
-      "headshot": "/assets/headshots/00-0039919.png",
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/kqxetflykjn9clz04k68",
       "main_stats": {
         "expected_points": 19.5,
         "actual_points": 7.0,
@@ -1013,7 +1013,7 @@
       "position": "QB",
       "week": 3,
       "rating": 82.7,
-      "headshot": "/assets/headshots/00-0038128.png",
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/earybrx24kkhnk4innsw",
       "main_stats": {
         "expected_points": 33.2,
         "actual_points": 14.0,
@@ -1053,7 +1053,7 @@
       "position": "QB",
       "week": 4,
       "rating": 82.4,
-      "headshot": "/assets/headshots/00-0040743.png",
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/vu51ogqu4i3abbwpj2fl",
       "main_stats": {
         "expected_points": 35.8,
         "actual_points": 15.9,
@@ -1093,7 +1093,7 @@
       "position": "TE",
       "week": 1,
       "rating": 82.3,
-      "headshot": "/assets/headshots/00-0040126.png",
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/tdeidev1typrqjijtb3a",
       "main_stats": {
         "expected_points": 6.1,
         "actual_points": 0.0,
@@ -1133,7 +1133,7 @@
       "position": "WR",
       "week": 3,
       "rating": 82.2,
-      "headshot": "/assets/headshots/00-0038621.png",
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/m3fpxawsccoqsajtqlec",
       "main_stats": {
         "expected_points": 16.0,
         "actual_points": 4.8,
@@ -1173,7 +1173,7 @@
       "position": "WR",
       "week": 2,
       "rating": 82.2,
-      "headshot": "/assets/headshots/00-0038618.png",
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/ozdgoi4ync5i38s1fpb7",
       "main_stats": {
         "expected_points": 19.7,
         "actual_points": 6.7,
@@ -1213,7 +1213,7 @@
       "position": "WR",
       "week": 4,
       "rating": 82.0,
-      "headshot": "/assets/headshots/00-0036988.png",
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/woswdfrtxnsfgzsjvsxx",
       "main_stats": {
         "expected_points": 11.7,
         "actual_points": 1.3,
@@ -1253,7 +1253,7 @@
       "position": "TE",
       "week": 4,
       "rating": 81.8,
-      "headshot": "/assets/headshots/00-0037744.png",
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/psasp10nn5pcvkli9kil",
       "main_stats": {
         "expected_points": 16.7,
         "actual_points": 10.1,
@@ -1293,7 +1293,7 @@
       "position": "WR",
       "week": 6,
       "rating": 81.5,
-      "headshot": "/assets/headshots/00-0038606.png",
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/yn0hc5xrz5nqeccg8two",
       "main_stats": {
         "expected_points": 22.7,
         "actual_points": 10.4,
@@ -1333,7 +1333,7 @@
       "position": "WR",
       "week": 4,
       "rating": 81.0,
-      "headshot": "/assets/headshots/00-0041067.png",
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/sst98duh0vwxfdaezkvc",
       "main_stats": {
         "expected_points": 11.8,
         "actual_points": 1.7,
@@ -1373,7 +1373,7 @@
       "position": "WR",
       "week": 1,
       "rating": 80.6,
-      "headshot": "/assets/headshots/00-0039739.png",
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/xuhjoscmhmmsutbvfmrs",
       "main_stats": {
         "expected_points": 16.2,
         "actual_points": 5.6,
@@ -1413,7 +1413,7 @@
       "position": "RB",
       "week": 6,
       "rating": 80.5,
-      "headshot": "/assets/headshots/00-0039361.png",
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/vkc00rvnix3f2b96vkwo",
       "main_stats": {
         "expected_points": 15.5,
         "actual_points": 6.9,
@@ -1453,7 +1453,7 @@
       "position": "WR",
       "week": 6,
       "rating": 80.4,
-      "headshot": "/assets/headshots/00-0038124.png",
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/tumeg4d32sirkab2xzu5",
       "main_stats": {
         "expected_points": 21.3,
         "actual_points": 9.4,
@@ -1493,7 +1493,7 @@
       "position": "RB",
       "week": 6,
       "rating": 80.2,
-      "headshot": "/assets/headshots/00-0037263.png",
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/sp9lhhmpv4qy3xy2msxd",
       "main_stats": {
         "expected_points": 14.3,
         "actual_points": 5.8,
@@ -1533,7 +1533,7 @@
       "position": "TE",
       "week": 4,
       "rating": 80.0,
-      "headshot": "/assets/headshots/00-0037838.png",
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/b1pahldt9ixp9lssxi2d",
       "main_stats": {
         "expected_points": 19.7,
         "actual_points": 13.6,
@@ -1573,7 +1573,7 @@
       "position": "QB",
       "week": 3,
       "rating": 79.8,
-      "headshot": "/assets/headshots/00-0039150.png",
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/vcvhmxvxw2a3armle0af",
       "main_stats": {
         "expected_points": 33.5,
         "actual_points": 15.6,
@@ -1613,7 +1613,7 @@
       "position": "WR",
       "week": 2,
       "rating": 79.8,
-      "headshot": "/assets/headshots/00-0039890.png",
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/hwwacoa3pqapd7pgahfx",
       "main_stats": {
         "expected_points": 24.3,
         "actual_points": 12.3,
@@ -1653,7 +1653,7 @@
       "position": "RB",
       "week": 2,
       "rating": 79.6,
-      "headshot": "/assets/headshots/00-0041512.png",
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/toy90i08oumgbdlvctja",
       "main_stats": {
         "expected_points": 14.3,
         "actual_points": 7.0,
@@ -1693,7 +1693,7 @@
       "position": "RB",
       "week": 3,
       "rating": 79.6,
-      "headshot": "/assets/headshots/00-0040242.png",
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/qew4qhlj4yuf50voko61",
       "main_stats": {
         "expected_points": 14.7,
         "actual_points": 5.3,
@@ -1733,7 +1733,7 @@
       "position": "WR",
       "week": 4,
       "rating": 79.5,
-      "headshot": "/assets/headshots/00-0038563.png",
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/hazzk3hrcequzosdgzgv",
       "main_stats": {
         "expected_points": 17.9,
         "actual_points": 8.4,
@@ -1773,7 +1773,7 @@
       "position": "RB",
       "week": 5,
       "rating": 79.5,
-      "headshot": "/assets/headshots/00-0037258.png",
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/oai3defivyfyofxxh4ux",
       "main_stats": {
         "expected_points": 12.1,
         "actual_points": 3.2,
@@ -1813,7 +1813,7 @@
       "position": "QB",
       "week": 6,
       "rating": 79.4,
-      "headshot": "/assets/headshots/00-0033077.png",
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/yvscmqq1qki8zfsemmcd",
       "main_stats": {
         "expected_points": 35.3,
         "actual_points": 15.0,
@@ -1853,7 +1853,7 @@
       "position": "WR",
       "week": 3,
       "rating": 78.7,
-      "headshot": "/assets/headshots/00-0038997.png",
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/zniq20yhnxjqajqcgfc5",
       "main_stats": {
         "expected_points": 22.7,
         "actual_points": 12.7,
@@ -1893,7 +1893,7 @@
       "position": "TE",
       "week": 4,
       "rating": 78.5,
-      "headshot": "/assets/headshots/00-0041032.png",
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/mnswulwto4yqkgmugoiq",
       "main_stats": {
         "expected_points": 5.8,
         "actual_points": 0.0,
@@ -1933,7 +1933,7 @@
       "position": "WR",
       "week": 4,
       "rating": 78.3,
-      "headshot": "/assets/headshots/00-0041040.png",
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/noywrsgaqoqlv64c12yw",
       "main_stats": {
         "expected_points": 14.2,
         "actual_points": 5.1,
@@ -1973,7 +1973,7 @@
       "position": "RB",
       "week": 3,
       "rating": 78.3,
-      "headshot": "/assets/headshots/00-0036223.png",
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/d7pmatz5wylijbsplnkg",
       "main_stats": {
         "expected_points": 18.1,
         "actual_points": 9.2,

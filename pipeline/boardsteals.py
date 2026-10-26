@@ -1,15 +1,15 @@
 import os
 import json
 import math
-import requests
 import pandas as pd
-import numpy as np
 import nflreadpy as nfl
 from datetime import datetime
 
 # --- CONFIGURATION ---
 DATA_DIR = "../site/public/data"
-ASSETS_DIR = "../site/public/assets/headshots"
+
+# Only the play-by-play columns needed for end zone targets (the full table has ~370)
+PBP_COLS = ["week", "pass_attempt", "air_yards", "yardline_100", "receiver_player_id"]
 
 # Dynamic Season Setup
 SEASON = datetime.now().year if datetime.now().month > 6 else datetime.now().year - 1
@@ -17,30 +17,9 @@ IS_SEASON_ACTIVE = datetime.now().month in [9, 10, 11, 12, 1]
 
 def setup_directories():
     os.makedirs(DATA_DIR, exist_ok=True)
-    os.makedirs(ASSETS_DIR, exist_ok=True)
 
-def download_headshot(player_id, url):
-    if not isinstance(url, str) or not url.startswith("http"):
-        return None
-    
-    file_path = f"{ASSETS_DIR}/{player_id}.png"
-    local_path = f"/assets/headshots/{player_id}.png"
-    
-    if not os.path.exists(file_path):
-        try:
-            headers = {
-                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
-            }
-            r = requests.get(url, headers=headers, timeout=5)
-            if r.status_code == 200:
-                with open(file_path, 'wb') as f:
-                    f.write(r.content)
-            else:
-                return None
-        except Exception as e:
-            print(f"Failed to download {player_id}: {e}")
-            return None
-    return local_path
+def load_pbp(season):
+    return nfl.load_pbp(seasons=[season]).select(PBP_COLS).to_pandas()
 
 def calculate_ratings(df):
     VALID_POSITIONS = ["QB", "RB", "WR", "TE"]
@@ -51,7 +30,7 @@ def calculate_ratings(df):
         'attempts', 'passing_air_yards', 'passing_tds', 'passing_yards', 'interceptions',
         'carries', 'rushing_yards', 'rushing_tds',
         'targets', 'receiving_air_yards', 'receptions', 'receiving_yards', 'receiving_tds',
-        'wopr', 'fg_att', 'fg_made', 'pat_att', 'pat_made', 'endzone_targets' 
+        'wopr', 'endzone_targets'
     ]
     for col in expected_cols:
         if col not in df.columns:
@@ -61,8 +40,7 @@ def calculate_ratings(df):
     df['actual_points'] = (
         (df['passing_yards'] * 0.04) + (df['passing_tds'] * 4.0) - (df['interceptions'] * 2.0) +
         (df['rushing_yards'] * 0.1) + (df['rushing_tds'] * 6.0) +
-        (df['receptions'] * 1.0) + (df['receiving_yards'] * 0.1) + (df['receiving_tds'] * 6.0) +
-        (df['fg_made'] * 3.0) + (df['pat_made'] * 1.0)
+        (df['receptions'] * 1.0) + (df['receiving_yards'] * 0.1) + (df['receiving_tds'] * 6.0)
     )
 
     # 3. Calculate Expected Fantasy Points based on league-average positional usage
@@ -73,13 +51,11 @@ def calculate_ratings(df):
         (df['targets'] * 0.80) +              # Receiving volume 
         (df['receiving_air_yards'] * 0.06) +  # Receiving depth opportunity
         (df['wopr'] * 4.0) +                  # Market share weight (mostly WR/RB/TE)
-        (df['endzone_targets'] * 2.0) +       # End Zone Target Bonus
-        (df['fg_att'] * 2.55) +               # Kicking (Assumes ~85% league avg FG completion)
-        (df['pat_att'] * 0.95)                # Kicking (Assumes ~95% league avg PAT completion)
+        (df['endzone_targets'] * 2.0)         # End Zone Target Bonus
     )
 
     # Calculate standard 'Opportunities' metric for the frontend card summary
-    df['total_opportunity'] = df['attempts'] + df['carries'] + df['targets'] + df['fg_att']
+    df['total_opportunity'] = df['attempts'] + df['carries'] + df['targets']
 
     # 4. Calculate Disparity (How much they underperformed their pure usage)
     df['disparity'] = df['expected_points'] - df['actual_points']
@@ -105,9 +81,12 @@ def calculate_ratings(df):
     return df
 
 def format_player_json(row):
-    headshot_path = download_headshot(row['player_id'], row.get('headshot_url'))
-    
     pos = row['position']
+
+    # Ask the NFL image CDN for a card-sized copy instead of the ~1MB original
+    headshot_url = row.get('headshot_url')
+    if isinstance(headshot_url, str):
+        headshot_url = headshot_url.replace("/f_auto,q_auto/", "/f_auto,q_auto,w_512/")
 
     exp_pts = round(float(row.get('expected_points', 0)), 1)
     act_pts = round(float(row.get('actual_points', 0)), 1)
@@ -140,7 +119,7 @@ def format_player_json(row):
         "position": pos,
         "week": int(row['week']),
         "rating": float(row['rating']),
-        "headshot": headshot_path,
+        "headshot": headshot_url,
         "main_stats": {
             "expected_points": exp_pts,
             "actual_points": act_pts,
@@ -159,34 +138,15 @@ def sanitize_nan(obj):
         return None
     return obj
 
-def cleanup_unused_headshots(active_player_ids):
-    if not os.path.exists(ASSETS_DIR):
-        return
-        
-    valid_filenames = {f"{pid}.png" for pid in active_player_ids}
-    removed_count = 0
-    
-    for filename in os.listdir(ASSETS_DIR):
-        if filename.endswith(".png") and filename not in valid_filenames:
-            file_path = os.path.join(ASSETS_DIR, filename)
-            try:
-                os.remove(file_path)
-                removed_count += 1
-            except Exception as e:
-                print(f"Failed to delete {filename}: {e}")
-                
-    if removed_count > 0:
-        print(f"Cleaned up {removed_count} stale headshots.")
-
 def main():
     global SEASON, IS_SEASON_ACTIVE 
     print(f"Fetching LIVE NFL Data for {SEASON} using nflreadpy...")
     setup_directories()
     
-# 1. Fetch live data natively
+    # 1. Fetch live data natively
     try:
         weekly_df = nfl.load_player_stats(seasons=[SEASON]).to_pandas()
-        pbp_df = nfl.load_pbp(seasons=[SEASON]).to_pandas() # Fetch PBP for target depth
+        pbp_df = load_pbp(SEASON) # Fetch PBP for end zone targets
         if weekly_df.empty or pbp_df.empty:
             raise ValueError("Data exists but is empty.")
     except Exception as e:
@@ -195,6 +155,7 @@ def main():
         SEASON -= 1
         IS_SEASON_ACTIVE = False
         weekly_df = nfl.load_player_stats(seasons=[SEASON]).to_pandas()
+        pbp_df = load_pbp(SEASON)
 
     # 2. Cleanup and filter
     cols_to_fill = ['carries', 'targets', 'receptions', 'receiving_yards', 'rushing_yards', 'fantasy_points_ppr']
@@ -231,7 +192,7 @@ def main():
     
     top_50 = df.head(50)
     
-    print("Formatting Weekly JSON and downloading headshots...")
+    print("Formatting Weekly JSON...")
     weekly_players = [format_player_json(row) for _, row in top_50.iterrows()]
     
     meta_block = {
@@ -249,7 +210,8 @@ def main():
     global_path = f"{DATA_DIR}/picks_global.json"
     global_players = []
     
-    if os.path.exists(global_path):
+    # A new season starts a fresh global board
+    if latest_week > 1 and os.path.exists(global_path):
         with open(global_path, "r") as f:
             try:
                 global_data = json.load(f)
@@ -270,11 +232,7 @@ def main():
         with open(global_path, "w") as f:
             json.dump(global_output, f, indent=2)
 
-    # Active IDs still used to protect downloaded headshots from deletion
-    active_ids = {p['id'] for p in weekly_players} | {p['id'] for p in top_50_global}
-    cleanup_unused_headshots(active_ids)
-
-    print("Pipeline complete. JSON and assets are synced.")
+    print("Pipeline complete. JSON is synced.")
 
 if __name__ == "__main__":
     main()

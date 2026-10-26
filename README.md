@@ -33,7 +33,7 @@ $$\begin{aligned}
 
 - End Zone Targets ($2.0$ multiplier): An end zone target already gets counted in Targets (+0.80) and receives a small contribution from Rec Air Yards. This term adds a bonus as incompletes in the endzone are worth more than elsewhere. 
 
-### Step 1: Disparity Calculation
+### Step 2: Disparity Calculation
 We evaluate whether a player's fantasy output underperformed or outpaced their real-world usage,
 
 $$\text{Disparity} = \text{Expected Points} - \text{Actual Fantasy Points}$$
@@ -51,18 +51,18 @@ Which gives us key outcomes:
 ### Step 3: Noise Threshold
 To eliminate backup players and gadget options who distort small-sample statistics (e.g., a WR5 running one route, seeing one target, and dropping it for a $+1.8$ disparity), the engine requires a minimum opportunity floor
 
-$$\text{Expected PPR} \ge 6.0$$ 
+$$\text{Opportunities} \ge 2 \quad \text{or} \quad \text{Expected PPR} \ge 3.0$$
 
-(Equivalent to roughly 4+ targets, 9+ carries, or a hybrid workload).
+where Opportunities = pass attempts + carries + targets.
 
 ### Step 4: Normalisation (The Boardsteals rating)
-To translate disparity into an intuitive rating where the league median sits in the 50–60 range, disparity values are normalised using standard Z-scores across the active weekly sample,
+To translate disparity into an intuitive rating where the league median sits in the 50–60 range, disparity values are normalised using the positional Z-scores from Step 2 across the active weekly sample,
 
-$$Z = \frac{\text{Disparity} - \mu}{\sigma}$$
+$$Z = \frac{\text{Disparity} - \mu_{\text{position}}}{\sigma_{\text{position}}}$$
 
-And given a Boardsteals rating from 0-100 accordingly.
+And given a Boardsteals rating from 1-99.9 accordingly.
 
-$$\text{Rating} = \text{clip}\left(54 + (Z \times 14),\, 0,\, 100\right)$$
+$$\text{Rating} = \text{clip}\left(54 + (Z \times 14),\, 1,\, 99.9\right)$$
 
 - Rating $0-55$ - Iron: Up to just above median expectation ($Z = 0$). Output closely matched volume.
   
@@ -83,48 +83,41 @@ The backend script (`pipeline/boardsteals.py`) runs as a fully decoupled, zero-s
 [nflreadpy API]
            │
            ▼
-[Data Extraction & Polars-to-Pandas Conversion]
+[Data Extraction & Polars-to-Pandas Conversion (only the needed pbp columns)]
            │
            ▼
-[Position & Noise Filtering (RB/WR/TE; Exp PPR >= 6.0)]
+[Position Filtering (QB/RB/WR/TE)]
            │
            ▼
 [xP and Disparity Calculation]
            │
            ▼
-[Z-Score Calculation & Rating Engine (0-100)]
+[Noise Filtering (Opportunities >= 2 or Exp PPR >= 3.0)]
            │
            ▼
-[Headshot Download Manager] ────► [Asset Cache: site/public/assets/headshots/]
-           │                       (Requests session, browser headers, 0.5s rate-limit)
+[Z-Score Calculation & Rating Engine (1-99.9)]
+           │
            ▼
 [JSON Serialization] ───────────► [site/public/data/picks_weekly.json]
            │                  └─► [site/public/data/picks_global.json]
            ▼
-[Garbage Collection] ───────────► Prunes stale images not present in Weekly or Global Top 50
-           │
-           ▼
-[Site Deployment] ──────────────► Clear Cloudflare CDN Cache and deploy updated list and headshots
+[Site Deployment] ──────────────► Clear Cloudflare CDN Cache and deploy the updated lists
 ```
 
 ---
 
 ### Key Modules
-- Dynamic Season Ingestion: Uses nflreadpy to ingest official weekly NFL player box scores and pbp stats. The engine isolates the latest completed week (`week.max()`) and provides fallback recovery if an active week's dataset is pending ingestion.
+- Dynamic Season Ingestion: Uses nflreadpy to ingest official weekly NFL player box scores and pbp stats. The engine isolates the latest completed week (`week.max()`) and provides fallback recovery to the previous season if the current season's data is not available yet.
   
-- Headshot Asset Cache: Downloads official player portraits directly to `site/public/assets/headshots/{player_id}.png`.
-
-- - Checks `os.path.exists()` before requesting to avoid redundant network calls.
+- Headshots: The JSON stores each player's official headshot URL from nflreadpy, and the browser loads it directly from that CDN. Nothing is downloaded or stored in the repo.
 
 - Dual-Board JSON Serialization:
 
 - - `picks_weekly.json`: The Top 50 rated players from the current week's games.
 
-- - `picks_global.json`: The all-time season leaderboard. Deduplicates multiple weeks for the same player, retaining only their highest-rated single-game breakout signal.
+- - `picks_global.json`: The season leaderboard: the Top 50 single-week ratings so far. The same player can appear once per week. It is cleared when Week 1 of a new season is processed.
 
-- Garbage Collection Pruning: Automatically deletes cached .png files from the repo if a player drops out of both the Weekly Top 50 and the Global Top 50, capping local disk usage to ~100 images maximum.
-
-- Cloudflare CDN Cache: Optimise GitHub pages bandwidth by cacheing all logos and headshots to Cloudflare's CDN, purging once a week during the automated run.
+- Cloudflare CDN Cache: Optimise GitHub pages bandwidth by caching the site and team logos on Cloudflare's CDN, purging once a week during the automated run.
 
 ---
 
@@ -147,20 +140,20 @@ Since the live site is run on a github pages instance, the pipeline exports stat
       "position": "WR",
       "week": 2,
       "rating": 71.0,
-      "headshot": "/assets/headshots/00-0040669.png",
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/<image-id>",
       "main_stats": {
         "expected_points": 9.0,
         "actual_points": 4.6,
         "total_opportunity": 5
       },
-      "detail_stats": {
-        "targets": 5,
-        "carries": 0,
-        "receptions": 2,
-        "receiving_yards": 26,
-        "rushing_yards": 0,
-        "wopr": 0.37
-      }
+      "detail_stats": [
+        { "label": "Targets", "value": 5 },
+        { "label": "Carries", "value": 0 },
+        { "label": "Receptions", "value": 2 },
+        { "label": "Rec Yds", "value": 26 },
+        { "label": "Rush Yds", "value": 0 },
+        { "label": "WOPR", "value": 0.37 }
+      ]
     }
   ]
 }
@@ -190,7 +183,7 @@ pip install -r requirements.txt --prefer-binary
 python boardsteals.py
 ```
 
-The script will fetch the latest data, normalise scores, download any missing headshots to `site/public/assets/headshots/`, and write the formatted data to `site/public/data/`.
+The script will fetch the latest data, normalise scores, and write the formatted data to `site/public/data/`.
 
 Enjoy your fantasy pickings!
 

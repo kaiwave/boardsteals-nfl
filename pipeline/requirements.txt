@@ -1,5 +1,3 @@
 nflreadpy
 pandas
-numpy
-requests
 pyarrow

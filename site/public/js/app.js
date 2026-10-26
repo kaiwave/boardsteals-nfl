@@ -30,8 +30,7 @@
   }
 
   function headshotSrc(player) {
-    if (player.headshot) return player.headshot.replace(/^\//, "");
-    return "assets/headshots/" + player.id + ".png";
+    return player.headshot || "assets/headshots/placeholder.svg";
   }
 
   function logoSrc(player) {
