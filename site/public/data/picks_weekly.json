@@ -3,341 +3,21 @@
     "is_season_active": true,
     "season": 2026,
     "last_completed_season": 2025,
-    "current_week": 9
+    "current_week": 10
   },
   "players": [
     {
-      "id": "00-0038559",
-      "name": "Michael Wilson",
-      "team": "ARI",
-      "position": "WR",
-      "week": 9,
-      "rating": 89.1,
-      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/hm2b9z4zujjmbiyldh8n",
-      "main_stats": {
-        "expected_points": 23.4,
-        "actual_points": 16.5,
-        "season_avg": 13.4
-      },
-      "detail_stats": [
-        {
-          "label": "Targets",
-          "value": 7
-        },
-        {
-          "label": "Carries",
-          "value": 0
-        },
-        {
-          "label": "Receptions",
-          "value": 6
-        },
-        {
-          "label": "Rec Yds",
-          "value": 60
-        },
-        {
-          "label": "Rush Yds",
-          "value": 0
-        },
-        {
-          "label": "WOPR",
-          "value": 0.45
-        }
-      ]
-    },
-    {
-      "id": "00-0040126",
-      "name": "Colston Loveland",
-      "team": "CHI",
-      "position": "TE",
-      "week": 9,
-      "rating": 85.0,
-      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/tdeidev1typrqjijtb3a",
-      "main_stats": {
-        "expected_points": 13.9,
-        "actual_points": 14.3,
-        "season_avg": 9.5
-      },
-      "detail_stats": [
-        {
-          "label": "Targets",
-          "value": 6
-        },
-        {
-          "label": "Carries",
-          "value": 0
-        },
-        {
-          "label": "Receptions",
-          "value": 4
-        },
-        {
-          "label": "Rec Yds",
-          "value": 54
-        },
-        {
-          "label": "Rush Yds",
-          "value": 0
-        },
-        {
-          "label": "WOPR",
-          "value": 0.38
-        }
-      ]
-    },
-    {
-      "id": "00-0039398",
-      "name": "Joe Milton III",
-      "team": "PHI",
-      "position": "QB",
-      "week": 9,
-      "rating": 83.3,
-      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/tsj9lobse1gxzanf39dt",
-      "main_stats": {
-        "expected_points": 28.4,
-        "actual_points": 13.2,
-        "season_avg": 13.2
-      },
-      "detail_stats": [
-        {
-          "label": "Pass Att",
-          "value": 34
-        },
-        {
-          "label": "Pass Yds",
-          "value": 169
-        },
-        {
-          "label": "Pass TDs",
-          "value": 0
-        },
-        {
-          "label": "Carries",
-          "value": 9
-        },
-        {
-          "label": "Rush Yds",
-          "value": 64
-        },
-        {
-          "label": "INTs",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "id": "00-0040867",
-      "name": "Makai Lemon",
-      "team": "PHI",
-      "position": "WR",
-      "week": 9,
-      "rating": 80.3,
-      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/ys2i2o7c0bl36xvlrojz",
-      "main_stats": {
-        "expected_points": 13.3,
-        "actual_points": 14.5,
-        "season_avg": 8.2
-      },
-      "detail_stats": [
-        {
-          "label": "Targets",
-          "value": 9
-        },
-        {
-          "label": "Carries",
-          "value": 0
-        },
-        {
-          "label": "Receptions",
-          "value": 6
-        },
-        {
-          "label": "Rec Yds",
-          "value": 61
-        },
-        {
-          "label": "Rush Yds",
-          "value": 0
-        },
-        {
-          "label": "WOPR",
-          "value": 0.61
-        }
-      ]
-    },
-    {
-      "id": "00-0040129",
-      "name": "Emeka Egbuka",
-      "team": "TB",
-      "position": "WR",
-      "week": 9,
-      "rating": 80.0,
-      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/z224kbzs62rjuykc0vha",
-      "main_stats": {
-        "expected_points": 18.4,
-        "actual_points": 14.0,
-        "season_avg": 11.1
-      },
-      "detail_stats": [
-        {
-          "label": "Targets",
-          "value": 5
-        },
-        {
-          "label": "Carries",
-          "value": 1
-        },
-        {
-          "label": "Receptions",
-          "value": 3
-        },
-        {
-          "label": "Rec Yds",
-          "value": 38
-        },
-        {
-          "label": "Rush Yds",
-          "value": 1
-        },
-        {
-          "label": "WOPR",
-          "value": 0.42
-        }
-      ]
-    },
-    {
-      "id": "00-0036919",
-      "name": "Kenny Gainwell",
-      "team": "TB",
+      "id": "00-0035261",
+      "name": "Tony Pollard",
+      "team": "TEN",
       "position": "RB",
-      "week": 9,
-      "rating": 79.3,
-      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/eo62l8ec8e3lzt86ihth",
+      "week": 10,
+      "rating": 91.2,
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/u4poetcrbxffcuyglmj8",
       "main_stats": {
-        "expected_points": 12.4,
-        "actual_points": 11.1,
-        "season_avg": 7.1
-      },
-      "detail_stats": [
-        {
-          "label": "Targets",
-          "value": 3
-        },
-        {
-          "label": "Carries",
-          "value": 5
-        },
-        {
-          "label": "Receptions",
-          "value": 3
-        },
-        {
-          "label": "Rec Yds",
-          "value": 60
-        },
-        {
-          "label": "Rush Yds",
-          "value": 16
-        },
-        {
-          "label": "WOPR",
-          "value": 0.2
-        }
-      ]
-    },
-    {
-      "id": "00-0039732",
-      "name": "Bo Nix",
-      "team": "DEN",
-      "position": "QB",
-      "week": 9,
-      "rating": 77.6,
-      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/zvo9xatffmqn9lnukpgk",
-      "main_stats": {
-        "expected_points": 23.9,
-        "actual_points": 19.7,
-        "season_avg": 14.3
-      },
-      "detail_stats": [
-        {
-          "label": "Pass Att",
-          "value": 37
-        },
-        {
-          "label": "Pass Yds",
-          "value": 237
-        },
-        {
-          "label": "Pass TDs",
-          "value": 2
-        },
-        {
-          "label": "Carries",
-          "value": 5
-        },
-        {
-          "label": "Rush Yds",
-          "value": 2
-        },
-        {
-          "label": "INTs",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "id": "00-0040667",
-      "name": "Matthew Golden",
-      "team": "GB",
-      "position": "WR",
-      "week": 9,
-      "rating": 77.6,
-      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/dbjki6b0swksr7mk17wk",
-      "main_stats": {
-        "expected_points": 24.4,
-        "actual_points": 21.1,
-        "season_avg": 18.0
-      },
-      "detail_stats": [
-        {
-          "label": "Targets",
-          "value": 10
-        },
-        {
-          "label": "Carries",
-          "value": 0
-        },
-        {
-          "label": "Receptions",
-          "value": 10
-        },
-        {
-          "label": "Rec Yds",
-          "value": 164
-        },
-        {
-          "label": "Rush Yds",
-          "value": 0
-        },
-        {
-          "label": "WOPR",
-          "value": 0.77
-        }
-      ]
-    },
-    {
-      "id": "00-0034348",
-      "name": "Courtland Sutton",
-      "team": "DEN",
-      "position": "WR",
-      "week": 9,
-      "rating": 76.1,
-      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/kqwmqcrlrwmqcvfuguhs",
-      "main_stats": {
-        "expected_points": 12.6,
-        "actual_points": 10.8,
-        "season_avg": 7.1
+        "expected_points": 18.3,
+        "actual_points": 29.7,
+        "season_avg": 15.6
       },
       "detail_stats": [
         {
@@ -346,183 +26,23 @@
         },
         {
           "label": "Carries",
-          "value": 0
+          "value": 9
         },
         {
           "label": "Receptions",
-          "value": 5
+          "value": 8
         },
         {
           "label": "Rec Yds",
-          "value": 45
+          "value": 66
         },
         {
           "label": "Rush Yds",
-          "value": 0
+          "value": 33
         },
         {
           "label": "WOPR",
-          "value": 0.69
-        }
-      ]
-    },
-    {
-      "id": "00-0039923",
-      "name": "J.J. McCarthy",
-      "team": "NYG",
-      "position": "QB",
-      "week": 9,
-      "rating": 74.6,
-      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/eeecyzrxuih3pv2sywvx",
-      "main_stats": {
-        "expected_points": 18.4,
-        "actual_points": 10.6,
-        "season_avg": 8.0
-      },
-      "detail_stats": [
-        {
-          "label": "Pass Att",
-          "value": 19
-        },
-        {
-          "label": "Pass Yds",
-          "value": 127
-        },
-        {
-          "label": "Pass TDs",
-          "value": 0
-        },
-        {
-          "label": "Carries",
-          "value": 4
-        },
-        {
-          "label": "Rush Yds",
-          "value": 22
-        },
-        {
-          "label": "INTs",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "id": "00-0033555",
-      "name": "Mack Hollins",
-      "team": "NE",
-      "position": "WR",
-      "week": 9,
-      "rating": 74.6,
-      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/qbz7whjzsittudcecezw",
-      "main_stats": {
-        "expected_points": 15.8,
-        "actual_points": 11.9,
-        "season_avg": 9.7
-      },
-      "detail_stats": [
-        {
-          "label": "Targets",
-          "value": 6
-        },
-        {
-          "label": "Carries",
-          "value": 0
-        },
-        {
-          "label": "Receptions",
-          "value": 3
-        },
-        {
-          "label": "Rec Yds",
-          "value": 36
-        },
-        {
-          "label": "Rush Yds",
-          "value": 0
-        },
-        {
-          "label": "WOPR",
-          "value": 0.39
-        }
-      ]
-    },
-    {
-      "id": "00-0036900",
-      "name": "Ja'Marr Chase",
-      "team": "CIN",
-      "position": "WR",
-      "week": 9,
-      "rating": 74.5,
-      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/qya3dtjb5kgofcuj2tuw",
-      "main_stats": {
-        "expected_points": 23.0,
-        "actual_points": 26.6,
-        "season_avg": 20.0
-      },
-      "detail_stats": [
-        {
-          "label": "Targets",
-          "value": 12
-        },
-        {
-          "label": "Carries",
-          "value": 0
-        },
-        {
-          "label": "Receptions",
-          "value": 10
-        },
-        {
-          "label": "Rec Yds",
-          "value": 155
-        },
-        {
-          "label": "Rush Yds",
-          "value": 0
-        },
-        {
-          "label": "WOPR",
-          "value": 1.02
-        }
-      ]
-    },
-    {
-      "id": "00-0040583",
-      "name": "Woody Marks",
-      "team": "HOU",
-      "position": "RB",
-      "week": 9,
-      "rating": 74.3,
-      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/ksk0fjj4bl9jvfh2s0rm",
-      "main_stats": {
-        "expected_points": 15.2,
-        "actual_points": 9.2,
-        "season_avg": 8.9
-      },
-      "detail_stats": [
-        {
-          "label": "Targets",
-          "value": 4
-        },
-        {
-          "label": "Carries",
-          "value": 18
-        },
-        {
-          "label": "Receptions",
-          "value": 1
-        },
-        {
-          "label": "Rec Yds",
-          "value": 4
-        },
-        {
-          "label": "Rush Yds",
-          "value": 70
-        },
-        {
-          "label": "WOPR",
-          "value": 0.18
+          "value": 0.37
         }
       ]
     },
@@ -531,13 +51,173 @@
       "name": "Adonai Mitchell",
       "team": "NYJ",
       "position": "WR",
-      "week": 9,
-      "rating": 74.2,
+      "week": 10,
+      "rating": 88.2,
       "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/hwwacoa3pqapd7pgahfx",
       "main_stats": {
-        "expected_points": 17.5,
-        "actual_points": 9.1,
-        "season_avg": 9.7
+        "expected_points": 20.6,
+        "actual_points": 12.0,
+        "season_avg": 9.6
+      },
+      "detail_stats": [
+        {
+          "label": "Targets",
+          "value": 8
+        },
+        {
+          "label": "Carries",
+          "value": 0
+        },
+        {
+          "label": "Receptions",
+          "value": 3
+        },
+        {
+          "label": "Rec Yds",
+          "value": 59
+        },
+        {
+          "label": "Rush Yds",
+          "value": 0
+        },
+        {
+          "label": "WOPR",
+          "value": 0.5
+        }
+      ]
+    },
+    {
+      "id": "00-0036900",
+      "name": "Ja'Marr Chase",
+      "team": "CIN",
+      "position": "WR",
+      "week": 10,
+      "rating": 87.5,
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/qya3dtjb5kgofcuj2tuw",
+      "main_stats": {
+        "expected_points": 26.9,
+        "actual_points": 32.2,
+        "season_avg": 21.5
+      },
+      "detail_stats": [
+        {
+          "label": "Targets",
+          "value": 14
+        },
+        {
+          "label": "Carries",
+          "value": 0
+        },
+        {
+          "label": "Receptions",
+          "value": 11
+        },
+        {
+          "label": "Rec Yds",
+          "value": 231
+        },
+        {
+          "label": "Rush Yds",
+          "value": 0
+        },
+        {
+          "label": "WOPR",
+          "value": 0.96
+        }
+      ]
+    },
+    {
+      "id": "00-0040584",
+      "name": "Gunnar Helm",
+      "team": "TEN",
+      "position": "TE",
+      "week": 10,
+      "rating": 80.6,
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/vxm3tzziboxezsb9thjm",
+      "main_stats": {
+        "expected_points": 8.1,
+        "actual_points": 8.1,
+        "season_avg": 4.9
+      },
+      "detail_stats": [
+        {
+          "label": "Targets",
+          "value": 4
+        },
+        {
+          "label": "Carries",
+          "value": 0
+        },
+        {
+          "label": "Receptions",
+          "value": 4
+        },
+        {
+          "label": "Rec Yds",
+          "value": 23
+        },
+        {
+          "label": "Rush Yds",
+          "value": 0
+        },
+        {
+          "label": "WOPR",
+          "value": 0.22
+        }
+      ]
+    },
+    {
+      "id": "00-0035676",
+      "name": "A.J. Brown",
+      "team": "NE",
+      "position": "WR",
+      "week": 10,
+      "rating": 79.1,
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/qfhvjyssf0lwsh0kienp",
+      "main_stats": {
+        "expected_points": 15.5,
+        "actual_points": 6.1,
+        "season_avg": 6.0
+      },
+      "detail_stats": [
+        {
+          "label": "Targets",
+          "value": 6
+        },
+        {
+          "label": "Carries",
+          "value": 0
+        },
+        {
+          "label": "Receptions",
+          "value": 2
+        },
+        {
+          "label": "Rec Yds",
+          "value": 27
+        },
+        {
+          "label": "Rush Yds",
+          "value": 0
+        },
+        {
+          "label": "WOPR",
+          "value": 0.56
+        }
+      ]
+    },
+    {
+      "id": "00-0041013",
+      "name": "Emmett Johnson",
+      "team": "KC",
+      "position": "RB",
+      "week": 10,
+      "rating": 78.5,
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/avdz4njz1slqn7ktqcuq",
+      "main_stats": {
+        "expected_points": 10.4,
+        "actual_points": 23.3,
+        "season_avg": 10.7
       },
       "detail_stats": [
         {
@@ -546,15 +226,95 @@
         },
         {
           "label": "Carries",
+          "value": 22
+        },
+        {
+          "label": "Receptions",
+          "value": 6
+        },
+        {
+          "label": "Rec Yds",
+          "value": 70
+        },
+        {
+          "label": "Rush Yds",
+          "value": 101
+        },
+        {
+          "label": "WOPR",
+          "value": 0.28
+        }
+      ]
+    },
+    {
+      "id": "00-0040676",
+      "name": "Cam Ward",
+      "team": "TEN",
+      "position": "QB",
+      "week": 10,
+      "rating": 76.5,
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/l7iuimdeqgmmhdzdhl67",
+      "main_stats": {
+        "expected_points": 25.7,
+        "actual_points": 16.4,
+        "season_avg": 12.9
+      },
+      "detail_stats": [
+        {
+          "label": "Pass Att",
+          "value": 39
+        },
+        {
+          "label": "Pass Yds",
+          "value": 231
+        },
+        {
+          "label": "Pass TDs",
+          "value": 2
+        },
+        {
+          "label": "Carries",
+          "value": 3
+        },
+        {
+          "label": "Rush Yds",
+          "value": 39
+        },
+        {
+          "label": "INTs",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "00-0037247",
+      "name": "George Pickens",
+      "team": "DAL",
+      "position": "WR",
+      "week": 10,
+      "rating": 76.2,
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/cbpyykoguf7rsxezqzvk",
+      "main_stats": {
+        "expected_points": 21.3,
+        "actual_points": 22.0,
+        "season_avg": 16.4
+      },
+      "detail_stats": [
+        {
+          "label": "Targets",
+          "value": 18
+        },
+        {
+          "label": "Carries",
           "value": 0
         },
         {
           "label": "Receptions",
-          "value": 0
+          "value": 11
         },
         {
           "label": "Rec Yds",
-          "value": 0
+          "value": 145
         },
         {
           "label": "Rush Yds",
@@ -567,177 +327,17 @@
       ]
     },
     {
-      "id": "00-0041037",
-      "name": "Denzel Boston",
-      "team": "CLE",
+      "id": "00-0040432",
+      "name": "Beaux Collins",
+      "team": "ATL",
       "position": "WR",
-      "week": 9,
-      "rating": 74.1,
-      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/loaz6dx5hkl1r5nxi4sg",
+      "week": 10,
+      "rating": 75.6,
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/v2voy9ptjslx6ivbufke",
       "main_stats": {
-        "expected_points": 19.1,
-        "actual_points": 10.4,
-        "season_avg": 11.2
-      },
-      "detail_stats": [
-        {
-          "label": "Targets",
-          "value": 7
-        },
-        {
-          "label": "Carries",
-          "value": 0
-        },
-        {
-          "label": "Receptions",
-          "value": 6
-        },
-        {
-          "label": "Rec Yds",
-          "value": 98
-        },
-        {
-          "label": "Rush Yds",
-          "value": 0
-        },
-        {
-          "label": "WOPR",
-          "value": 0.62
-        }
-      ]
-    },
-    {
-      "id": "00-0040981",
-      "name": "Joe Fagnano",
-      "team": "BAL",
-      "position": "QB",
-      "week": 9,
-      "rating": 72.6,
-      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/p8uqfsnpx153mn3gjtd3",
-      "main_stats": {
-        "expected_points": 12.2,
-        "actual_points": 0.8,
-        "season_avg": 0.8
-      },
-      "detail_stats": [
-        {
-          "label": "Pass Att",
-          "value": 18
-        },
-        {
-          "label": "Pass Yds",
-          "value": 60
-        },
-        {
-          "label": "Pass TDs",
-          "value": 0
-        },
-        {
-          "label": "Carries",
-          "value": 3
-        },
-        {
-          "label": "Rush Yds",
-          "value": 13
-        },
-        {
-          "label": "INTs",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "id": "00-0037263",
-      "name": "Tyler Allgeier",
-      "team": "ARI",
-      "position": "RB",
-      "week": 9,
-      "rating": 72.5,
-      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/sp9lhhmpv4qy3xy2msxd",
-      "main_stats": {
-        "expected_points": 11.5,
-        "actual_points": 16.9,
-        "season_avg": 10.1
-      },
-      "detail_stats": [
-        {
-          "label": "Targets",
-          "value": 3
-        },
-        {
-          "label": "Carries",
-          "value": 17
-        },
-        {
-          "label": "Receptions",
-          "value": 2
-        },
-        {
-          "label": "Rec Yds",
-          "value": 0
-        },
-        {
-          "label": "Rush Yds",
-          "value": 46
-        },
-        {
-          "label": "WOPR",
-          "value": 0.11
-        }
-      ]
-    },
-    {
-      "id": "00-0039919",
-      "name": "Rome Odunze",
-      "team": "CHI",
-      "position": "WR",
-      "week": 9,
-      "rating": 72.3,
-      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/kqxetflykjn9clz04k68",
-      "main_stats": {
-        "expected_points": 14.8,
-        "actual_points": 13.2,
-        "season_avg": 10.1
-      },
-      "detail_stats": [
-        {
-          "label": "Targets",
-          "value": 7
-        },
-        {
-          "label": "Carries",
-          "value": 0
-        },
-        {
-          "label": "Receptions",
-          "value": 4
-        },
-        {
-          "label": "Rec Yds",
-          "value": 60
-        },
-        {
-          "label": "Rush Yds",
-          "value": 0
-        },
-        {
-          "label": "WOPR",
-          "value": 0.49
-        }
-      ]
-    },
-    {
-      "id": "00-0039794",
-      "name": "Braelon Allen",
-      "team": "NYJ",
-      "position": "RB",
-      "week": 9,
-      "rating": 72.0,
-      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/x78ebxfvyyuemrxyank1",
-      "main_stats": {
-        "expected_points": 14.5,
-        "actual_points": 16.7,
-        "season_avg": 11.9
+        "expected_points": 8.4,
+        "actual_points": 0.0,
+        "season_avg": 0.0
       },
       "detail_stats": [
         {
@@ -746,63 +346,23 @@
         },
         {
           "label": "Carries",
-          "value": 8
+          "value": 0
         },
         {
           "label": "Receptions",
-          "value": 2
+          "value": 0
         },
         {
           "label": "Rec Yds",
-          "value": 21
+          "value": 0
         },
         {
           "label": "Rush Yds",
-          "value": 33
+          "value": 0
         },
         {
           "label": "WOPR",
-          "value": 0.09
-        }
-      ]
-    },
-    {
-      "id": "00-0036264",
-      "name": "Jordan Love",
-      "team": "GB",
-      "position": "QB",
-      "week": 9,
-      "rating": 71.6,
-      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/thz8stjkbjwddxqnozi5",
-      "main_stats": {
-        "expected_points": 28.7,
-        "actual_points": 24.2,
-        "season_avg": 20.3
-      },
-      "detail_stats": [
-        {
-          "label": "Pass Att",
-          "value": 29
-        },
-        {
-          "label": "Pass Yds",
-          "value": 372
-        },
-        {
-          "label": "Pass TDs",
-          "value": 3
-        },
-        {
-          "label": "Carries",
-          "value": 1
-        },
-        {
-          "label": "Rush Yds",
-          "value": 13
-        },
-        {
-          "label": "INTs",
-          "value": 0
+          "value": 0.14
         }
       ]
     },
@@ -811,18 +371,18 @@
       "name": "Kaelon Black",
       "team": "SF",
       "position": "RB",
-      "week": 9,
-      "rating": 71.5,
+      "week": 10,
+      "rating": 75.6,
       "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/nwgkzr1ysr32jc79zfnt",
       "main_stats": {
-        "expected_points": 8.5,
-        "actual_points": 8.2,
-        "season_avg": 5.0
+        "expected_points": 9.6,
+        "actual_points": 11.5,
+        "season_avg": 6.0
       },
       "detail_stats": [
         {
           "label": "Targets",
-          "value": 0
+          "value": 2
         },
         {
           "label": "Carries",
@@ -830,34 +390,514 @@
         },
         {
           "label": "Receptions",
-          "value": 0
+          "value": 2
         },
         {
           "label": "Rec Yds",
-          "value": 0
+          "value": 13
         },
         {
           "label": "Rush Yds",
-          "value": 70
+          "value": 53
         },
         {
           "label": "WOPR",
-          "value": 0.0
+          "value": 0.12
         }
       ]
     },
     {
-      "id": "00-0041070",
-      "name": "Reggie Virgil",
-      "team": "ARI",
+      "id": "00-0040170",
+      "name": "Elic Ayomanor",
+      "team": "TEN",
       "position": "WR",
-      "week": 9,
-      "rating": 71.4,
-      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/hmaylhc9nc2zmqjdw1ib",
+      "week": 10,
+      "rating": 75.1,
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/xozpynzjbuorn6ixdjh3",
       "main_stats": {
-        "expected_points": 9.3,
-        "actual_points": 2.8,
-        "season_avg": 2.8
+        "expected_points": 12.2,
+        "actual_points": 8.9,
+        "season_avg": 5.9
+      },
+      "detail_stats": [
+        {
+          "label": "Targets",
+          "value": 10
+        },
+        {
+          "label": "Carries",
+          "value": 0
+        },
+        {
+          "label": "Receptions",
+          "value": 5
+        },
+        {
+          "label": "Rec Yds",
+          "value": 79
+        },
+        {
+          "label": "Rush Yds",
+          "value": 0
+        },
+        {
+          "label": "WOPR",
+          "value": 0.71
+        }
+      ]
+    },
+    {
+      "id": "00-0033077",
+      "name": "Dak Prescott",
+      "team": "DAL",
+      "position": "QB",
+      "week": 10,
+      "rating": 74.6,
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/yvscmqq1qki8zfsemmcd",
+      "main_stats": {
+        "expected_points": 30.9,
+        "actual_points": 24.6,
+        "season_avg": 19.8
+      },
+      "detail_stats": [
+        {
+          "label": "Pass Att",
+          "value": 51
+        },
+        {
+          "label": "Pass Yds",
+          "value": 343
+        },
+        {
+          "label": "Pass TDs",
+          "value": 5
+        },
+        {
+          "label": "Carries",
+          "value": 4
+        },
+        {
+          "label": "Rush Yds",
+          "value": 7
+        },
+        {
+          "label": "INTs",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "00-0033119",
+      "name": "Jacoby Brissett",
+      "team": "BAL",
+      "position": "QB",
+      "week": 10,
+      "rating": 73.2,
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/qjswiunczrn5xmdiqhlz",
+      "main_stats": {
+        "expected_points": 29.4,
+        "actual_points": 10.6,
+        "season_avg": 13.7
+      },
+      "detail_stats": [
+        {
+          "label": "Pass Att",
+          "value": 49
+        },
+        {
+          "label": "Pass Yds",
+          "value": 340
+        },
+        {
+          "label": "Pass TDs",
+          "value": 0
+        },
+        {
+          "label": "Carries",
+          "value": 2
+        },
+        {
+          "label": "Rush Yds",
+          "value": 2
+        },
+        {
+          "label": "INTs",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "00-0038115",
+      "name": "Daniel Bellinger",
+      "team": "TEN",
+      "position": "TE",
+      "week": 10,
+      "rating": 72.9,
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/r9ra5zgmycey0rsohbmh",
+      "main_stats": {
+        "expected_points": 4.2,
+        "actual_points": 5.5,
+        "season_avg": 2.7
+      },
+      "detail_stats": [
+        {
+          "label": "Targets",
+          "value": 3
+        },
+        {
+          "label": "Carries",
+          "value": 0
+        },
+        {
+          "label": "Receptions",
+          "value": 2
+        },
+        {
+          "label": "Rec Yds",
+          "value": 6
+        },
+        {
+          "label": "Rush Yds",
+          "value": 0
+        },
+        {
+          "label": "WOPR",
+          "value": 0.12
+        }
+      ]
+    },
+    {
+      "id": "00-0041561",
+      "name": "Carson Beck",
+      "team": "ARI",
+      "position": "QB",
+      "week": 10,
+      "rating": 72.6,
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/yvybqpgnezk75h9rpobv",
+      "main_stats": {
+        "expected_points": 13.8,
+        "actual_points": 0.4,
+        "season_avg": 0.4
+      },
+      "detail_stats": [
+        {
+          "label": "Pass Att",
+          "value": 18
+        },
+        {
+          "label": "Pass Yds",
+          "value": 108
+        },
+        {
+          "label": "Pass TDs",
+          "value": 0
+        },
+        {
+          "label": "Carries",
+          "value": 1
+        },
+        {
+          "label": "Rush Yds",
+          "value": 1
+        },
+        {
+          "label": "INTs",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "id": "00-0039923",
+      "name": "J.J. McCarthy",
+      "team": "NYG",
+      "position": "QB",
+      "week": 10,
+      "rating": 72.1,
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/eeecyzrxuih3pv2sywvx",
+      "main_stats": {
+        "expected_points": 21.9,
+        "actual_points": 11.5,
+        "season_avg": 9.8
+      },
+      "detail_stats": [
+        {
+          "label": "Pass Att",
+          "value": 36
+        },
+        {
+          "label": "Pass Yds",
+          "value": 293
+        },
+        {
+          "label": "Pass TDs",
+          "value": 1
+        },
+        {
+          "label": "Carries",
+          "value": 6
+        },
+        {
+          "label": "Rush Yds",
+          "value": 34
+        },
+        {
+          "label": "INTs",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "00-0038618",
+      "name": "Xavier Hutchinson",
+      "team": "HOU",
+      "position": "WR",
+      "week": 10,
+      "rating": 72.0,
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/ozdgoi4ync5i38s1fpb7",
+      "main_stats": {
+        "expected_points": 13.6,
+        "actual_points": 13.2,
+        "season_avg": 9.1
+      },
+      "detail_stats": [
+        {
+          "label": "Targets",
+          "value": 9
+        },
+        {
+          "label": "Carries",
+          "value": 0
+        },
+        {
+          "label": "Receptions",
+          "value": 4
+        },
+        {
+          "label": "Rec Yds",
+          "value": 58
+        },
+        {
+          "label": "Rush Yds",
+          "value": 0
+        },
+        {
+          "label": "WOPR",
+          "value": 0.6
+        }
+      ]
+    },
+    {
+      "id": "00-0037740",
+      "name": "Garrett Wilson",
+      "team": "NYJ",
+      "position": "WR",
+      "week": 10,
+      "rating": 71.6,
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/bo2gf1ohffbzo0rd71kp",
+      "main_stats": {
+        "expected_points": 23.3,
+        "actual_points": 12.2,
+        "season_avg": 14.6
+      },
+      "detail_stats": [
+        {
+          "label": "Targets",
+          "value": 14
+        },
+        {
+          "label": "Carries",
+          "value": 0
+        },
+        {
+          "label": "Receptions",
+          "value": 7
+        },
+        {
+          "label": "Rec Yds",
+          "value": 106
+        },
+        {
+          "label": "Rush Yds",
+          "value": 0
+        },
+        {
+          "label": "WOPR",
+          "value": 0.91
+        }
+      ]
+    },
+    {
+      "id": "00-0040667",
+      "name": "Matthew Golden",
+      "team": "GB",
+      "position": "WR",
+      "week": 10,
+      "rating": 71.4,
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/dbjki6b0swksr7mk17wk",
+      "main_stats": {
+        "expected_points": 21.5,
+        "actual_points": 21.8,
+        "season_avg": 17.4
+      },
+      "detail_stats": [
+        {
+          "label": "Targets",
+          "value": 9
+        },
+        {
+          "label": "Carries",
+          "value": 0
+        },
+        {
+          "label": "Receptions",
+          "value": 5
+        },
+        {
+          "label": "Rec Yds",
+          "value": 70
+        },
+        {
+          "label": "Rush Yds",
+          "value": 0
+        },
+        {
+          "label": "WOPR",
+          "value": 0.74
+        }
+      ]
+    },
+    {
+      "id": "00-0040663",
+      "name": "Harold Fannin Jr.",
+      "team": "CLE",
+      "position": "TE",
+      "week": 10,
+      "rating": 71.3,
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/fxublmpnxx9uggsddwik",
+      "main_stats": {
+        "expected_points": 11.4,
+        "actual_points": 17.9,
+        "season_avg": 12.2
+      },
+      "detail_stats": [
+        {
+          "label": "Targets",
+          "value": 9
+        },
+        {
+          "label": "Carries",
+          "value": 0
+        },
+        {
+          "label": "Receptions",
+          "value": 7
+        },
+        {
+          "label": "Rec Yds",
+          "value": 91
+        },
+        {
+          "label": "Rush Yds",
+          "value": 0
+        },
+        {
+          "label": "WOPR",
+          "value": 0.48
+        }
+      ]
+    },
+    {
+      "id": "00-0039530",
+      "name": "Brevyn Spann-Ford",
+      "team": "DAL",
+      "position": "TE",
+      "week": 10,
+      "rating": 71.3,
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/sko2pmuqociwa92ep1ad",
+      "main_stats": {
+        "expected_points": 4.9,
+        "actual_points": 4.9,
+        "season_avg": 3.2
+      },
+      "detail_stats": [
+        {
+          "label": "Targets",
+          "value": 3
+        },
+        {
+          "label": "Carries",
+          "value": 0
+        },
+        {
+          "label": "Receptions",
+          "value": 1
+        },
+        {
+          "label": "Rec Yds",
+          "value": 26
+        },
+        {
+          "label": "Rush Yds",
+          "value": 0
+        },
+        {
+          "label": "WOPR",
+          "value": 0.12
+        }
+      ]
+    },
+    {
+      "id": "00-0033537",
+      "name": "Deshaun Watson",
+      "team": "CLE",
+      "position": "QB",
+      "week": 10,
+      "rating": 70.4,
+      "headshot": "https://static.www.nfl.com/image/private/f_auto,q_auto,w_512/league/otfs2docj6eahaebo5xn",
+      "main_stats": {
+        "expected_points": 27.3,
+        "actual_points": 17.6,
+        "season_avg": 15.9
+      },
+      "detail_stats": [
+        {
+          "label": "Pass Att",
+          "value": 40
+        },
+        {
+          "label": "Pass Yds",
+          "value": 312
+        },
+        {
+          "label": "Pass TDs",
+          "value": 0
+        },
+        {
+          "label": "Carries",
+          "value": 8
+        },
+        {
+          "label": "Rush Yds",
+          "value": 49
+        },
+        {
+          "label": "INTs",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "00-0036463",
+      "name": "Chris Blair",
+      "team": "ATL",
+      "position": "WR",
+      "week": 10,
+      "rating": 69.7,
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/unvrabuns2qjrjotregw",
+      "main_stats": {
+        "expected_points": 6.7,
+        "actual_points": 1.2,
+        "season_avg": 0.7
       },
       "detail_stats": [
         {
@@ -874,7 +914,7 @@
         },
         {
           "label": "Rec Yds",
-          "value": 25
+          "value": 26
         },
         {
           "label": "Rush Yds",
@@ -882,27 +922,147 @@
         },
         {
           "label": "WOPR",
-          "value": 0.52
+          "value": 0.22
         }
       ]
     },
     {
-      "id": "00-0036244",
-      "name": "Colby Parkinson",
-      "team": "LA",
+      "id": "00-0040081",
+      "name": "Jake Briningstool",
+      "team": "KC",
       "position": "TE",
-      "week": 9,
-      "rating": 70.8,
-      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/qsyrgtfjj06wryahnxc9",
+      "week": 10,
+      "rating": 69.5,
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/q7n84oth87v1glz5a5sz",
       "main_stats": {
-        "expected_points": 5.8,
-        "actual_points": 9.7,
-        "season_avg": 5.1
+        "expected_points": 3.3,
+        "actual_points": 2.0,
+        "season_avg": 1.3
       },
       "detail_stats": [
         {
           "label": "Targets",
+          "value": 2
+        },
+        {
+          "label": "Carries",
+          "value": 0
+        },
+        {
+          "label": "Receptions",
+          "value": 1
+        },
+        {
+          "label": "Rec Yds",
+          "value": 20
+        },
+        {
+          "label": "Rush Yds",
+          "value": 0
+        },
+        {
+          "label": "WOPR",
+          "value": 0.16
+        }
+      ]
+    },
+    {
+      "id": "00-0040878",
+      "name": "Mike Washington Jr.",
+      "team": "LV",
+      "position": "RB",
+      "week": 10,
+      "rating": 69.3,
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/ocdjq5ohmtgdghqdh5m4",
+      "main_stats": {
+        "expected_points": 9.5,
+        "actual_points": 3.9,
+        "season_avg": 4.1
+      },
+      "detail_stats": [
+        {
+          "label": "Targets",
+          "value": 1
+        },
+        {
+          "label": "Carries",
+          "value": 8
+        },
+        {
+          "label": "Receptions",
+          "value": 1
+        },
+        {
+          "label": "Rec Yds",
           "value": 4
+        },
+        {
+          "label": "Rush Yds",
+          "value": 23
+        },
+        {
+          "label": "WOPR",
+          "value": 0.07
+        }
+      ]
+    },
+    {
+      "id": "00-0034827",
+      "name": "DJ Moore",
+      "team": "BUF",
+      "position": "WR",
+      "week": 10,
+      "rating": 69.3,
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/tmiale9dvql5ol2xmhf1",
+      "main_stats": {
+        "expected_points": 15.7,
+        "actual_points": 14.9,
+        "season_avg": 11.6
+      },
+      "detail_stats": [
+        {
+          "label": "Targets",
+          "value": 6
+        },
+        {
+          "label": "Carries",
+          "value": 1
+        },
+        {
+          "label": "Receptions",
+          "value": 4
+        },
+        {
+          "label": "Rec Yds",
+          "value": 90
+        },
+        {
+          "label": "Rush Yds",
+          "value": 4
+        },
+        {
+          "label": "WOPR",
+          "value": 0.77
+        }
+      ]
+    },
+    {
+      "id": "00-0037809",
+      "name": "Chig Okonkwo",
+      "team": "WAS",
+      "position": "TE",
+      "week": 10,
+      "rating": 69.1,
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/pzcez6pi9tpdqkmjjnzk",
+      "main_stats": {
+        "expected_points": 9.9,
+        "actual_points": 7.8,
+        "season_avg": 7.6
+      },
+      "detail_stats": [
+        {
+          "label": "Targets",
+          "value": 8
         },
         {
           "label": "Carries",
@@ -914,7 +1074,87 @@
         },
         {
           "label": "Rec Yds",
-          "value": 13
+          "value": 24
+        },
+        {
+          "label": "Rush Yds",
+          "value": 0
+        },
+        {
+          "label": "WOPR",
+          "value": 0.48
+        }
+      ]
+    },
+    {
+      "id": "00-0041056",
+      "name": "Cade Klubnik",
+      "team": "NYJ",
+      "position": "QB",
+      "week": 10,
+      "rating": 68.8,
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/wjng4c61gqtlf3ah2mgi",
+      "main_stats": {
+        "expected_points": 17.8,
+        "actual_points": 6.1,
+        "season_avg": 6.1
+      },
+      "detail_stats": [
+        {
+          "label": "Pass Att",
+          "value": 20
+        },
+        {
+          "label": "Pass Yds",
+          "value": 137
+        },
+        {
+          "label": "Pass TDs",
+          "value": 0
+        },
+        {
+          "label": "Carries",
+          "value": 3
+        },
+        {
+          "label": "Rush Yds",
+          "value": 26
+        },
+        {
+          "label": "INTs",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "00-0041503",
+      "name": "Nate Boerkircher",
+      "team": "JAX",
+      "position": "TE",
+      "week": 10,
+      "rating": 68.6,
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/bxglkvzpx2y40u25xaso",
+      "main_stats": {
+        "expected_points": 5.5,
+        "actual_points": 6.8,
+        "season_avg": 4.7
+      },
+      "detail_stats": [
+        {
+          "label": "Targets",
+          "value": 2
+        },
+        {
+          "label": "Carries",
+          "value": 0
+        },
+        {
+          "label": "Receptions",
+          "value": 1
+        },
+        {
+          "label": "Rec Yds",
+          "value": 12
         },
         {
           "label": "Rush Yds",
@@ -927,38 +1167,118 @@
       ]
     },
     {
-      "id": "00-0039361",
-      "name": "Bucky Irving",
-      "team": "TB",
+      "id": "00-0034975",
+      "name": "Justice Hill",
+      "team": "BAL",
       "position": "RB",
-      "week": 9,
-      "rating": 70.5,
-      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/vkc00rvnix3f2b96vkwo",
+      "week": 10,
+      "rating": 68.6,
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/fuodbrwvianete2gy5ag",
       "main_stats": {
-        "expected_points": 18.8,
-        "actual_points": 25.2,
-        "season_avg": 18.1
+        "expected_points": 9.0,
+        "actual_points": 11.5,
+        "season_avg": 7.0
       },
       "detail_stats": [
         {
           "label": "Targets",
-          "value": 5
+          "value": 7
         },
         {
           "label": "Carries",
-          "value": 20
+          "value": 3
         },
         {
           "label": "Receptions",
-          "value": 4
+          "value": 5
         },
         {
           "label": "Rec Yds",
-          "value": 28
+          "value": 34
         },
         {
           "label": "Rush Yds",
-          "value": 97
+          "value": 4
+        },
+        {
+          "label": "WOPR",
+          "value": 0.21
+        }
+      ]
+    },
+    {
+      "id": "00-0037263",
+      "name": "Tyler Allgeier",
+      "team": "ARI",
+      "position": "RB",
+      "week": 10,
+      "rating": 68.5,
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/sp9lhhmpv4qy3xy2msxd",
+      "main_stats": {
+        "expected_points": 10.5,
+        "actual_points": 14.7,
+        "season_avg": 9.2
+      },
+      "detail_stats": [
+        {
+          "label": "Targets",
+          "value": 1
+        },
+        {
+          "label": "Carries",
+          "value": 5
+        },
+        {
+          "label": "Receptions",
+          "value": 0
+        },
+        {
+          "label": "Rec Yds",
+          "value": 0
+        },
+        {
+          "label": "Rush Yds",
+          "value": 14
+        },
+        {
+          "label": "WOPR",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "00-0040705",
+      "name": "Chimere Dike",
+      "team": "TEN",
+      "position": "WR",
+      "week": 10,
+      "rating": 68.2,
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/jcxkarajirurpxlxl1rj",
+      "main_stats": {
+        "expected_points": 7.2,
+        "actual_points": 7.4,
+        "season_avg": 3.7
+      },
+      "detail_stats": [
+        {
+          "label": "Targets",
+          "value": 3
+        },
+        {
+          "label": "Carries",
+          "value": 1
+        },
+        {
+          "label": "Receptions",
+          "value": 2
+        },
+        {
+          "label": "Rec Yds",
+          "value": 16
+        },
+        {
+          "label": "Rush Yds",
+          "value": 5
         },
         {
           "label": "WOPR",
@@ -967,17 +1287,377 @@
       ]
     },
     {
+      "id": "00-0036322",
+      "name": "Justin Jefferson",
+      "team": "MIN",
+      "position": "WR",
+      "week": 10,
+      "rating": 68.2,
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/tzx1iqbxxa1807m6olwj",
+      "main_stats": {
+        "expected_points": 20.0,
+        "actual_points": 13.2,
+        "season_avg": 13.7
+      },
+      "detail_stats": [
+        {
+          "label": "Targets",
+          "value": 13
+        },
+        {
+          "label": "Carries",
+          "value": 0
+        },
+        {
+          "label": "Receptions",
+          "value": 9
+        },
+        {
+          "label": "Rec Yds",
+          "value": 74
+        },
+        {
+          "label": "Rush Yds",
+          "value": 0
+        },
+        {
+          "label": "WOPR",
+          "value": 0.95
+        }
+      ]
+    },
+    {
+      "id": "00-0035689",
+      "name": "Dawson Knox",
+      "team": "BUF",
+      "position": "TE",
+      "week": 10,
+      "rating": 67.8,
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/ihlvyh95aub97tfklmr1",
+      "main_stats": {
+        "expected_points": 4.9,
+        "actual_points": 3.7,
+        "season_avg": 3.2
+      },
+      "detail_stats": [
+        {
+          "label": "Targets",
+          "value": 3
+        },
+        {
+          "label": "Carries",
+          "value": 0
+        },
+        {
+          "label": "Receptions",
+          "value": 1
+        },
+        {
+          "label": "Rec Yds",
+          "value": 7
+        },
+        {
+          "label": "Rush Yds",
+          "value": 0
+        },
+        {
+          "label": "WOPR",
+          "value": 0.23
+        }
+      ]
+    },
+    {
+      "id": "00-0039847",
+      "name": "Theo Johnson",
+      "team": "NYG",
+      "position": "TE",
+      "week": 10,
+      "rating": 67.6,
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/fv2jbzlocr1o3ahkru43",
+      "main_stats": {
+        "expected_points": 4.3,
+        "actual_points": 5.1,
+        "season_avg": 3.5
+      },
+      "detail_stats": [
+        {
+          "label": "Targets",
+          "value": 3
+        },
+        {
+          "label": "Carries",
+          "value": 0
+        },
+        {
+          "label": "Receptions",
+          "value": 1
+        },
+        {
+          "label": "Rec Yds",
+          "value": 8
+        },
+        {
+          "label": "Rush Yds",
+          "value": 0
+        },
+        {
+          "label": "WOPR",
+          "value": 0.19
+        }
+      ]
+    },
+    {
+      "id": "00-0040583",
+      "name": "Woody Marks",
+      "team": "HOU",
+      "position": "RB",
+      "week": 10,
+      "rating": 67.6,
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/ksk0fjj4bl9jvfh2s0rm",
+      "main_stats": {
+        "expected_points": 13.7,
+        "actual_points": 8.3,
+        "season_avg": 8.7
+      },
+      "detail_stats": [
+        {
+          "label": "Targets",
+          "value": 1
+        },
+        {
+          "label": "Carries",
+          "value": 12
+        },
+        {
+          "label": "Receptions",
+          "value": 1
+        },
+        {
+          "label": "Rec Yds",
+          "value": 15
+        },
+        {
+          "label": "Rush Yds",
+          "value": 50
+        },
+        {
+          "label": "WOPR",
+          "value": 0.04
+        }
+      ]
+    },
+    {
       "id": "00-0037291",
       "name": "Jalen Nailor",
       "team": "LV",
       "position": "WR",
-      "week": 9,
-      "rating": 70.4,
+      "week": 10,
+      "rating": 66.7,
       "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/nojopyt8hxuwycxyaokb",
       "main_stats": {
-        "expected_points": 9.4,
-        "actual_points": 6.7,
-        "season_avg": 4.6
+        "expected_points": 8.4,
+        "actual_points": 5.9,
+        "season_avg": 4.1
+      },
+      "detail_stats": [
+        {
+          "label": "Targets",
+          "value": 4
+        },
+        {
+          "label": "Carries",
+          "value": 0
+        },
+        {
+          "label": "Receptions",
+          "value": 1
+        },
+        {
+          "label": "Rec Yds",
+          "value": -1
+        },
+        {
+          "label": "Rush Yds",
+          "value": 0
+        },
+        {
+          "label": "WOPR",
+          "value": 0.39
+        }
+      ]
+    },
+    {
+      "id": "00-0033699",
+      "name": "Austin Ekeler",
+      "team": "WAS",
+      "position": "RB",
+      "week": 10,
+      "rating": 66.6,
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/sldndpn2zwt4uhkj2zks",
+      "main_stats": {
+        "expected_points": 8.2,
+        "actual_points": 6.1,
+        "season_avg": 4.7
+      },
+      "detail_stats": [
+        {
+          "label": "Targets",
+          "value": 4
+        },
+        {
+          "label": "Carries",
+          "value": 9
+        },
+        {
+          "label": "Receptions",
+          "value": 4
+        },
+        {
+          "label": "Rec Yds",
+          "value": 26
+        },
+        {
+          "label": "Rush Yds",
+          "value": 26
+        },
+        {
+          "label": "WOPR",
+          "value": 0.22
+        }
+      ]
+    },
+    {
+      "id": "00-0036849",
+      "name": "Tutu Atwell",
+      "team": "LA",
+      "position": "WR",
+      "week": 10,
+      "rating": 66.4,
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/u3yymljy6ixexp6p8jop",
+      "main_stats": {
+        "expected_points": 7.9,
+        "actual_points": 5.0,
+        "season_avg": 3.5
+      },
+      "detail_stats": [
+        {
+          "label": "Targets",
+          "value": 2
+        },
+        {
+          "label": "Carries",
+          "value": 0
+        },
+        {
+          "label": "Receptions",
+          "value": 1
+        },
+        {
+          "label": "Rec Yds",
+          "value": 31
+        },
+        {
+          "label": "Rush Yds",
+          "value": 0
+        },
+        {
+          "label": "WOPR",
+          "value": 0.3
+        }
+      ]
+    },
+    {
+      "id": "00-0037004",
+      "name": "Hunter Long",
+      "team": "ARI",
+      "position": "TE",
+      "week": 10,
+      "rating": 66.0,
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/zu9wzaatrgpkwost3kwo",
+      "main_stats": {
+        "expected_points": 2.2,
+        "actual_points": 1.7,
+        "season_avg": 1.0
+      },
+      "detail_stats": [
+        {
+          "label": "Targets",
+          "value": 2
+        },
+        {
+          "label": "Carries",
+          "value": 0
+        },
+        {
+          "label": "Receptions",
+          "value": 1
+        },
+        {
+          "label": "Rec Yds",
+          "value": 7
+        },
+        {
+          "label": "Rush Yds",
+          "value": 0
+        },
+        {
+          "label": "WOPR",
+          "value": 0.23
+        }
+      ]
+    },
+    {
+      "id": "00-0039364",
+      "name": "Sione Vaki",
+      "team": "DET",
+      "position": "RB",
+      "week": 10,
+      "rating": 66.0,
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/abqcluf2gbejhiyjjtoz",
+      "main_stats": {
+        "expected_points": 6.3,
+        "actual_points": 5.9,
+        "season_avg": 3.6
+      },
+      "detail_stats": [
+        {
+          "label": "Targets",
+          "value": 1
+        },
+        {
+          "label": "Carries",
+          "value": 6
+        },
+        {
+          "label": "Receptions",
+          "value": 1
+        },
+        {
+          "label": "Rec Yds",
+          "value": 17
+        },
+        {
+          "label": "Rush Yds",
+          "value": 28
+        },
+        {
+          "label": "WOPR",
+          "value": 0.05
+        }
+      ]
+    },
+    {
+      "id": "00-0031610",
+      "name": "Darren Waller",
+      "team": "CAR",
+      "position": "TE",
+      "week": 10,
+      "rating": 66.0,
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/t0advoaoix6fvhu6zs5e",
+      "main_stats": {
+        "expected_points": 10.1,
+        "actual_points": 9.8,
+        "season_avg": 9.0
       },
       "detail_stats": [
         {
@@ -994,7 +1674,7 @@
         },
         {
           "label": "Rec Yds",
-          "value": 9
+          "value": 24
         },
         {
           "label": "Rush Yds",
@@ -1002,67 +1682,107 @@
         },
         {
           "label": "WOPR",
-          "value": 0.3
+          "value": 0.44
         }
       ]
     },
     {
-      "id": "00-0041547",
-      "name": "KC Concepcion",
-      "team": "CLE",
+      "id": "00-0040870",
+      "name": "Ja'Kobi Lane",
+      "team": "BAL",
       "position": "WR",
-      "week": 9,
-      "rating": 70.1,
-      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/evzxqxsyr1m3ohchqcan",
+      "week": 10,
+      "rating": 65.7,
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/gjezd2a8imfrxyv16wuj",
       "main_stats": {
-        "expected_points": 12.1,
-        "actual_points": 16.2,
-        "season_avg": 10.0
+        "expected_points": 10.1,
+        "actual_points": 3.8,
+        "season_avg": 4.5
       },
       "detail_stats": [
         {
           "label": "Targets",
-          "value": 6
+          "value": 11
         },
         {
           "label": "Carries",
-          "value": 1
+          "value": 0
         },
         {
           "label": "Receptions",
-          "value": 4
-        },
-        {
-          "label": "Rec Yds",
-          "value": 85
-        },
-        {
-          "label": "Rush Yds",
           "value": 3
         },
         {
+          "label": "Rec Yds",
+          "value": 61
+        },
+        {
+          "label": "Rush Yds",
+          "value": 0
+        },
+        {
           "label": "WOPR",
-          "value": 0.54
+          "value": 0.76
         }
       ]
     },
     {
-      "id": "00-0037120",
-      "name": "Tyler Goodson",
-      "team": "DAL",
-      "position": "RB",
-      "week": 9,
-      "rating": 70.0,
-      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/gqgrmbnzyqu4vynmovxl",
+      "id": "00-0037292",
+      "name": "Andrew Ogletree",
+      "team": "IND",
+      "position": "TE",
+      "week": 10,
+      "rating": 65.5,
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/hufz9e6zicjonf8daeuz",
       "main_stats": {
-        "expected_points": 7.7,
-        "actual_points": 5.6,
-        "season_avg": 3.8
+        "expected_points": 1.9,
+        "actual_points": 1.6,
+        "season_avg": 0.9
       },
       "detail_stats": [
         {
           "label": "Targets",
+          "value": 2
+        },
+        {
+          "label": "Carries",
+          "value": 0
+        },
+        {
+          "label": "Receptions",
           "value": 1
+        },
+        {
+          "label": "Rec Yds",
+          "value": 5
+        },
+        {
+          "label": "Rush Yds",
+          "value": 0
+        },
+        {
+          "label": "WOPR",
+          "value": 0.2
+        }
+      ]
+    },
+    {
+      "id": "00-0041125",
+      "name": "Seth McGowan",
+      "team": "IND",
+      "position": "RB",
+      "week": 10,
+      "rating": 65.5,
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/f4h7kmayu7kqncha3f6v",
+      "main_stats": {
+        "expected_points": 5.6,
+        "actual_points": 9.3,
+        "season_avg": 4.6
+      },
+      "detail_stats": [
+        {
+          "label": "Targets",
+          "value": 0
         },
         {
           "label": "Carries",
@@ -1082,167 +1802,7 @@
         },
         {
           "label": "WOPR",
-          "value": 0.05
-        }
-      ]
-    },
-    {
-      "id": "00-0040934",
-      "name": "Jordan Hudson",
-      "team": "DAL",
-      "position": "WR",
-      "week": 9,
-      "rating": 70.0,
-      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/uwgiczb8bnnacu2g7zln",
-      "main_stats": {
-        "expected_points": 6.1,
-        "actual_points": 0.0,
-        "season_avg": 0.0
-      },
-      "detail_stats": [
-        {
-          "label": "Targets",
-          "value": 1
-        },
-        {
-          "label": "Carries",
-          "value": 0
-        },
-        {
-          "label": "Receptions",
-          "value": 0
-        },
-        {
-          "label": "Rec Yds",
-          "value": 0
-        },
-        {
-          "label": "Rush Yds",
-          "value": 0
-        },
-        {
-          "label": "WOPR",
-          "value": 0.12
-        }
-      ]
-    },
-    {
-      "id": "00-0040736",
-      "name": "Mason Taylor",
-      "team": "NYJ",
-      "position": "TE",
-      "week": 9,
-      "rating": 69.7,
-      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/lejmnygqgkeu7ujr7x36",
-      "main_stats": {
-        "expected_points": 9.2,
-        "actual_points": 10.1,
-        "season_avg": 7.5
-      },
-      "detail_stats": [
-        {
-          "label": "Targets",
-          "value": 2
-        },
-        {
-          "label": "Carries",
-          "value": 0
-        },
-        {
-          "label": "Receptions",
-          "value": 1
-        },
-        {
-          "label": "Rec Yds",
-          "value": 11
-        },
-        {
-          "label": "Rush Yds",
-          "value": 0
-        },
-        {
-          "label": "WOPR",
-          "value": 0.2
-        }
-      ]
-    },
-    {
-      "id": "00-0039337",
-      "name": "Malik Nabers",
-      "team": "NYG",
-      "position": "WR",
-      "week": 9,
-      "rating": 69.3,
-      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/w3edoyyuomqlovvp9ixc",
-      "main_stats": {
-        "expected_points": 20.5,
-        "actual_points": 18.6,
-        "season_avg": 16.2
-      },
-      "detail_stats": [
-        {
-          "label": "Targets",
-          "value": 8
-        },
-        {
-          "label": "Carries",
-          "value": 0
-        },
-        {
-          "label": "Receptions",
-          "value": 5
-        },
-        {
-          "label": "Rec Yds",
-          "value": 43
-        },
-        {
-          "label": "Rush Yds",
-          "value": 0
-        },
-        {
-          "label": "WOPR",
-          "value": 0.66
-        }
-      ]
-    },
-    {
-      "id": "00-0037809",
-      "name": "Chig Okonkwo",
-      "team": "WAS",
-      "position": "TE",
-      "week": 9,
-      "rating": 69.1,
-      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/pzcez6pi9tpdqkmjjnzk",
-      "main_stats": {
-        "expected_points": 9.5,
-        "actual_points": 10.2,
-        "season_avg": 7.8
-      },
-      "detail_stats": [
-        {
-          "label": "Targets",
-          "value": 7
-        },
-        {
-          "label": "Carries",
-          "value": 0
-        },
-        {
-          "label": "Receptions",
-          "value": 6
-        },
-        {
-          "label": "Rec Yds",
-          "value": 56
-        },
-        {
-          "label": "Rush Yds",
-          "value": 0
-        },
-        {
-          "label": "WOPR",
-          "value": 0.41
+          "value": 0.0
         }
       ]
     },
@@ -1251,412 +1811,12 @@
       "name": "Malachi Fields",
       "team": "NYG",
       "position": "WR",
-      "week": 9,
-      "rating": 68.6,
+      "week": 10,
+      "rating": 64.6,
       "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/tpls1aptxx9x8xaqvjtj",
       "main_stats": {
-        "expected_points": 11.7,
-        "actual_points": 7.7,
-        "season_avg": 6.7
-      },
-      "detail_stats": [
-        {
-          "label": "Targets",
-          "value": 5
-        },
-        {
-          "label": "Carries",
-          "value": 0
-        },
-        {
-          "label": "Receptions",
-          "value": 3
-        },
-        {
-          "label": "Rec Yds",
-          "value": 40
-        },
-        {
-          "label": "Rush Yds",
-          "value": 0
-        },
-        {
-          "label": "WOPR",
-          "value": 0.44
-        }
-      ]
-    },
-    {
-      "id": "00-0040663",
-      "name": "Harold Fannin Jr.",
-      "team": "CLE",
-      "position": "TE",
-      "week": 9,
-      "rating": 68.2,
-      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/fxublmpnxx9uggsddwik",
-      "main_stats": {
-        "expected_points": 11.0,
-        "actual_points": 17.6,
-        "season_avg": 11.8
-      },
-      "detail_stats": [
-        {
-          "label": "Targets",
-          "value": 2
-        },
-        {
-          "label": "Carries",
-          "value": 0
-        },
-        {
-          "label": "Receptions",
-          "value": 2
-        },
-        {
-          "label": "Rec Yds",
-          "value": 42
-        },
-        {
-          "label": "Rush Yds",
-          "value": 0
-        },
-        {
-          "label": "WOPR",
-          "value": 0.11
-        }
-      ]
-    },
-    {
-      "id": "00-0036355",
-      "name": "Justin Herbert",
-      "team": "LAC",
-      "position": "QB",
-      "week": 9,
-      "rating": 68.0,
-      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/jnkspnntgebegzp4ghve",
-      "main_stats": {
-        "expected_points": 21.3,
-        "actual_points": 9.0,
-        "season_avg": 10.6
-      },
-      "detail_stats": [
-        {
-          "label": "Pass Att",
-          "value": 23
-        },
-        {
-          "label": "Pass Yds",
-          "value": 193
-        },
-        {
-          "label": "Pass TDs",
-          "value": 1
-        },
-        {
-          "label": "Carries",
-          "value": 1
-        },
-        {
-          "label": "Rush Yds",
-          "value": 7
-        },
-        {
-          "label": "INTs",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "id": "00-0036358",
-      "name": "CeeDee Lamb",
-      "team": "DAL",
-      "position": "WR",
-      "week": 9,
-      "rating": 67.5,
-      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/mbblzwtynxr15ovzkevi",
-      "main_stats": {
-        "expected_points": 26.6,
-        "actual_points": 24.2,
-        "season_avg": 22.4
-      },
-      "detail_stats": [
-        {
-          "label": "Targets",
-          "value": 16
-        },
-        {
-          "label": "Carries",
-          "value": 0
-        },
-        {
-          "label": "Receptions",
-          "value": 10
-        },
-        {
-          "label": "Rec Yds",
-          "value": 195
-        },
-        {
-          "label": "Rush Yds",
-          "value": 0
-        },
-        {
-          "label": "WOPR",
-          "value": 1.13
-        }
-      ]
-    },
-    {
-      "id": "00-0041503",
-      "name": "Nate Boerkircher",
-      "team": "JAX",
-      "position": "TE",
-      "week": 9,
-      "rating": 67.2,
-      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/bxglkvzpx2y40u25xaso",
-      "main_stats": {
-        "expected_points": 5.2,
-        "actual_points": 9.0,
-        "season_avg": 5.1
-      },
-      "detail_stats": [
-        {
-          "label": "Targets",
-          "value": 3
-        },
-        {
-          "label": "Carries",
-          "value": 0
-        },
-        {
-          "label": "Receptions",
-          "value": 2
-        },
-        {
-          "label": "Rec Yds",
-          "value": 61
-        },
-        {
-          "label": "Rush Yds",
-          "value": 0
-        },
-        {
-          "label": "WOPR",
-          "value": 0.33
-        }
-      ]
-    },
-    {
-      "id": "00-0040878",
-      "name": "Mike Washington Jr.",
-      "team": "LV",
-      "position": "RB",
-      "week": 9,
-      "rating": 67.2,
-      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/ocdjq5ohmtgdghqdh5m4",
-      "main_stats": {
-        "expected_points": 8.9,
-        "actual_points": 3.6,
-        "season_avg": 4.2
-      },
-      "detail_stats": [
-        {
-          "label": "Targets",
-          "value": 0
-        },
-        {
-          "label": "Carries",
-          "value": 6
-        },
-        {
-          "label": "Receptions",
-          "value": 0
-        },
-        {
-          "label": "Rec Yds",
-          "value": 0
-        },
-        {
-          "label": "Rush Yds",
-          "value": -3
-        },
-        {
-          "label": "WOPR",
-          "value": 0.0
-        }
-      ]
-    },
-    {
-      "id": "00-0041395",
-      "name": "Eli Raridon",
-      "team": "NE",
-      "position": "TE",
-      "week": 9,
-      "rating": 66.8,
-      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/flj53cmijulfjxegejyc",
-      "main_stats": {
-        "expected_points": 7.8,
-        "actual_points": 8.1,
-        "season_avg": 6.3
-      },
-      "detail_stats": [
-        {
-          "label": "Targets",
-          "value": 6
-        },
-        {
-          "label": "Carries",
-          "value": 0
-        },
-        {
-          "label": "Receptions",
-          "value": 3
-        },
-        {
-          "label": "Rec Yds",
-          "value": 52
-        },
-        {
-          "label": "Rush Yds",
-          "value": 0
-        },
-        {
-          "label": "WOPR",
-          "value": 0.33
-        }
-      ]
-    },
-    {
-      "id": "00-0041125",
-      "name": "Seth McGowan",
-      "team": "IND",
-      "position": "RB",
-      "week": 9,
-      "rating": 66.4,
-      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/f4h7kmayu7kqncha3f6v",
-      "main_stats": {
-        "expected_points": 5.7,
-        "actual_points": 6.6,
-        "season_avg": 3.6
-      },
-      "detail_stats": [
-        {
-          "label": "Targets",
-          "value": 1
-        },
-        {
-          "label": "Carries",
-          "value": 6
-        },
-        {
-          "label": "Receptions",
-          "value": 1
-        },
-        {
-          "label": "Rec Yds",
-          "value": -3
-        },
-        {
-          "label": "Rush Yds",
-          "value": 45
-        },
-        {
-          "label": "WOPR",
-          "value": 0.03
-        }
-      ]
-    },
-    {
-      "id": "00-0032950",
-      "name": "Carson Wentz",
-      "team": "MIN",
-      "position": "QB",
-      "week": 9,
-      "rating": 66.4,
-      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/azwdmcksvjva4tgaa8vm",
-      "main_stats": {
-        "expected_points": 16.7,
-        "actual_points": 7.6,
-        "season_avg": 7.6
-      },
-      "detail_stats": [
-        {
-          "label": "Pass Att",
-          "value": 25
-        },
-        {
-          "label": "Pass Yds",
-          "value": 81
-        },
-        {
-          "label": "Pass TDs",
-          "value": 0
-        },
-        {
-          "label": "Carries",
-          "value": 1
-        },
-        {
-          "label": "Rush Yds",
-          "value": 0
-        },
-        {
-          "label": "INTs",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "id": "00-0034975",
-      "name": "Justice Hill",
-      "team": "BAL",
-      "position": "RB",
-      "week": 9,
-      "rating": 66.2,
-      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/fuodbrwvianete2gy5ag",
-      "main_stats": {
-        "expected_points": 8.2,
-        "actual_points": 10.7,
-        "season_avg": 6.8
-      },
-      "detail_stats": [
-        {
-          "label": "Targets",
-          "value": 3
-        },
-        {
-          "label": "Carries",
-          "value": 9
-        },
-        {
-          "label": "Receptions",
-          "value": 3
-        },
-        {
-          "label": "Rec Yds",
-          "value": 7
-        },
-        {
-          "label": "Rush Yds",
-          "value": 85
-        },
-        {
-          "label": "WOPR",
-          "value": -0.11
-        }
-      ]
-    },
-    {
-      "id": "00-0039793",
-      "name": "AJ Barner",
-      "team": "SEA",
-      "position": "TE",
-      "week": 9,
-      "rating": 65.4,
-      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/i0esiguve9if4ts5mm1q",
-      "main_stats": {
-        "expected_points": 7.7,
-        "actual_points": 9.3,
+        "expected_points": 10.1,
+        "actual_points": 9.5,
         "season_avg": 7.0
       },
       "detail_stats": [
@@ -1666,19 +1826,19 @@
         },
         {
           "label": "Carries",
-          "value": 3
+          "value": 0
         },
         {
           "label": "Receptions",
-          "value": 2
+          "value": 3
         },
         {
           "label": "Rec Yds",
-          "value": 7
+          "value": 62
         },
         {
           "label": "Rush Yds",
-          "value": 3
+          "value": 0
         },
         {
           "label": "WOPR",
@@ -1687,262 +1847,22 @@
       ]
     },
     {
-      "id": "00-0039530",
-      "name": "Brevyn Spann-Ford",
-      "team": "DAL",
-      "position": "TE",
-      "week": 9,
-      "rating": 65.4,
-      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/sko2pmuqociwa92ep1ad",
-      "main_stats": {
-        "expected_points": 4.3,
-        "actual_points": 4.7,
-        "season_avg": 3.1
-      },
-      "detail_stats": [
-        {
-          "label": "Targets",
-          "value": 3
-        },
-        {
-          "label": "Carries",
-          "value": 0
-        },
-        {
-          "label": "Receptions",
-          "value": 2
-        },
-        {
-          "label": "Rec Yds",
-          "value": 20
-        },
-        {
-          "label": "Rush Yds",
-          "value": 0
-        },
-        {
-          "label": "WOPR",
-          "value": 0.15
-        }
-      ]
-    },
-    {
       "id": "00-0035208",
       "name": "Olamide Zaccheaus",
       "team": "ATL",
       "position": "WR",
-      "week": 9,
-      "rating": 64.9,
+      "week": 10,
+      "rating": 64.6,
       "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/wxamgrryctedlz0coeyd",
       "main_stats": {
-        "expected_points": 5.7,
-        "actual_points": 1.0,
-        "season_avg": 1.1
-      },
-      "detail_stats": [
-        {
-          "label": "Targets",
-          "value": 3
-        },
-        {
-          "label": "Carries",
-          "value": 0
-        },
-        {
-          "label": "Receptions",
-          "value": 1
-        },
-        {
-          "label": "Rec Yds",
-          "value": 5
-        },
-        {
-          "label": "Rush Yds",
-          "value": 0
-        },
-        {
-          "label": "WOPR",
-          "value": 0.24
-        }
-      ]
-    },
-    {
-      "id": "00-0040198",
-      "name": "Ollie Gordon II",
-      "team": "MIA",
-      "position": "RB",
-      "week": 9,
-      "rating": 64.7,
-      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/bv33rgypaauv7sealwkr",
-      "main_stats": {
-        "expected_points": 15.5,
-        "actual_points": 10.5,
-        "season_avg": 11.4
-      },
-      "detail_stats": [
-        {
-          "label": "Targets",
-          "value": 1
-        },
-        {
-          "label": "Carries",
-          "value": 16
-        },
-        {
-          "label": "Receptions",
-          "value": 1
-        },
-        {
-          "label": "Rec Yds",
-          "value": 9
-        },
-        {
-          "label": "Rush Yds",
-          "value": 55
-        },
-        {
-          "label": "WOPR",
-          "value": 0.06
-        }
-      ]
-    },
-    {
-      "id": "00-0034844",
-      "name": "Saquon Barkley",
-      "team": "PHI",
-      "position": "RB",
-      "week": 9,
-      "rating": 64.5,
-      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/qcayrzjpura2zydszonh",
-      "main_stats": {
-        "expected_points": 9.5,
-        "actual_points": 11.9,
-        "season_avg": 8.4
-      },
-      "detail_stats": [
-        {
-          "label": "Targets",
-          "value": 1
-        },
-        {
-          "label": "Carries",
-          "value": 13
-        },
-        {
-          "label": "Receptions",
-          "value": 0
-        },
-        {
-          "label": "Rec Yds",
-          "value": 0
-        },
-        {
-          "label": "Rush Yds",
-          "value": 22
-        },
-        {
-          "label": "WOPR",
-          "value": 0.06
-        }
-      ]
-    },
-    {
-      "id": "00-0038544",
-      "name": "Quentin Johnston",
-      "team": "LAC",
-      "position": "WR",
-      "week": 9,
-      "rating": 64.5,
-      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/lyvsrjh4mjb4dqwp6shm",
-      "main_stats": {
-        "expected_points": 9.2,
-        "actual_points": 9.2,
-        "season_avg": 6.5
+        "expected_points": 5.5,
+        "actual_points": 2.2,
+        "season_avg": 1.4
       },
       "detail_stats": [
         {
           "label": "Targets",
           "value": 4
-        },
-        {
-          "label": "Carries",
-          "value": 1
-        },
-        {
-          "label": "Receptions",
-          "value": 1
-        },
-        {
-          "label": "Rec Yds",
-          "value": 58
-        },
-        {
-          "label": "Rush Yds",
-          "value": 5
-        },
-        {
-          "label": "WOPR",
-          "value": 0.41
-        }
-      ]
-    },
-    {
-      "id": "00-0038046",
-      "name": "Charlie Kolar",
-      "team": "LAC",
-      "position": "TE",
-      "week": 9,
-      "rating": 64.2,
-      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/wjguwfmbshhyuetf3lgs",
-      "main_stats": {
-        "expected_points": 6.1,
-        "actual_points": 4.8,
-        "season_avg": 4.4
-      },
-      "detail_stats": [
-        {
-          "label": "Targets",
-          "value": 3
-        },
-        {
-          "label": "Carries",
-          "value": 1
-        },
-        {
-          "label": "Receptions",
-          "value": 3
-        },
-        {
-          "label": "Rec Yds",
-          "value": 31
-        },
-        {
-          "label": "Rush Yds",
-          "value": 3
-        },
-        {
-          "label": "WOPR",
-          "value": 0.19
-        }
-      ]
-    },
-    {
-      "id": "00-0040189",
-      "name": "Oronde Gadsden II",
-      "team": "LAC",
-      "position": "TE",
-      "week": 9,
-      "rating": 64.0,
-      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/r8b4oghjwhw8x9nv1wbs",
-      "main_stats": {
-        "expected_points": 6.6,
-        "actual_points": 6.2,
-        "season_avg": 5.3
-      },
-      "detail_stats": [
-        {
-          "label": "Targets",
-          "value": 3
         },
         {
           "label": "Carries",
@@ -1962,31 +1882,31 @@
         },
         {
           "label": "WOPR",
-          "value": 0.21
+          "value": 0.22
         }
       ]
     },
     {
-      "id": "00-0038938",
-      "name": "Jalin Hyatt",
-      "team": "NYG",
-      "position": "WR",
-      "week": 9,
-      "rating": 64.0,
-      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/fqgvjckxe03pr4eup6m7",
+      "id": "00-0040556",
+      "name": "Corey Kiner",
+      "team": "NE",
+      "position": "RB",
+      "week": 10,
+      "rating": 64.5,
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/zz4imen7bzozyeicm1mn",
       "main_stats": {
-        "expected_points": 4.3,
-        "actual_points": 0.0,
-        "season_avg": 0.0
+        "expected_points": 5.8,
+        "actual_points": 5.9,
+        "season_avg": 3.6
       },
       "detail_stats": [
         {
           "label": "Targets",
-          "value": 1
+          "value": 0
         },
         {
           "label": "Carries",
-          "value": 0
+          "value": 10
         },
         {
           "label": "Receptions",
@@ -1998,11 +1918,91 @@
         },
         {
           "label": "Rush Yds",
+          "value": 25
+        },
+        {
+          "label": "WOPR",
+          "value": 0.0
+        }
+      ]
+    },
+    {
+      "id": "00-0035640",
+      "name": "DK Metcalf",
+      "team": "PIT",
+      "position": "WR",
+      "week": 10,
+      "rating": 63.8,
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/kxql4sjfelubhxawu2zh",
+      "main_stats": {
+        "expected_points": 16.4,
+        "actual_points": 7.5,
+        "season_avg": 10.1
+      },
+      "detail_stats": [
+        {
+          "label": "Targets",
+          "value": 6
+        },
+        {
+          "label": "Carries",
+          "value": 0
+        },
+        {
+          "label": "Receptions",
+          "value": 2
+        },
+        {
+          "label": "Rec Yds",
+          "value": 54
+        },
+        {
+          "label": "Rush Yds",
           "value": 0
         },
         {
           "label": "WOPR",
-          "value": 0.17
+          "value": 0.71
+        }
+      ]
+    },
+    {
+      "id": "00-0039165",
+      "name": "Zach Charbonnet",
+      "team": "SEA",
+      "position": "RB",
+      "week": 10,
+      "rating": 63.8,
+      "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto,w_512/league/cuuyog0lpxfaj0y0huvp",
+      "main_stats": {
+        "expected_points": 11.8,
+        "actual_points": 8.3,
+        "season_avg": 8.3
+      },
+      "detail_stats": [
+        {
+          "label": "Targets",
+          "value": 0
+        },
+        {
+          "label": "Carries",
+          "value": 20
+        },
+        {
+          "label": "Receptions",
+          "value": 0
+        },
+        {
+          "label": "Rec Yds",
+          "value": 0
+        },
+        {
+          "label": "Rush Yds",
+          "value": 94
+        },
+        {
+          "label": "WOPR",
+          "value": 0.0
         }
       ]
     }
